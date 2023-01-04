@@ -97,3 +97,18 @@ Command failed: npx jest ex2-dogYears.test.js --colors --reporters="E:\HYF\JS\Ho
 2023-01-04 03:27:07 info: ----------------------------------------
 2023-01-04 03:27:11 info: All unit tests passed.
 2023-01-04 03:27:18 info: All steps were completed successfully
+2023-01-04 04:02:01 info: -------------------------------------------
+2023-01-04 04:02:01 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-04 04:02:01 info: -------------------------------------------
+2023-01-04 04:02:05 error: *** Unit Test Error Report ***
+
+✕ tellFortune `numKids` should be an array initialized with 5 elements
+✕ tellFortune `partnerNames` should be an array initialized with 5 elements
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 04:02:12 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:52:36 - Unknown word (Joulia)
+ex3-tellFortune.js:52:46 - Unknown word (Beartice)
+
