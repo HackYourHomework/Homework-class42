@@ -1,0 +1,77 @@
+2023-01-04 02:52:02 info: ----------------------------------------------
+2023-01-04 02:52:02 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 02:52:02 info: ----------------------------------------------
+2023-01-04 02:52:07 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 02:52:15 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Jalal)
+
+2023-01-04 02:53:40 info: Disclaimer turned off
+2023-01-04 02:53:55 info: ----------------------------------------------
+2023-01-04 02:53:55 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 02:53:55 info: ----------------------------------------------
+2023-01-04 02:54:00 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 02:54:07 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:39:19 - Unknown word (Jalal)
+
+2023-01-04 02:57:13 info: ----------------------------------------------
+2023-01-04 02:57:13 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 02:57:13 info: ----------------------------------------------
+2023-01-04 02:57:17 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 02:57:24 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Jalal)
+
+2023-01-04 02:59:06 info: ----------------------------------------------
+2023-01-04 02:59:06 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 02:59:06 info: ----------------------------------------------
+2023-01-04 02:59:11 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 02:59:18 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Jalal)
+
+2023-01-04 03:00:07 info: ----------------------------------------------
+2023-01-04 03:00:07 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 03:00:07 info: ----------------------------------------------
+2023-01-04 03:00:11 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 03:00:18 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:39:19 - Unknown word (Jalal)
+

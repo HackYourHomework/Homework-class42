@@ -1,0 +1,11 @@
+*** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+*** Spell Checker Report ***
+
+ex1-giveCompliment.js:39:19 - Unknown word (Jalal)
