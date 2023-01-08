@@ -1,0 +1,15 @@
+2023-01-05 04:33:17 info: ----------------------------------------------
+2023-01-05 04:33:17 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-05 04:33:17 info: ----------------------------------------------
+2023-01-05 04:33:17 info: Exercise has not yet been modified
+2023-01-05 04:33:18 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should take a single parameter
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-05 04:33:40 info: Disclaimer turned off
