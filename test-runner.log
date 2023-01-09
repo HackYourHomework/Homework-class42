@@ -13,3 +13,246 @@
 
 Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
 2023-01-05 04:33:40 info: Disclaimer turned off
+2023-01-09 06:34:51 info: ----------------------------------------------
+2023-01-09 06:34:51 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 06:34:51 info: ----------------------------------------------
+2023-01-09 06:34:52 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are Awesome, HackYourFuture!
+  Received: You are Awesome, HackYourFuture 
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 06:34:54 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:42:19 - Unknown word (Yunus)
+
+2023-01-09 06:35:37 info: ----------------------------------------------
+2023-01-09 06:35:37 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 06:35:37 info: ----------------------------------------------
+2023-01-09 06:35:38 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are Awesome, HackYourFuture!
+  Received: You are Awesome, HackYourFuture 
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 06:35:39 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Yunus)
+
+2023-01-09 06:36:47 info: ----------------------------------------------
+2023-01-09 06:36:47 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 06:36:47 info: ----------------------------------------------
+2023-01-09 06:36:47 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are Awesome, HackYourFuture!
+  Received: You are Awesome, HackYourFuture 
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 06:36:49 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Yunus)
+
+2023-01-09 07:49:59 info: ----------------------------------------------
+2023-01-09 07:49:59 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:49:59 info: ----------------------------------------------
+2023-01-09 07:50:01 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are Awesome, HackYourFuture!
+  Received: You are Awesome, HackYourFuture 
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 07:55:30 info: ----------------------------------------------
+2023-01-09 07:55:30 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:55:30 info: ----------------------------------------------
+2023-01-09 07:55:32 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are Awesome, HackYourFuture!
+  Received: You are Awesome, HackYourFuture 
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 07:57:18 info: ----------------------------------------------
+2023-01-09 07:57:18 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:57:18 info: ----------------------------------------------
+2023-01-09 07:57:20 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are Awesome, HackYourFuture!
+  Received: You are Awesome, HackYourFuture 
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 07:59:29 info: ----------------------------------------
+2023-01-09 07:59:29 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-09 07:59:29 info: ----------------------------------------
+2023-01-09 07:59:31 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should have all TODO comments removed
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: "Your doggie is 7 years old in dog years!"
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: "Your doggie is 14 years old in dog years!"
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: "Your doggie is 21 years old in dog years!"
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 08:05:19 info: ----------------------------------------
+2023-01-09 08:05:19 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-09 08:05:19 info: ----------------------------------------
+2023-01-09 08:05:21 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: "Your doggie is 7 years old in dog years!"
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: "Your doggie is 14 years old in dog years!"
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: "Your doggie is 21 years old in dog years!"
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 08:06:41 info: ----------------------------------------
+2023-01-09 08:06:41 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-09 08:06:41 info: ----------------------------------------
+2023-01-09 08:06:43 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: "Your doggie is 7 years old in 1 dog years!"
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: "Your doggie is 14 years old in 2 dog years!"
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: "Your doggie is 21 years old in 3 dog years!"
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 08:08:02 info: ----------------------------------------
+2023-01-09 08:08:02 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-09 08:08:02 info: ----------------------------------------
+2023-01-09 08:08:04 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: "Your doggie is 7 years old in 1 dog years!"
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: "Your doggie is 14 years old in 2 dog years!"
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: "Your doggie is 21 years old in 3 dog years!"
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 08:08:44 info: ----------------------------------------
+2023-01-09 08:08:44 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-09 08:08:44 info: ----------------------------------------
+2023-01-09 08:08:46 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: "Your doggie is 7 years old in dog years!"
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: "Your doggie is 14 years old in dog years!"
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: "Your doggie is 21 years old in dog years!"
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 08:09:55 info: ----------------------------------------
+2023-01-09 08:09:55 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-09 08:09:55 info: ----------------------------------------
+2023-01-09 08:09:57 info: All unit tests passed.
+2023-01-09 08:10:00 info: All steps were completed successfully
+2023-01-09 08:10:54 info: -------------------------------------------
+2023-01-09 08:10:54 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-09 08:10:54 info: -------------------------------------------
+2023-01-09 08:10:56 error: *** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Web Developer in Spain, married to John with 1 kids.
+  Received: You will be a Web Developer in Spain, married to John with 1 kid.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 08:11:00 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:64:6 - Unknown word (Lannister)
+ex3-tellFortune.js:71:6 - Unknown word (Turkiye)
+
+2023-01-09 08:11:55 info: -------------------------------------------
+2023-01-09 08:11:55 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-09 08:11:55 info: -------------------------------------------
+2023-01-09 08:11:57 error: *** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Web Developer in Spain, married to John with 1 kids.
+  Received: You will be a Web Developer in Spain, married to John with 1 kid.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 08:12:42 info: -------------------------------------------
+2023-01-09 08:12:42 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-09 08:12:42 info: -------------------------------------------
+2023-01-09 08:12:44 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Web Developer in Spain, married to John with 1 kids.
+  Received: You will be a Web Developer in Spain, married to John with 1.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 08:13:01 info: -------------------------------------------
+2023-01-09 08:13:01 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-09 08:13:01 info: -------------------------------------------
+2023-01-09 08:13:03 info: All unit tests passed.
+2023-01-09 08:13:06 info: All steps were completed successfully
+2023-01-09 08:13:38 info: ----------------------------------------------
+2023-01-09 08:13:38 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 08:13:38 info: ----------------------------------------------
+2023-01-09 08:13:40 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are Awesome, HackYourFuture!
+  Received: You are Awesome, HackYourFuture 
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-09 08:13:42 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Yunus)
+
+2023-01-09 08:13:56 info: ----------------------------------------------
+2023-01-09 08:13:56 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 08:13:56 info: ----------------------------------------------
+2023-01-09 08:13:58 info: All unit tests passed.
+2023-01-09 08:14:01 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Yunus)
+
+2023-01-09 08:14:19 info: ----------------------------------------------
+2023-01-09 08:14:19 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 08:14:19 info: ----------------------------------------------
+2023-01-09 08:14:21 info: All unit tests passed.
+2023-01-09 08:14:24 info: All steps were completed successfully

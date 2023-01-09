@@ -31,15 +31,13 @@ function giveCompliment(name) {
     'leadership',
     'teammate',
   ];
-  const randomCompliment =
-    compliments[Math.floor(Math.random() * compliments.length)];
-  return `You are ${randomCompliment}, ${name} `;
-  // TODO complete this function
+  return `You are ${
+    compliments[[Math.floor(Math.random() * compliments.length)]]
+  }, ${name}!`;
 }
 
 function main() {
-  // TODO substitute your own name for "HackYourFuture"
-  const myName = 'Yunus';
+  const myName = 'HackYourFuture';
 
   console.log(giveCompliment(myName));
   console.log(giveCompliment(myName));
