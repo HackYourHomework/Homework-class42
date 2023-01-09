@@ -1,0 +1,35 @@
+2023-01-09 07:09:32 info: ----------------------------------------------
+2023-01-09 07:09:32 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:09:32 info: ----------------------------------------------
+2023-01-09 07:09:37 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are awesome, HackYourFuture!
+  Received: You are awesome, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\test-runner\CustomReporter.js"
+2023-01-09 07:31:08 info: ----------------------------------------------
+2023-01-09 07:31:08 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:31:08 info: ----------------------------------------------
+2023-01-09 07:31:13 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\test-runner\CustomReporter.js"
+2023-01-09 07:32:28 info: ----------------------------------------------
+2023-01-09 07:32:28 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:32:28 info: ----------------------------------------------
+2023-01-09 07:32:33 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\test-runner\CustomReporter.js"
+2023-01-09 07:38:32 info: ----------------------------------------------
+2023-01-09 07:38:32 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:38:32 info: ----------------------------------------------
+2023-01-09 07:38:36 info: All unit tests passed.
+2023-01-09 07:38:42 info: All steps were completed successfully
