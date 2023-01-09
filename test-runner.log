@@ -33,3 +33,8 @@ Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Use
 2023-01-09 07:38:32 info: ----------------------------------------------
 2023-01-09 07:38:36 info: All unit tests passed.
 2023-01-09 07:38:42 info: All steps were completed successfully
+2023-01-09 07:59:00 info: ----------------------------------------
+2023-01-09 07:59:00 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-09 07:59:00 info: ----------------------------------------
+2023-01-09 07:59:04 info: All unit tests passed.
+2023-01-09 07:59:11 info: All steps were completed successfully
