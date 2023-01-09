@@ -22,10 +22,22 @@ instead!
 -----------------------------------------------------------------------------*/
 const cartForParty = {
   // TODO complete this object
+  chocolate: 2.1,
+  chips: 1.5,
+  drink: 3.0,
+  pizza: 4.25,
+  cake: 3.4,
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
+function calculateTotalPrice(priceOfItems) {
   // TODO replace this comment with your code
+  for (let totalPrice of cartForParty) {
+    if (typeof cartForParty === number) {
+      totalPrice += cartForParty;
+    }
+  }
+
+  return `Total: €${totalPrice}`;
 }
 
 // ! Test functions (plain vanilla JavaScript)
