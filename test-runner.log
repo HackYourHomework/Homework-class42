@@ -43,3 +43,13 @@ Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Use
 2023-01-09 08:11:04 info: --------------------------------------------
 2023-01-09 08:11:04 warn: A unit test file was not provided.
 2023-01-09 08:11:12 info: All steps were completed successfully
+2023-01-09 08:12:50 info: --------------------------------------------
+2023-01-09 08:12:50 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-09 08:12:50 info: --------------------------------------------
+2023-01-09 08:12:50 warn: A unit test file was not provided.
+2023-01-09 08:12:57 info: All steps were completed successfully
+2023-01-09 08:18:37 info: -------------------------------------------
+2023-01-09 08:18:37 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-01-09 08:18:37 info: -------------------------------------------
+2023-01-09 08:18:37 warn: A unit test file was not provided.
+2023-01-09 08:18:44 info: All steps were completed successfully

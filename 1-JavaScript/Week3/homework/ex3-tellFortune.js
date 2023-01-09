@@ -33,7 +33,7 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */ []) {
+function selectRandomly(/* TODO parameter(s) go here */) {
   // TODO complete this function
 }
 
