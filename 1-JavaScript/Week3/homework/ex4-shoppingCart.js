@@ -25,7 +25,6 @@ const shoppingCart = ['bananas', 'milk'];
 // ! Function to be tested
 function addToShoppingCart(groceryItem) {
   // TODO complete this function
-  toString.call(groceryItem);
   if (typeof groceryItem === 'string') shoppingCart.push(groceryItem);
   if (shoppingCart.length > 3) {
     shoppingCart.shift();
