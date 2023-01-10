@@ -30,10 +30,14 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
+function filterPrivateData(array) {
+  const nonPrivateData = [];
+  for (const { name, occupation, email } of array) {
+    nonPrivateData.push({ name, occupation, email });
+  }
 
+  return nonPrivateData;
+}
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('Test 1: filterPrivateData should take one parameters');
