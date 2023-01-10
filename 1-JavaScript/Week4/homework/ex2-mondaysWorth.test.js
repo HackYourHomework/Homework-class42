@@ -31,9 +31,21 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(tasks, hourlyRate) {
+  let income = 0;
+  const filteredArray = [];
+
+  for (const task of tasks) {
+    const { duration } = task;
+    filteredArray.push({ duration }); //but what if there won'be a duration key?
+    //is there a way to complete this task without destructuring?
+  }
+  filteredArray
+    .map((value) => Object.values(value))
+    .forEach((value) => (income += (value / 60) * hourlyRate));
+  return `€${income.toFixed(2)}`;
 }
+computeEarnings(mondayTasks, hourlyRate);
 
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
