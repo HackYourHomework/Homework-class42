@@ -21,17 +21,17 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  water: 2.22,
-  lemon: 1.49,
-  cake: 4.39,
-  coke: 3.99,
-  pepsi: 3.33,
+  water: 4.44,
+  lemon: 2.98,
+  cake: 8.78,
+  coke: 7.98,
+  pepsi: 6.66,
 };
 
-function calculateTotalPrice(partyCost) {
+function calculateTotalPrice(partyItemsCost) {
   let sum = 0;
-  for (const price of partyCost) {
-    sum += price;
+  for (const item of Object.values(partyItemsCost)) {
+    sum += item;
   }
   return `Total: €${sum}`;
 }
