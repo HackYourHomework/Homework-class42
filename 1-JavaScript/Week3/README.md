@@ -309,3 +309,5 @@ function test2() {
   console.assert(JSON.stringify(result) === JSON.stringify(expected));
 }
 ```
+
+// completed
