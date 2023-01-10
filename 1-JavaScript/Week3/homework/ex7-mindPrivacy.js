@@ -1,4 +1,7 @@
 'use strict';
+
+const prompts = require('prompts');
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-7-mind-the-privacy
 
@@ -32,10 +35,9 @@ const employeeRecords = [
 // ! Function under test
 function filterPrivateData(array) {
   const nonPrivateData = [];
-  for (const { name, occupation, email } of array) {
-    nonPrivateData.push({ name, occupation, email });
+  for (const { gender, salary, ...props } of array) {
+    nonPrivateData.push({ ...props });
   }
-
   return nonPrivateData;
 }
 // ! Test functions (plain vanilla JavaScript)
