@@ -112,3 +112,33 @@ Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="E:\HYF\JS
 ex3-tellFortune.js:52:36 - Unknown word (Joulia)
 ex3-tellFortune.js:52:46 - Unknown word (Beartice)
 
+2023-01-04 04:30:46 info: --------------------------------------------
+2023-01-04 04:30:46 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 04:30:46 info: --------------------------------------------
+2023-01-04 04:30:46 warn: A unit test file was not provided.
+2023-01-04 04:30:54 info: All steps were completed successfully
+2023-01-04 04:31:18 info: --------------------------------------------
+2023-01-04 04:31:18 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 04:31:18 info: --------------------------------------------
+2023-01-04 04:31:18 warn: A unit test file was not provided.
+2023-01-04 04:31:25 info: All steps were completed successfully
+2023-01-04 04:46:49 info: --------------------------------------------
+2023-01-04 04:46:49 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 04:46:49 info: --------------------------------------------
+2023-01-04 04:46:49 warn: A unit test file was not provided.
+2023-01-04 04:46:56 info: All steps were completed successfully
+2023-01-04 05:00:01 info: --------------------------------------------
+2023-01-04 05:00:01 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 05:00:01 info: --------------------------------------------
+2023-01-04 05:00:01 warn: A unit test file was not provided.
+2023-01-04 05:00:08 info: All steps were completed successfully
+2023-01-04 08:58:59 info: --------------------------------------------
+2023-01-04 08:58:59 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 08:58:59 info: --------------------------------------------
+2023-01-04 08:58:59 warn: A unit test file was not provided.
+2023-01-04 08:59:07 info: All steps were completed successfully
+2023-01-05 10:28:05 info: ------------------------------------------------
+2023-01-05 10:28:05 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-01-05 10:28:05 info: ------------------------------------------------
+2023-01-05 10:28:05 warn: A unit test file was not provided.
+2023-01-05 10:28:13 info: All steps were completed successfully
