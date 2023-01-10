@@ -30,7 +30,13 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
+function filterPrivateData(employeeRecords) {
+  const newArray = [];
+  for (const record of employeeRecords) {
+    const { name, occupation, email } = record;
+    newArray.push({ name: name, occupation: occupation, email: email });
+  }
+  return newArray;
   // TODO complete this function
 }
 
