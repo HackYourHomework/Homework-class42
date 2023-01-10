@@ -54,6 +54,7 @@ function main() {
   console.log(giveCompliment(yourName));
   console.log(giveCompliment(yourName));
   console.log(giveCompliment(yourName));
+
   /*console.log(giveCompliment(yourName));
   console.log(giveCompliment(yourName));
   console.log(giveCompliment(yourName));*/
