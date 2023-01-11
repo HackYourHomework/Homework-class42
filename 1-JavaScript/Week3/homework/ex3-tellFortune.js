@@ -4,7 +4,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
 
 Why pay a fortune teller when you can just program your fortune yourself?
 
-1. Create four arrays, `numKids`, `partnerNames`, `locations` and `jobTitles`. 
++1. Create four arrays, `numKids`, `partnerNames`, `locations` and `jobTitles`. 
    Give each array five random values that have to do with the name of 
    the variable.
 
@@ -33,28 +33,31 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
+
+function selectRandomly(myArray) {return myArray[Math.floor(Math.random() * myArray.length)];
   // TODO complete this function
 }
 
-function tellFortune(/* TODO add parameter(s) here */) {
+function tellFortune(numKids,partnerNames,locations,jobTitles) {
+  return `You will be a ${selectRandomly(jobTitles)} in ${selectRandomly(locations)}, 
+    married to ${selectRandomly(partnerNames)} with ${selectRandomly(numKids)} kids.`
   // TODO complete this function
 }
 
 function main() {
-  const numKids = [
+  const numKids = [1,2,3,4,5
     // TODO add elements here
   ];
 
-  const partnerNames = [
+  const partnerNames = ['Mot','Gill','Alex','Rob','Kat'
     // TODO add elements here
   ];
 
-  const locations = [
+  const locations = ['Kyiv','Amsterdam','Berlin','London','Hague'
     // TODO add elements here
   ];
 
-  const jobTitles = [
+  const jobTitles = ['barber','cooker','developer','doctor','manager'
     // TODO add elements here
   ];
 

@@ -16,7 +16,8 @@ calculate it!
    ages.
 -----------------------------------------------------------------------------*/
 
-function calculateDogAge(/* TODO parameter(s) go here */) {
+function calculateDogAge(dogAge) {dogAge *=7 
+  return  `Your doggie is ${dogAge} years old in dog years!`
   // TODO complete this function
 }
 
