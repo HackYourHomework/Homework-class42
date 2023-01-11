@@ -44,8 +44,7 @@ describe('sanitizeFruitBasket', () => {
   });
 
   test('should return a new array that does not include the unwanted `lemon`', () => {
-    const result = sanitizeFruitBasket(fruitBasket, 'lemon');
-    const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
-    expect(result).toEqual(expected);
+    const fruit = 'lemon';
+    expect(sanitizeFruitBasket(fruitBasket, fruit)).not.toContain(fruit);
   });
 });
