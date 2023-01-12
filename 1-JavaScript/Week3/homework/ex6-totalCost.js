@@ -21,20 +21,20 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  beer: 1.75,
-  wine: 2.00,
-  chips: 1.00,
-  fish: 3.75,
-  water: 0.55
+  'beer': 1.75,
+  'wine': 2.00,
+  'chips': 1.00,
+  'fish': 3.75,
+  'water': 0.55
 
   // TODO complete this object
 };
 
-function calculateTotalPrice(number) {
-   for () {
-   
-  }
-  return `Total: €${}`;
+function calculateTotalPrice() {
+  const totalCost=cartForParty.forEach[number].reduce(accumulator+curentValue)=>{
+     return 'Total: €'+totalCost
+   }
+  ;
   // TODO replace this comment with your code
 }
 
