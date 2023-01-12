@@ -1,7 +1,5 @@
 'use strict';
 
-const prompts = require('prompts');
-
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-7-mind-the-privacy
 
