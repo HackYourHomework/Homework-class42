@@ -35,7 +35,7 @@ function filterPrivateData(records) {
   for (const record of records) {
     const { name, occupation, email } = record;
     const filteredRecord = { name, occupation, email };
-    filteredRecordsForOthers .push(filteredRecord);
+    filteredRecordsForOthers.push(filteredRecord);
   }
   return filteredRecordsForOthers;
 }

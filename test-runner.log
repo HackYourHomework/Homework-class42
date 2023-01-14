@@ -1,0 +1,79 @@
+2023-01-14 09:05:49 info: ----------------------------------------------
+2023-01-14 09:05:49 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-14 09:05:49 info: ----------------------------------------------
+2023-01-14 09:06:01 info: All unit tests passed.
+2023-01-14 09:06:11 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:28:19 - Unknown word (Badar)
+
+2023-01-14 09:06:20 info: Disclaimer turned off
+2023-01-14 09:06:56 info: ----------------------------------------
+2023-01-14 09:06:56 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-14 09:06:56 info: ----------------------------------------
+2023-01-14 09:07:04 info: All unit tests passed.
+2023-01-14 09:07:12 info: All steps were completed successfully
+2023-01-14 09:07:33 info: -------------------------------------------
+2023-01-14 09:07:33 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-14 09:07:33 info: -------------------------------------------
+2023-01-14 09:07:42 info: All unit tests passed.
+2023-01-14 09:07:50 info: All steps were completed successfully
+2023-01-14 09:08:17 info: --------------------------------------------
+2023-01-14 09:08:17 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-14 09:08:17 info: --------------------------------------------
+2023-01-14 09:08:17 warn: A unit test file was not provided.
+2023-01-14 09:08:25 info: All steps were completed successfully
+2023-01-14 09:10:03 info: --------------------------------------------
+2023-01-14 09:10:03 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-14 09:10:03 info: --------------------------------------------
+2023-01-14 09:10:03 warn: A unit test file was not provided.
+2023-01-14 09:10:11 info: All steps were completed successfully
+2023-01-14 09:10:28 info: ------------------------------------------------
+2023-01-14 09:10:28 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-01-14 09:10:28 info: ------------------------------------------------
+2023-01-14 09:10:28 warn: A unit test file was not provided.
+2023-01-14 09:10:37 info: All steps were completed successfully
+2023-01-14 09:11:03 info: -----------------------------------------
+2023-01-14 09:11:03 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-01-14 09:11:03 info: -----------------------------------------
+2023-01-14 09:11:03 warn: A unit test file was not provided.
+2023-01-14 09:11:07 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  33:3  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-14 09:14:03 info: -----------------------------------------
+2023-01-14 09:14:03 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-01-14 09:14:03 info: -----------------------------------------
+2023-01-14 09:14:03 warn: A unit test file was not provided.
+2023-01-14 09:14:11 info: All steps were completed successfully
+2023-01-14 09:14:58 info: -----------------------------------------
+2023-01-14 09:14:58 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-01-14 09:14:58 info: -----------------------------------------
+2023-01-14 09:14:58 warn: A unit test file was not provided.
+2023-01-14 09:15:06 info: All steps were completed successfully
+2023-01-14 09:15:16 info: -------------------------------------------
+2023-01-14 09:15:16 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-01-14 09:15:16 info: -------------------------------------------
+2023-01-14 09:15:16 warn: A unit test file was not provided.
+2023-01-14 09:15:24 info: All steps were completed successfully
+2023-01-14 09:18:28 info: ----------------------------------------------
+2023-01-14 09:18:28 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-14 09:18:28 info: ----------------------------------------------
+2023-01-14 09:18:36 info: All unit tests passed.
+2023-01-14 09:18:44 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:28:19 - Unknown word (Badar)
+
+2023-01-14 09:19:33 info: ----------------------------------------------
+2023-01-14 09:19:33 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-14 09:19:33 info: ----------------------------------------------
+2023-01-14 09:19:42 info: All unit tests passed.
+2023-01-14 09:19:50 info: All steps were completed successfully
+2023-01-14 09:29:50 info: --------------------------------------------
+2023-01-14 09:29:50 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-14 09:29:50 info: --------------------------------------------
+2023-01-14 09:29:50 warn: A unit test file was not provided.
+2023-01-14 09:29:58 info: All steps were completed successfully
