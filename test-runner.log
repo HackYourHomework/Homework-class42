@@ -1,0 +1,41 @@
+2023-01-14 04:16:29 info: ------------------------------------------------------
+2023-01-14 04:16:29 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-14 04:16:29 info: ------------------------------------------------------
+2023-01-14 04:16:29 info: Exercise has not yet been modified
+2023-01-14 04:16:30 info: All unit tests passed.
+2023-01-14 04:16:32 info: All steps were completed successfully
+2023-01-14 07:38:51 info: ------------------------------------------------------
+2023-01-14 07:38:51 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-14 07:38:51 info: ------------------------------------------------------
+2023-01-14 07:38:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  ✕ doubleEvenNumbers should take the even numbers and double them (2 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: [4, 8]
+    Received: NaN
+
+      29 |   const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      30 |   const expected = [4, 8];
+    > 31 |   expect(actual).toEqual(expected);
+         |                  ^
+      32 | });
+      33 |
+
+      at Object.toEqual (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:31:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.249 s, estimated 1 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2023-01-14 08:15:58 info: ------------------------------------------------------
+2023-01-14 08:15:58 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-14 08:15:58 info: ------------------------------------------------------
+2023-01-14 08:15:59 info: All unit tests passed.
+2023-01-14 08:16:00 info: All steps were completed successfully
