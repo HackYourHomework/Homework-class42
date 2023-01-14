@@ -18,11 +18,6 @@ it pure. Do the following:
 // ! Function under test
 function addToShoppingCart(shoppingCart, product) {
   const newShoppingCart = [...shoppingCart, product];
-  for (let i = 0; i < newShoppingCart.length; i++) {
-    if (newShoppingCart[i] === undefined) {
-      newShoppingCart.splice(i, 1);
-    }
-  }
   if (newShoppingCart.length > 3) {
     newShoppingCart.shift();
   }
