@@ -47,9 +47,9 @@ function tellFortune(kidsNumber, partnerName, yourLocation, yourJob) {
 }
 
 function main() {
-  const numKids = [1, 2, 3, 4];
+  const numKids = [3, 5, 6, 4, 9];
 
-  const partnerNames = ['Tamara', 'Joulia', 'Beartice', 'Aurora'];
+  const partnerNames = ['Tamara', 'Joulia', 'Beartice', 'Aurora', 'Sandra'];
 
   const locations = ['The Netherlands', 'USA', 'Spain', 'Germany', 'China'];
 
