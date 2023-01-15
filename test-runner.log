@@ -44,3 +44,174 @@ Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
 2023-01-14 08:22:35 info: ------------------------------------------------------
 2023-01-14 08:22:36 info: All unit tests passed.
 2023-01-14 08:22:38 info: All steps were completed successfully
+2023-01-15 11:11:12 info: -------------------------------------------------
+2023-01-15 11:11:12 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:11:12 info: -------------------------------------------------
+2023-01-15 11:11:13 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount (1 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    TypeError: Cannot read properties of undefined (reading 'forEach')
+
+      33 |
+      34 | function computeEarnings(tasks, rate) {
+    > 35 |   const totalWorkMonday = tasks.duration.forEach((element) => element / 60);
+         |                                          ^
+      36 |   const mondayIncome = totalWorkMonday * rate;
+      37 |   return `€${mondayIncome}`;
+      38 | }
+
+      at forEach (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:35:42)
+      at Object.computeEarnings (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:49:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.273 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:15:59 info: -------------------------------------------------
+2023-01-15 11:15:59 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:15:59 info: -------------------------------------------------
+2023-01-15 11:16:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    TypeError: Cannot read properties of undefined (reading 'map')
+
+      33 |
+      34 | function computeEarnings(tasks, rate) {
+    > 35 |   const totalWorkMonday = tasks.duration.map((minutes) => minutes / 60);
+         |                                          ^
+      36 |   const mondayIncome = totalWorkMonday * rate;
+      37 |   return `€${mondayIncome}`;
+      38 | }
+
+      at map (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:35:42)
+      at Object.computeEarnings (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:49:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.253 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:29:16 info: -------------------------------------------------
+2023-01-15 11:29:16 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:29:16 info: -------------------------------------------------
+2023-01-15 11:29:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount (2 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      54 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      55 |     const expected = '€187.50';
+    > 56 |     expect(result).toBe(expected);
+         |                    ^
+      57 |   });
+      58 | });
+      59 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:56:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.255 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:35:07 info: -------------------------------------------------
+2023-01-15 11:35:07 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:35:07 info: -------------------------------------------------
+2023-01-15 11:35:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount (2 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      52 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      53 |     const expected = '€187.50';
+    > 54 |     expect(result).toBe(expected);
+         |                    ^
+      55 |   });
+      56 | });
+      57 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:54:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.25 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:36:32 info: -------------------------------------------------
+2023-01-15 11:36:32 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:36:32 info: -------------------------------------------------
+2023-01-15 11:36:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (2 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      52 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      53 |     const expected = '€187.50';
+    > 54 |     expect(result).toBe(expected);
+         |                    ^
+      55 |   });
+      56 | });
+      57 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:54:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.252 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:37:33 info: -------------------------------------------------
+2023-01-15 11:37:33 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:37:33 info: -------------------------------------------------
+2023-01-15 11:37:34 info: All unit tests passed.
+2023-01-15 11:37:36 info: All steps were completed successfully
+2023-01-15 11:39:37 info: -------------------------------------------------
+2023-01-15 11:39:37 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:39:37 info: -------------------------------------------------
+2023-01-15 11:39:38 info: All unit tests passed.
+2023-01-15 11:39:40 info: All steps were completed successfully
