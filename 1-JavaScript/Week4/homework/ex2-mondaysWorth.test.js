@@ -35,9 +35,9 @@ function computeEarnings(tasks, hourlyRate) {
   // TODO complete this function
   //Use map to take out the duration time.
   const earnings = tasks
-    .map((task) => task.duration * hourlyRate)
+    .map((task) => (task.duration * hourlyRate) / 60)
     .reduce((a, b) => a + b, 0);
-  return earnings;
+  return `€${earnings.toFixed(2)}`;
 }
 
 // ! Unit tests (using Jest)

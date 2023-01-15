@@ -31,23 +31,40 @@ function sanitizeFruitBasket(fruits, causeAllergy) {
   const newFruitBasket = fruits.filter((kind) => kind !== causeAllergy);
   return newFruitBasket;
 }
-
+sanitizeFruitBasket(fruitBasket, 'lemon');
 // ! Unit tests (using Jest)
 describe('sanitizeFruitBasket', () => {
   test('should take two parameters', () => {
     // TODO replace next line with your code
-    expect(false).toBe(true);
+    function sanitizeFruitBasket(fruits, causeAllergy) {
+      // TODO complete this function
+      const newFruitBasket = fruits.filter((kind) => kind !== causeAllergy);
+      return newFruitBasket;
+    }
+    sanitizeFruitBasket(fruitBasket, 'lemon');
   });
 
   test('should not modify the original `fruitBasket` array', () => {
     // Save the original contents of the fruit basket
     const originalFruitBasketContents = [...fruitBasket];
     // TODO replace next line with your code
-    expect(false).toBe(true);
+    function sanitizeFruitBasket(fruits, causeAllergy) {
+      // TODO complete this function
+      const newFruitBasket = originalFruitBasketContents.filter(
+        (kind) => kind !== causeAllergy
+      );
+      return newFruitBasket;
+    }
+    sanitizeFruitBasket(fruitBasket, 'lemon');
   });
 
   test('should return a new array that does not include the unwanted `lemon`', () => {
     // TODO replace next line with your code
-    expect(false).toBe(true);
+    function sanitizeFruitBasket(fruits, causeAllergy) {
+      // TODO complete this function
+      const newFruitBasket = fruits.filter((kind) => kind !== causeAllergy);
+      return newFruitBasket;
+    }
+    sanitizeFruitBasket(fruitBasket, 'lemon');
   });
 });
