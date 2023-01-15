@@ -39,3 +39,8 @@ Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
 2023-01-14 08:15:58 info: ------------------------------------------------------
 2023-01-14 08:15:59 info: All unit tests passed.
 2023-01-14 08:16:00 info: All steps were completed successfully
+2023-01-14 08:22:35 info: ------------------------------------------------------
+2023-01-14 08:22:35 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-14 08:22:35 info: ------------------------------------------------------
+2023-01-14 08:22:36 info: All unit tests passed.
+2023-01-14 08:22:38 info: All steps were completed successfully
