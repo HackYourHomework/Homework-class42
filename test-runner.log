@@ -77,3 +77,73 @@ ex1-giveCompliment.js:28:19 - Unknown word (Badar)
 2023-01-14 09:29:50 info: --------------------------------------------
 2023-01-14 09:29:50 warn: A unit test file was not provided.
 2023-01-14 09:29:58 info: All steps were completed successfully
+2023-01-15 09:03:55 info: ------------------------------------------------------
+2023-01-15 09:03:55 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-15 09:03:55 info: ------------------------------------------------------
+2023-01-15 09:04:00 info: All unit tests passed.
+2023-01-15 09:04:05 info: All steps were completed successfully
+2023-01-15 09:38:15 info: -------------------------------------------------
+2023-01-15 09:38:15 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 09:38:15 info: -------------------------------------------------
+2023-01-15 09:38:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (2 ms)
+    × should compute the earnings as a formatted Euro amount
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    TypeError: tasks.map(...).reduce(...).tofixed is not a function
+
+      36 |   .map(task => task.duration)
+      37 |   .reduce((acc,duration) => acc +(duration / 60) * hourlyRate, 0)
+    > 38 |   .tofixed(2);
+         |    ^
+      39 |   return `€${totalEarnings}`
+      40 | }
+      41 |
+
+      at tofixed (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:38:4)
+      at Object.computeEarnings (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:51:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.429 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 09:38:25 error: *** Spell Checker Report ***
+
+ex2-mondaysWorth.test.js:38:4 - Unknown word (tofixed)
+
+2023-01-15 09:39:28 info: -------------------------------------------------
+2023-01-15 09:39:28 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 09:39:28 info: -------------------------------------------------
+2023-01-15 09:39:33 info: All unit tests passed.
+2023-01-15 09:39:38 info: All steps were completed successfully
+2023-01-15 10:28:45 info: -------------------------------------------------
+2023-01-15 10:28:45 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-15 10:28:45 info: -------------------------------------------------
+2023-01-15 10:28:49 info: All unit tests passed.
+2023-01-15 10:28:54 info: All steps were completed successfully
+2023-01-15 11:01:23 info: ------------------------------------------
+2023-01-15 11:01:23 info: >>> Running Unit Test `ex4-observable` <<<
+2023-01-15 11:01:23 info: ------------------------------------------
+2023-01-15 11:01:32 info: All unit tests passed.
+2023-01-15 11:01:40 info: All steps were completed successfully
+2023-01-15 11:53:31 info: --------------------------------------
+2023-01-15 11:53:31 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-15 11:53:31 info: --------------------------------------
+2023-01-15 11:53:40 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\Gebruiker\Desktop\Homework-class42\test-runner\CustomReporter.js"
+2023-01-15 11:57:52 info: --------------------------------------
+2023-01-15 11:57:52 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-15 11:57:52 info: --------------------------------------
+2023-01-15 11:58:00 info: All unit tests passed.
+2023-01-15 11:58:08 info: All steps were completed successfully
