@@ -1,14 +1,4 @@
-/*------------------------------------------------------------------------------
-Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week4#exercise-1-the-odd-ones-out
-
-The `doubleEvenNumbers` function returns only the even numbers in the array 
-passed as the `numbers` parameter and doubles them.
-
-Let's rewrite it (or _refactor_ it, as experienced developers would call it):
-
-- Using the `map` and `filter` functions, rewrite the function body of
-`doubleEvenNumbers`.
-------------------------------------------------------------------------------*/
+'use strict';
 // ! Function to be tested
 function doubleEvenNumbers(numbers) {
   // TODO rewrite the function body using `map` and `filter`.

@@ -1,15 +1,5 @@
 'use strict';
-/*------------------------------------------------------------------------------
-Full description atL https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week4#exercise-2-whats-your-monday-worth
 
-- Complete the function names `computeEarnings`. It should take an array of
-  tasks and an hourly rate as arguments and return a formatted Euro amount
-  (e.g: `€11.34`) comprising the total earnings.
-- Use the `map` array function to take out the duration time for each task.
-- Multiply each duration by a hourly rate for billing and sum it all up.
-- Make sure the program can be used on any array of objects that contain a
-  `duration` property with a number value.
-------------------------------------------------------------------------------*/
 const mondayTasks = [
   {
     name: 'Daily standup',
@@ -31,8 +21,19 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(tasks, hourlyRate) {
+  let earnings = 0;
+  const listWithDuration = [];
+
+  for (const task of tasks) {
+    const { duration } = task;
+    listWithDuration.push({ duration }); //but what if there won'be a duration key?
+    //is there a way to complete this task without destructuring?
+  }
+  listWithDuration
+    .map((value) => Object.values(value))
+    .forEach((value) => (earnings += (value / 60) * hourlyRate));
+  return `€${earnings.toFixed(2)}`;
 }
 
 // ! Unit tests (using Jest)
