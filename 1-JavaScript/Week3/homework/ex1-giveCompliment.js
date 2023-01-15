@@ -31,8 +31,8 @@ function giveCompliment(name) {
     'gorgeous',
     'incomparable',
   ];
-  const compliment = Math.round(Math.random() * 9);
-  const randomCompliment = compliments[compliment]; //are these two lines redundant? also possible randomCompliment[Math.round(Math.random()*10)]
+  const randomComplimentIndex = Math.round(Math.random() * 9);
+  const randomCompliment = compliments[randomComplimentIndex]; //are these two lines redundant? also possible randomCompliment[Math.round(Math.random()*10)]
   return `You are ${randomCompliment}, ${name}!`;
 }
 
