@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-7-mind-the-privacy
 
@@ -30,10 +31,14 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(employee) {
+  const newArr = employee.map((item) => {
+    const { name, occupation, email } = item;
+    const filteredEmployee = { name, occupation, email };
+    return filteredEmployee;
+  });
+  return newArr;
 }
-
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('Test 1: filterPrivateData should take one parameters');

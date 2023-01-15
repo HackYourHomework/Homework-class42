@@ -1,0 +1,11 @@
+*** Unit Test Error Report ***
+
+✕ tellFortune `numKids` should be an array initialized with 5 elements
+✕ tellFortune `partnerNames` should be an array initialized with 5 elements
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+*** Spell Checker Report ***
+
+ex3-tellFortune.js:52:36 - Unknown word (Joulia)
+ex3-tellFortune.js:52:46 - Unknown word (Beartice)
