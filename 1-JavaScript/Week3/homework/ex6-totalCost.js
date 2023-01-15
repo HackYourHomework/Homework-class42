@@ -1,25 +1,5 @@
 'use strict';
-/*------------------------------------------------------------------------------
-Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-6-total-cost-is
 
-You want to buy a couple of things from the supermarket to prepare for a party.
-After scanning all the items the cashier wants to give you the total price, but
-the machine is broken! Let's write her a function that does it for her
-instead!
-
-1. Create an object named `cartForParty` with five properties. Each property
-   should be a grocery item (like `beers` or `chips`) and hold a number value
-   (like `1.75` or `0.99`).
-
-2. Complete the function called `calculateTotalPrice`.
-
-   - It takes one parameter: an object that contains properties that only contain
-     number values.
-   - Loop through the object and add all the number values together.
-   - Return a string: "Total: €`amount`".
-
-3. Complete the unit test functions and verify that all is working as expected.
------------------------------------------------------------------------------*/
 const cartForParty = {
   champagne: 5.0,
   whiskey: 13.0,
@@ -28,23 +8,23 @@ const cartForParty = {
   beer: 2.0,
 };
 
-/*function calculateTotalPrice(items) {
-  let sum = 0;
-  for(const item in items){
-    sum += items[item];
+/*function calculateTotalPrice(cartItems) {
+  let totalPrice = 0;
+  for(const item in cartItems{
+    totalPrice +=cartItems[item];
   }
-  return `Total: € ${sum}`;
+  return `Total: € ${totalPrice}`;
   
 }
 */
 
 // got rid of for in loop (commented above)
-function calculateTotalPrice(items) {
-  let sum = 0;
-  Object.values(items).forEach((item) => {
-    sum += item;
+function calculateTotalPrice(cartItems) {
+  let totalPrice = 0;
+  Object.values(cartItems).forEach((item) => {
+    totalPrice += item;
   });
-  return `Total: € ${sum}`;
+  return `Total: € ${totalPrice}`;
 }
 
 // ! Test functions (plain vanilla JavaScript)
@@ -57,8 +37,8 @@ function test1() {
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
   const expectedResult = `Total: € 30`;
-  const sumString = calculateTotalPrice(cartForParty);
-  console.assert(sumString === expectedResult);
+  const totalPriceString = calculateTotalPrice(cartForParty);
+  console.assert(totalPriceString === expectedResult);
 }
 
 function test() {
