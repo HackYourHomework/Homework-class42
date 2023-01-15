@@ -1,0 +1,59 @@
+2023-01-05 11:10:29 info: ----------------------------------------------
+2023-01-05 11:10:29 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-05 11:10:29 info: ----------------------------------------------
+2023-01-05 11:10:32 info: All unit tests passed.
+2023-01-05 11:10:36 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:33:6 - Unknown word (magnifique)
+ex1-giveCompliment.js:43:19 - Unknown word (Ozgur)
+
+2023-01-05 11:21:06 info: ----------------------------------------
+2023-01-05 11:21:06 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-05 11:21:06 info: ----------------------------------------
+2023-01-05 11:21:08 info: All unit tests passed.
+2023-01-05 11:21:12 info: All steps were completed successfully
+2023-01-05 11:37:47 info: -------------------------------------------
+2023-01-05 11:37:47 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-05 11:37:47 info: -------------------------------------------
+2023-01-05 11:37:49 info: All unit tests passed.
+2023-01-05 11:37:53 info: All steps were completed successfully
+2023-01-05 11:50:14 info: --------------------------------------------
+2023-01-05 11:50:14 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-05 11:50:14 info: --------------------------------------------
+2023-01-05 11:50:14 warn: A unit test file was not provided.
+2023-01-05 11:50:17 info: All steps were completed successfully
+2023-01-05 12:00:27 info: -----------------------------------------
+2023-01-05 12:00:27 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-01-05 12:00:27 info: -----------------------------------------
+2023-01-05 12:00:27 warn: A unit test file was not provided.
+2023-01-05 12:00:28 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  33:12  warning  'value' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-05 12:01:43 info: -----------------------------------------
+2023-01-05 12:01:43 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-01-05 12:01:43 info: -----------------------------------------
+2023-01-05 12:01:43 warn: A unit test file was not provided.
+2023-01-05 12:01:47 info: All steps were completed successfully
+2023-01-05 12:19:28 info: -------------------------------------------
+2023-01-05 12:19:28 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-01-05 12:19:28 info: -------------------------------------------
+2023-01-05 12:19:28 warn: A unit test file was not provided.
+2023-01-05 12:19:31 info: All steps were completed successfully
+2023-01-05 02:07:18 info: ------------------------------------------------
+2023-01-05 02:07:18 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-01-05 02:07:18 info: ------------------------------------------------
+2023-01-05 02:07:18 warn: A unit test file was not provided.
+2023-01-05 02:07:22 info: All steps were completed successfully
+2023-01-06 02:09:31 info: ----------------------------------------------
+2023-01-06 02:09:31 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-06 02:09:31 info: ----------------------------------------------
+2023-01-06 02:09:34 info: All unit tests passed.
+2023-01-06 02:09:38 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:43:19 - Unknown word (Ozgur)
+
