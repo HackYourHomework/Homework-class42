@@ -21,7 +21,6 @@ function addToShoppingCart(shoppingCart, product) {
   if (newShoppingCart.length > 3) {
     newShoppingCart.shift();
   }
-
   return newShoppingCart;
 }
 
