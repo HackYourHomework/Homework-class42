@@ -21,7 +21,6 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
   juices: 2.3,
   chips: 4.9,
   cookies: 6.25,
@@ -31,9 +30,7 @@ const cartForParty = {
 
 function calculateTotalPrice(obj) {
   let totalPrice = 0;
-  for (const price of Object.values(obj)) {
-    totalPrice += price;
-  }
+  Object.values(obj).forEach((price) => (totalPrice += price));
   return `Total: €${totalPrice}`;
 }
 

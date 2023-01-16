@@ -37,7 +37,7 @@ function giveCompliment(name) {
 }
 
 function main() {
-  const myName = 'HackYourFuture';
+  const myName = 'Yunus';
 
   console.log(giveCompliment(myName));
   console.log(giveCompliment(myName));

@@ -31,12 +31,11 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(array) {
-  const nonPrivateData = [];
-  for (const { gender, salary, ...props } of array) {
-    nonPrivateData.push({ ...props });
-  }
-  return nonPrivateData;
+function filterPrivateData(employee) {
+  return employee.map((employee) => {
+    const { name, occupation, email } = employee;
+    return { name, occupation, email };
+  });
 }
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
