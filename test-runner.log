@@ -79,3 +79,11 @@ Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\
 2023-01-10 06:56:34 info: -------------------------------------------
 2023-01-10 06:56:37 info: All unit tests passed.
 2023-01-10 06:56:41 info: All steps were completed successfully
+2023-01-16 08:45:22 info: -------------------------------------------------
+2023-01-16 08:45:22 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-16 08:45:22 info: -------------------------------------------------
+2023-01-16 08:45:22 error: Something went wrong: Unit test file not found: C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\1-JavaScript\Week4\homework\ex2-mondaysWorth.test.js\ex2-mondaysWorth.test.js
+2023-01-16 08:47:04 info: -------------------------------------------------
+2023-01-16 08:47:04 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-16 08:47:04 info: -------------------------------------------------
+2023-01-16 08:47:04 error: Something went wrong: Unit test file not found: C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\1-JavaScript\Week4\Week4\homework\ex2-mondaysWorth.test.js\ex2-mondaysWorth.test.js
