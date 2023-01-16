@@ -39,9 +39,9 @@ function selectRandomly(array) {
 }
 
 function tellFortune(numKids, partnerName, geoLocation, jobTitle) {
-  let future;
+  const  future;
 
-  let numberOfKids = selectRandomly(numKids);
+  const numberOfKids = selectRandomly(numKids);
 
   if (numberOfKids === 1) {
     future =
