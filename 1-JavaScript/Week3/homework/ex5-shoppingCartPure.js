@@ -17,8 +17,8 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(shoppingCartArray, groceryItem) {
-  let newArray = [];
-  if (groceryItem) newArray = [...shoppingCartArray, groceryItem];
+  let newArray = [...shoppingCartArray];
+  if (groceryItem) newArray.push(groceryItem);
   return newArray.slice(-3);
 }
 
