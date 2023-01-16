@@ -8,3 +8,8 @@
 2023-01-16 04:14:31 info: -------------------------------------------------
 2023-01-16 04:14:39 info: All unit tests passed.
 2023-01-16 04:14:47 info: All steps were completed successfully
+2023-01-16 04:25:06 info: -------------------------------------------------
+2023-01-16 04:25:06 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-16 04:25:06 info: -------------------------------------------------
+2023-01-16 04:25:11 info: All unit tests passed.
+2023-01-16 04:25:17 info: All steps were completed successfully
