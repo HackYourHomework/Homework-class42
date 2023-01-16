@@ -18,3 +18,8 @@
 2023-01-16 04:28:56 info: ------------------------------------------
 2023-01-16 04:29:01 info: All unit tests passed.
 2023-01-16 04:29:06 info: All steps were completed successfully
+2023-01-16 04:36:32 info: --------------------------------------
+2023-01-16 04:36:32 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-16 04:36:32 info: --------------------------------------
+2023-01-16 04:36:37 info: All unit tests passed.
+2023-01-16 04:36:42 info: All steps were completed successfully
