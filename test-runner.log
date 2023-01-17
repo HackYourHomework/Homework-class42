@@ -92,3 +92,13 @@ ex2-mondaysWorth.test.js
 ✖ 1 problem (1 error, 0 warnings)
 
 
+2023-01-17 11:29:42 info: -------------------------------------------------
+2023-01-17 11:29:42 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-17 11:29:42 info: -------------------------------------------------
+2023-01-17 11:29:47 info: All unit tests passed.
+2023-01-17 11:29:55 info: All steps were completed successfully
+2023-01-17 11:33:23 info: ------------------------------------------------------
+2023-01-17 11:33:23 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-17 11:33:23 info: ------------------------------------------------------
+2023-01-17 11:33:28 info: All unit tests passed.
+2023-01-17 11:33:36 info: All steps were completed successfully
