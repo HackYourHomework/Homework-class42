@@ -1,0 +1,6 @@
+*** Unit Test Error Report ***
+
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"

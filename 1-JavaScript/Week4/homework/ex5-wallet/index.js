@@ -104,7 +104,7 @@ const quiz = {
       b: 'Transferring € 50,00 from Jack to undefined', 
       c: 'Transferring € 50,00 from Jack to Jane' 
     },
-    answer: 'b',
+    answer: 'a',
   },
   q5: {
     question: 'The owner of the wallet with insufficient funds is:',

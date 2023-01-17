@@ -107,3 +107,12 @@ ex2-mondaysWorth.test.js
 2023-01-18 12:03:22 info: ------------------------------------------
 2023-01-18 12:03:28 info: All unit tests passed.
 2023-01-18 12:03:36 info: All steps were completed successfully
+2023-01-18 12:21:25 info: --------------------------------------
+2023-01-18 12:21:25 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-18 12:21:25 info: --------------------------------------
+2023-01-18 12:21:30 error: *** Unit Test Error Report ***
+
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"
