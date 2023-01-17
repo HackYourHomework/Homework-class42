@@ -34,30 +34,52 @@ body, this code is now written once only in a separated function.
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
 
-function selectRandomly(myArray) {return myArray[Math.floor(Math.random() * myArray.length)];
+function selectRandomly(myArray) {
+  return myArray[Math.floor(Math.random() * myArray.length)];
   // TODO complete this function
 }
 
-function tellFortune(numKids,partnerNames,locations,jobTitles) {
-  return `You will be a ${selectRandomly(jobTitles)} in ${selectRandomly(locations)}, 
-    married to ${selectRandomly(partnerNames)} with ${selectRandomly(numKids)} kids.`
+function tellFortune(numKids, partnerNames, locations, jobTitles) {
+  const randomlySelectedJobTitle = selectRandomly(jobTitles);
+  const randomlySelectedLocations = selectRandomly(locations);
+  const randomlySelectedPartnerNames = selectRandomly(partnerNames);
+  const randomlySelectedNumKids = selectRandomly(numKids);
+
+  return `You will be a ${randomlySelectedJobTitle} in ${randomlySelectedLocations}, 
+    married to ${randomlySelectedPartnerNames} with ${randomlySelectedNumKids} kids.`;
   // TODO complete this function
 }
 
 function main() {
-  const numKids = [1,2,3,4,5
+  const numKids = [
+    1, 2, 3, 4, 5,
     // TODO add elements here
   ];
 
-  const partnerNames = ['Mot','Gill','Alex','Rob','Kat'
+  const partnerNames = [
+    'Mot',
+    'Gill',
+    'Alex',
+    'Rob',
+    'Kat',
     // TODO add elements here
   ];
 
-  const locations = ['Kyiv','Amsterdam','Berlin','London','Hague'
+  const locations = [
+    'Kyiv',
+    'Amsterdam',
+    'Berlin',
+    'London',
+    'Hague',
     // TODO add elements here
   ];
 
-  const jobTitles = ['barber','cooker','developer','doctor','manager'
+  const jobTitles = [
+    'barber',
+    'cooker',
+    'developer',
+    'doctor',
+    'manager',
     // TODO add elements here
   ];
 
