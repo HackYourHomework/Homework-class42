@@ -113,3 +113,71 @@ Ran all test suites matching /ex2-mondaysWorth.test.js/i.
 2023-01-17 05:03:54 info: ------------------------------------------------------
 2023-01-17 05:03:56 info: All unit tests passed.
 2023-01-17 05:04:00 info: All steps were completed successfully
+2023-01-17 05:13:39 info: -------------------------------------------------
+2023-01-17 05:13:39 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-17 05:13:39 info: -------------------------------------------------
+2023-01-17 05:13:41 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (3 ms)
+    × should not modify the original `fruitBasket` array (2 ms)
+    × should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: [Function sanitizeFruitBasket]
+
+      35 | describe('sanitizeFruitBasket', () => {
+      36 |   test('should take two parameters', () => {
+    > 37 |     expect(sanitizeFruitBasket).toBe(2);
+         |                                 ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:37:33)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      41 |     // Save the original contents of the fruit basket
+      42 |     const originalFruitBasketContents = [...fruitBasket];
+    > 43 |     expect(originalFruitBasketContents).toBe(fruitBasket);
+         |                                         ^
+      44 |   });
+      45 |
+      46 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:43:41)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: basket.fruit is not a function
+
+      29 | // ! Function under test
+      30 | function sanitizeFruitBasket(basket, fruit) {
+    > 31 |   return basket.fruit((item) => item !== fruit);
+         |                 ^
+      32 | }
+      33 |
+      34 | // ! Unit tests (using Jest)
+
+      at fruit (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:31:17)
+      at Object.sanitizeFruitBasket (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:47:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.519 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
