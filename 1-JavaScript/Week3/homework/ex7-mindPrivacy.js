@@ -31,14 +31,13 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(dataArray) {
-  const puplicData = [];
+  const publicData = [];
   for (const data of dataArray) {
-    const {name, occupation, email} = data;
-    puplicData.push({name: name, occupation: occupation, email: email})
+    const { name, occupation, email } = data;
+    publicData.push({ name: name, occupation: occupation, email: email });
   }
-  return puplicData
+  return publicData;
 }
-
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
