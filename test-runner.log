@@ -717,3 +717,8 @@ ex3-lemonAllergy.test.js
 2023-01-16 08:50:50 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
 2023-01-16 08:50:50 info: -------------------------------------------------
 2023-01-16 08:50:59 info: All unit tests passed.
+2023-01-17 07:32:24 info: --------------------------------------
+2023-01-17 07:32:24 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-17 07:32:24 info: --------------------------------------
+2023-01-17 07:32:26 info: All unit tests passed.
+2023-01-17 07:32:30 info: All steps were completed successfully
