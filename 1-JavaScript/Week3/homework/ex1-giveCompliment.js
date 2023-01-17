@@ -38,7 +38,6 @@ function giveCompliment(name) {
 
 function main() {
   const myName = 'Mohamad';
-  a;
   console.log(giveCompliment(myName));
   console.log(giveCompliment(myName));
   console.log(giveCompliment(myName));
