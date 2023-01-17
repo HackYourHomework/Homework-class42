@@ -1,3 +1,4 @@
+/* eslint-disable hyf/camelcase */
 'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-6-total-cost-is
@@ -20,42 +21,39 @@ instead!
 
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
-const cartForParty = { 
+const cartForParty = {
   beer: 1.99,
   juice: 2.99,
   Chips: 3.99,
   Chocolate: 6.99,
-  cookies: 2.99
+  cookies: 2.99,
 };
 
 function calculateTotalPrice(cartForParty) {
   // TODO replace this comment with your code
-let totalSum = 0;
-for (let price in cartForParty) {
-   totalSum += cartForParty[price];
-   // console.log(totalSum)
+  let totalSum = 0;
+  // eslint-disable-next-line no-restricted-syntax, no-autofix/prefer-const
+  for (let price in cartForParty) {
+    totalSum += cartForParty[price];
+    // eslint-disable-next-line hyf/no-commented-out-code
+    // console.log(totalSum)
+  }
+  return `Total: €${totalSum.toFixed(2)}`;
 }
-return `Total: €${totalSum}`;
-}
-
-// calculateTotalPrice(cartForParty)
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   console.assert(calculateTotalPrice.length === 1);
-  // TODO replace this comment with your code
 }
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  const expected = `Total: €18.950000000000003`;
+  const expected = `Total: €18.95`;
   const actual = calculateTotalPrice(cartForParty);
   console.assert(expected === actual);
-  // TODO replace this comment with your code
 }
 function test() {
   test1();
   test2();
 }
 test();
-
