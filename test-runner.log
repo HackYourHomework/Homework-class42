@@ -499,3 +499,19 @@ Ran all test suites matching /ex4-observable.test.js/i.
 2023-01-16 08:55:48 info: ------------------------------------------
 2023-01-16 08:55:49 info: All unit tests passed.
 2023-01-16 08:55:51 info: All steps were completed successfully
+2023-01-17 12:28:24 info: --------------------------------------
+2023-01-17 12:28:24 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-17 12:28:24 info: --------------------------------------
+2023-01-17 12:28:25 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-17 05:05:55 info: --------------------------------------
+2023-01-17 05:05:55 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-17 05:05:55 info: --------------------------------------
+2023-01-17 05:05:57 info: All unit tests passed.
+2023-01-17 05:05:59 info: All steps were completed successfully
