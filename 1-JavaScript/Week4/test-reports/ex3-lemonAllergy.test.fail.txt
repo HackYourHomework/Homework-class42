@@ -1,0 +1,29 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: basket.lemon is not a function
+
+      29 | // ! Function under test
+      30 | function sanitizeFruitBasket(basket, lemon) {
+    > 31 |   return basket.lemon((item) => item !== lemon);
+         |                 ^
+      32 | }
+      33 |
+      34 | // ! Unit tests (using Jest)
+
+      at lemon (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:31:17)
+      at Object.sanitizeFruitBasket (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:47:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.533 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
