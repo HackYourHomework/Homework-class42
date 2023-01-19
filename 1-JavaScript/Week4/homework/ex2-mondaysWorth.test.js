@@ -27,8 +27,7 @@ function computeEarnings(tasks, hourlyRate) {
 
   for (const task of tasks) {
     const { duration } = task;
-    listWithDuration.push({ duration }); //but what if there won'be a duration key?
-    //is there a way to complete this task without destructuring?
+    listWithDuration.push({ duration });
   }
   listWithDuration
     .map((value) => Object.values(value))
@@ -39,8 +38,6 @@ function computeEarnings(tasks, hourlyRate) {
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
   test('should take two parameters', () => {
-    // The `.length` property indicates the number of parameters expected by
-    // the function.
     expect(computeEarnings).toHaveLength(2);
   });
 
