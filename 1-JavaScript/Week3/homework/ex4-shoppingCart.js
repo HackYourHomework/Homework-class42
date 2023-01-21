@@ -24,8 +24,9 @@ const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
 function addToShoppingCart(groceryItem) {
-  if (typeof groceryItem !== 'string' && groceryItem === ' ') {
-    return 'Grocery item should be a string and not an empty one!';
+  if (typeof groceryItem !== 'string' || !groceryItem.trim()) {
+    const listOfItem = shoppingCart.join(', ');
+    return `You bought ${listOfItem}!`;
   } else if (typeof groceryItem === 'string') {
     shoppingCart.push(groceryItem);
   }

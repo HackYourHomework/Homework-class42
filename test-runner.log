@@ -92,3 +92,13 @@ Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\
 2023-01-16 09:40:34 info: --------------------------------------------
 2023-01-16 09:40:34 warn: A unit test file was not provided.
 2023-01-16 09:40:42 info: All steps were completed successfully
+2023-01-21 04:45:40 info: --------------------------------------------
+2023-01-21 04:45:40 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-21 04:45:40 info: --------------------------------------------
+2023-01-21 04:45:40 warn: A unit test file was not provided.
+2023-01-21 04:45:48 info: All steps were completed successfully
+2023-01-21 05:02:40 info: --------------------------------------------
+2023-01-21 05:02:40 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-21 05:02:40 info: --------------------------------------------
+2023-01-21 05:02:40 warn: A unit test file was not provided.
+2023-01-21 05:02:47 info: All steps were completed successfully
