@@ -1,0 +1,104 @@
+2023-01-09 07:09:32 info: ----------------------------------------------
+2023-01-09 07:09:32 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:09:32 info: ----------------------------------------------
+2023-01-09 07:09:37 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are awesome, HackYourFuture!
+  Received: You are awesome, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\test-runner\CustomReporter.js"
+2023-01-09 07:31:08 info: ----------------------------------------------
+2023-01-09 07:31:08 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:31:08 info: ----------------------------------------------
+2023-01-09 07:31:13 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\test-runner\CustomReporter.js"
+2023-01-09 07:32:28 info: ----------------------------------------------
+2023-01-09 07:32:28 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:32:28 info: ----------------------------------------------
+2023-01-09 07:32:33 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\test-runner\CustomReporter.js"
+2023-01-09 07:38:32 info: ----------------------------------------------
+2023-01-09 07:38:32 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-09 07:38:32 info: ----------------------------------------------
+2023-01-09 07:38:36 info: All unit tests passed.
+2023-01-09 07:38:42 info: All steps were completed successfully
+2023-01-09 07:59:00 info: ----------------------------------------
+2023-01-09 07:59:00 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-09 07:59:00 info: ----------------------------------------
+2023-01-09 07:59:04 info: All unit tests passed.
+2023-01-09 07:59:11 info: All steps were completed successfully
+2023-01-09 08:11:04 info: --------------------------------------------
+2023-01-09 08:11:04 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-09 08:11:04 info: --------------------------------------------
+2023-01-09 08:11:04 warn: A unit test file was not provided.
+2023-01-09 08:11:12 info: All steps were completed successfully
+2023-01-09 08:12:50 info: --------------------------------------------
+2023-01-09 08:12:50 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-09 08:12:50 info: --------------------------------------------
+2023-01-09 08:12:50 warn: A unit test file was not provided.
+2023-01-09 08:12:57 info: All steps were completed successfully
+2023-01-09 08:18:37 info: -------------------------------------------
+2023-01-09 08:18:37 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-01-09 08:18:37 info: -------------------------------------------
+2023-01-09 08:18:37 warn: A unit test file was not provided.
+2023-01-09 08:18:44 info: All steps were completed successfully
+2023-01-09 08:24:10 info: ------------------------------------------------
+2023-01-09 08:24:10 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-01-09 08:24:10 info: ------------------------------------------------
+2023-01-09 08:24:10 warn: A unit test file was not provided.
+2023-01-09 08:24:17 info: All steps were completed successfully
+2023-01-10 05:21:35 info: -----------------------------------------
+2023-01-10 05:21:36 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-01-10 05:21:36 info: -----------------------------------------
+2023-01-10 05:21:36 warn: A unit test file was not provided.
+2023-01-10 05:21:43 info: All steps were completed successfully
+2023-01-10 06:54:45 info: -------------------------------------------
+2023-01-10 06:54:45 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-10 06:54:45 info: -------------------------------------------
+2023-01-10 06:54:48 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Developer in Istanbul, married to Jan with 1 kids.
+  Received: You will be a Developer in Istanbul, married to Jan with 1 kid.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\test-runner\CustomReporter.js"
+2023-01-10 06:56:34 info: -------------------------------------------
+2023-01-10 06:56:34 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-10 06:56:34 info: -------------------------------------------
+2023-01-10 06:56:37 info: All unit tests passed.
+2023-01-10 06:56:41 info: All steps were completed successfully
+2023-01-16 08:45:22 info: -------------------------------------------------
+2023-01-16 08:45:22 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-16 08:45:22 info: -------------------------------------------------
+2023-01-16 08:45:22 error: Something went wrong: Unit test file not found: C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\1-JavaScript\Week4\homework\ex2-mondaysWorth.test.js\ex2-mondaysWorth.test.js
+2023-01-16 08:47:04 info: -------------------------------------------------
+2023-01-16 08:47:04 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-16 08:47:04 info: -------------------------------------------------
+2023-01-16 08:47:04 error: Something went wrong: Unit test file not found: C:\Users\aoali\desktop\HYF_PROJECT\week6\Homework-class42\1-JavaScript\Week4\Week4\homework\ex2-mondaysWorth.test.js\ex2-mondaysWorth.test.js
+2023-01-16 09:40:34 info: --------------------------------------------
+2023-01-16 09:40:34 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-16 09:40:34 info: --------------------------------------------
+2023-01-16 09:40:34 warn: A unit test file was not provided.
+2023-01-16 09:40:42 info: All steps were completed successfully
+2023-01-21 04:45:40 info: --------------------------------------------
+2023-01-21 04:45:40 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-21 04:45:40 info: --------------------------------------------
+2023-01-21 04:45:40 warn: A unit test file was not provided.
+2023-01-21 04:45:48 info: All steps were completed successfully
+2023-01-21 05:02:40 info: --------------------------------------------
+2023-01-21 05:02:40 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-21 05:02:40 info: --------------------------------------------
+2023-01-21 05:02:40 warn: A unit test file was not provided.
+2023-01-21 05:02:47 info: All steps were completed successfully

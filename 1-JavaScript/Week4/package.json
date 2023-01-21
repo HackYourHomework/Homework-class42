@@ -1,0 +1,15 @@
+{
+  "name": "week4",
+  "version": "1.0.0",
+  "description": "The homework for this week can be found in the `homework` folder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
