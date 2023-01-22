@@ -515,3 +515,483 @@ Command failed: npx jest ex5-wallet.test.js --colors --reporters="/home/yunus/De
 2023-01-17 05:05:55 info: --------------------------------------
 2023-01-17 05:05:57 info: All unit tests passed.
 2023-01-17 05:05:59 info: All steps were completed successfully
+2023-01-22 11:05:14 info: ------------------------------------------
+2023-01-22 11:05:14 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:05:14 info: ------------------------------------------
+2023-01-22 11:05:14 info: Exercise has not yet been modified
+2023-01-22 11:05:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (1 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (2 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 5 passed, 11 total
+Snapshots:   0 total
+Time:        0.41 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2023-01-22 11:12:32 info: ------------------------------------------
+2023-01-22 11:12:32 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:12:32 info: ------------------------------------------
+2023-01-22 11:12:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (1 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (3 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 5 passed, 11 total
+Snapshots:   0 total
+Time:        0.329 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2023-01-22 11:16:35 info: ------------------------------------------
+2023-01-22 11:16:35 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:16:35 info: ------------------------------------------
+2023-01-22 11:16:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (3 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 5 passed, 11 total
+Snapshots:   0 total
+Time:        0.331 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2023-01-22 11:24:35 info: ------------------------------------------
+2023-01-22 11:24:35 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:24:35 info: ------------------------------------------
+2023-01-22 11:24:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (1 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (3 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✓ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✓ a living cell with three living neighbors should survive and have its life time incremented by one (1 ms)
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      48 |     game.updateGrid();
+      49 |
+    > 50 |     expect(midCell.alive).toBe(false);
+         |                           ^
+      51 |     expect(midCell.lifeTime).toBe(0);
+      52 |   });
+      53 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:50:27)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      69 |     game.updateGrid();
+      70 |
+    > 71 |     expect(midCell.alive).toBe(false);
+         |                           ^
+      72 |     expect(midCell.lifeTime).toBe(0);
+      73 |   });
+      74 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:71:27)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      138 |     game.updateGrid();
+      139 |
+    > 140 |     expect(midCell.alive).toBe(false);
+          |                           ^
+      141 |     expect(midCell.lifeTime).toBe(0);
+      142 |   });
+      143 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:140:27)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      224 |     game.updateGrid();
+      225 |
+    > 226 |     expect(midCell.alive).toBe(true);
+          |                           ^
+      227 |     expect(midCell.lifeTime).toBe(1);
+      228 |   });
+      229 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:226:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 7 passed, 11 total
+Snapshots:   0 total
+Time:        0.336 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2023-01-22 11:26:10 info: ------------------------------------------
+2023-01-22 11:26:10 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:26:10 info: ------------------------------------------
+2023-01-22 11:26:11 info: All unit tests passed.
+2023-01-22 11:26:13 info: All steps were completed successfully
