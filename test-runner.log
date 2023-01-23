@@ -308,3 +308,403 @@ ex1-bookList/index.js:40:18 - Unknown word (assests)
 2023-01-23 05:59:55 info: ----------------------------------------
 2023-01-23 05:59:59 info: All unit tests passed.
 2023-01-23 06:00:01 info: All steps were completed successfully
+2023-01-23 06:58:49 info: ----------------------------------------
+2023-01-23 06:58:49 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 06:58:49 info: ----------------------------------------
+2023-01-23 06:58:53 info: All unit tests passed.
+2023-01-23 06:58:55 info: All steps were completed successfully
+2023-01-23 06:59:02 info: ---------------------------------------
+2023-01-23 06:59:02 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 06:59:02 info: ---------------------------------------
+2023-01-23 06:59:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (298 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✕ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (23 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        2.26 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 06:59:09 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:04:54 info: ---------------------------------------
+2023-01-23 07:04:54 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:04:54 info: ---------------------------------------
+2023-01-23 07:04:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (309 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✕ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (25 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        2.23 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:05:01 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:05:28 info: ---------------------------------------
+2023-01-23 07:05:28 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:05:28 info: ---------------------------------------
+2023-01-23 07:05:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (293 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✕ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (26 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        2.169 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:05:35 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:11:49 info: ---------------------------------------
+2023-01-23 07:11:49 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:11:49 info: ---------------------------------------
+2023-01-23 07:11:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (296 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (27 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        2.261 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:11:55 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:17:00 info: ---------------------------------------
+2023-01-23 07:17:00 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:17:00 info: ---------------------------------------
+2023-01-23 07:17:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (300 ms)
+    ✓ should have all TODO comments removed
+    ✓ the body font-family should be `Arial, sans-serif` (1 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (28 ms)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.744 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:17:07 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:18:06 info: ---------------------------------------
+2023-01-23 07:18:06 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:18:06 info: ---------------------------------------
+2023-01-23 07:18:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (296 ms)
+    ✓ should have all TODO comments removed
+    ✓ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (29 ms)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.321 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:18:11 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  23:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-23 07:18:13 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:19:11 info: ---------------------------------------
+2023-01-23 07:19:11 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:19:11 info: ---------------------------------------
+2023-01-23 07:19:15 info: All unit tests passed.
+2023-01-23 07:19:17 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  22:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-23 07:19:18 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:19:56 info: ---------------------------------------
+2023-01-23 07:19:56 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:19:56 info: ---------------------------------------
+2023-01-23 07:20:00 info: All unit tests passed.
+2023-01-23 07:20:02 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:21:01 info: ---------------------------------------
+2023-01-23 07:21:01 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:21:01 info: ---------------------------------------
+2023-01-23 07:21:05 info: All unit tests passed.
+2023-01-23 07:21:08 info: All steps were completed successfully
