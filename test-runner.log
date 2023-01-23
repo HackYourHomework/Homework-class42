@@ -511,3 +511,44 @@ Ran all test suites matching /ex4-whatsTheTime.test.js/i.
 2023-01-23 02:37:49 info: --------------------------------------------
 2023-01-23 02:37:58 info: All unit tests passed.
 2023-01-23 02:38:05 info: All steps were completed successfully
+2023-01-23 02:42:39 info: --------------------------------------------
+2023-01-23 02:42:39 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:42:39 info: --------------------------------------------
+2023-01-23 02:42:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.828 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (165 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` (1 ms)
+    √ should not call `setInterval()` more than once (2004 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    × `window.onload` or `window.addEventListener` should not call its event handler function (5 ms)
+
+  ● whatsTheTime › `window.onload` or `window.addEventListener` should not call its event handler function
+
+    expect(received).not.toBeDefined()
+
+    Received: true
+
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+    > 69 |     expect(state.callError).not.toBeDefined();
+         |                                 ^
+      70 |   });
+      71 | });
+      72 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:69:33)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.932 s, estimated 6 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 03:14:11 info: --------------------------------------------
+2023-01-23 03:14:11 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 03:14:11 info: --------------------------------------------
+2023-01-23 03:14:20 info: All unit tests passed.
+2023-01-23 03:14:27 info: All steps were completed successfully
