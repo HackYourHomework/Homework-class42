@@ -34,11 +34,10 @@ function giveCompliment(name) {
 
   return `You are ${compliments[Math.floor(Math.random() * 10)]}, ${name}!`;
 
-  // TODO complete this function
-}
+  }
 
 function main() {
-  // TODO substitute your own name for "HackYourFuture"
+
 
   const myName = 'Yuliia';
 
