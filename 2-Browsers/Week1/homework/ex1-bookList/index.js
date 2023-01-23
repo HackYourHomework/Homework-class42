@@ -28,9 +28,9 @@ function createBookList(books) {
     p.textContent =
       'Book : ' + books[i].title + '||\n Author : ' + books[i].author;
     if (books[i].alreadyRead) {
-      p.style.color = 'green';
+      li.style.backgroundColor = 'green';
     } else {
-      p.style.color = 'red';
+      li.style.backgroundColor = 'red';
     }
   }
   const img1 = document.createElement('img');

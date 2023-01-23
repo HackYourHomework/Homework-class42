@@ -8,17 +8,18 @@ h1 {
 }
 
 ul {
+  display: flex;
+  align-items: center;
   list-style: none;
   margin-top: 30px;
 }
 li {
   float: left;
-  margin-top: 50px;
-  margin-left: 5%;
+  margin: auto;
 }
 
 img {
-  width: 100px;
-  height: 150px;
-  margin-left: 40%;
+  width: 200px;
+  height: 300px;
+  margin-left: 80px;
 }
