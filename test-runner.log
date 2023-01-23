@@ -708,3 +708,239 @@ ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
 2023-01-23 07:21:01 info: ---------------------------------------
 2023-01-23 07:21:05 info: All unit tests passed.
 2023-01-23 07:21:08 info: All steps were completed successfully
+2023-01-23 07:24:36 info: ------------------------------------------
+2023-01-23 07:24:36 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:24:36 info: ------------------------------------------
+2023-01-23 07:24:36 info: Exercise has not yet been modified
+2023-01-23 07:24:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✕ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property
+    ✕ should set the `srcset` property (3 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.303 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:29:55 info: ------------------------------------------
+2023-01-23 07:29:55 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:29:55 info: ------------------------------------------
+2023-01-23 07:29:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.245 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:30:29 info: ------------------------------------------
+2023-01-23 07:30:29 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:30:29 info: ------------------------------------------
+2023-01-23 07:30:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.229 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:32:39 info: ------------------------------------------
+2023-01-23 07:32:39 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:32:39 info: ------------------------------------------
+2023-01-23 07:32:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.249 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:35:09 info: ------------------------------------------
+2023-01-23 07:35:09 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:35:09 info: ------------------------------------------
+2023-01-23 07:35:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.306 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:36:47 info: ------------------------------------------
+2023-01-23 07:36:47 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:36:47 info: ------------------------------------------
+2023-01-23 07:36:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.252 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:38:14 info: ------------------------------------------
+2023-01-23 07:38:14 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:38:14 info: ------------------------------------------
+2023-01-23 07:38:15 info: All unit tests passed.
+2023-01-23 07:38:18 info: All steps were completed successfully
