@@ -434,3 +434,80 @@ Ran all test suites matching /ex5-catWalk.test.js/i.
 2023-01-22 09:21:11 info: ---------------------------------------
 2023-01-22 09:21:20 info: All unit tests passed.
 2023-01-22 09:21:29 info: All steps were completed successfully
+2023-01-23 02:35:08 info: --------------------------------------------
+2023-01-23 02:35:08 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:35:08 info: --------------------------------------------
+2023-01-23 02:35:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (6.867 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (158 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()`
+    √ should not call `setInterval()` more than once (2015 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (5 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        7.035 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 02:37:12 info: --------------------------------------------
+2023-01-23 02:37:12 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:37:12 info: --------------------------------------------
+2023-01-23 02:37:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.85 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (146 ms)
+    √ should have all TODO comments removed
+    √ should use `setInterval()`
+    √ should not call `setInterval()` more than once (2003 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (5 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.951 s, estimated 7 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 02:37:49 info: --------------------------------------------
+2023-01-23 02:37:49 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:37:49 info: --------------------------------------------
+2023-01-23 02:37:58 info: All unit tests passed.
+2023-01-23 02:38:05 info: All steps were completed successfully

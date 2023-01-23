@@ -7,8 +7,17 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
   second). Use `setInterval()` to make sure the time stays current.
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
+const p = document.createElement('p');
+
 function addCurrentTime() {
-  // TODO complete this function
+  const date = new Date();
+  const time = `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`;
+  p.appendChild(document.createTextNode(''));
+  p.textContent = time;
+  document.querySelector('body').appendChild(p);
+
 }
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+window.addEventListener('load', addCurrentTime);
+setInterval(addCurrentTime,600)
+
