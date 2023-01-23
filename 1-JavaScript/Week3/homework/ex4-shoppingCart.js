@@ -2,7 +2,6 @@
 
 const shoppingCart = ['bananas', 'milk'];
 
-// ! Function to be tested
 function addToShoppingCart(product) {
   if (!product) {
     return `You bought ${shoppingCart.join(', ')}!`;
@@ -15,7 +14,6 @@ function addToShoppingCart(product) {
   return `You bought ${shoppingCart.join(', ')}!`;
 }
 
-// ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
     'Test 1: addShoppingCart() called without an argument should leave the shopping cart unchanged'

@@ -1,6 +1,5 @@
 'use strict';
 
-// ! Function under test
 function addToShoppingCart(initialCart, product) {
   const updatedCart = [...initialCart, product];
   if (updatedCart.length > 3) {
@@ -9,7 +8,6 @@ function addToShoppingCart(initialCart, product) {
   return updatedCart;
 }
 
-// ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('Test 1: addToShoppingCart should take two parameters');
   console.assert(addToShoppingCart.length === 2);

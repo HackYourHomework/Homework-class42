@@ -8,17 +8,7 @@ const cartForParty = {
   beer: 2.0,
 };
 
-/*function calculateTotalPrice(cartItems) {
-  let totalPrice = 0;
-  for(const item in cartItems{
-    totalPrice +=cartItems[item];
-  }
-  return `Total: € ${totalPrice}`;
-  
-}
-*/
 
-// got rid of for in loop (commented above)
 function calculateTotalPrice(cartItems) {
   let totalPrice = 0;
   Object.values(cartItems).forEach((item) => {
@@ -27,7 +17,6 @@ function calculateTotalPrice(cartItems) {
   return `Total: € ${totalPrice}`;
 }
 
-// ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   calculateTotalPrice(cartForParty);

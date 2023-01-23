@@ -26,7 +26,6 @@ function main() {
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
 }
 
-// ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }

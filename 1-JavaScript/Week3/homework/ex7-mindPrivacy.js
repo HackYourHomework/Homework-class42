@@ -17,7 +17,6 @@ const employeeRecords = [
   },
 ];
 
-// ! Function under test
 function filterPrivateData(employeeRecords) {
   const privateData = [];
 
@@ -28,7 +27,6 @@ function filterPrivateData(employeeRecords) {
   return privateData;
 }
 
-// ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('Test 1: filterPrivateData should take one parameters');
   console.assert(filterPrivateData.length === 1);
