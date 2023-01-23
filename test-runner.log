@@ -1,0 +1,310 @@
+2023-01-23 01:56:02 info: ----------------------------------------
+2023-01-23 01:56:02 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 01:56:02 info: ----------------------------------------
+2023-01-23 01:56:02 info: Exercise has not yet been modified
+2023-01-23 01:56:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (291 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✕ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    ✕ should contain a <ul> with 3 <li> elements (2 ms)
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    ✕ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    expect(received).toBeTruthy()
+
+    Received: null
+
+      46 |   test('should contain a <ul> that is a child of <div id="bookList">', () => {
+      47 |     const ul = document.querySelector('div[id=bookList] > ul');
+    > 48 |     expect(ul).toBeTruthy();
+         |                ^
+      49 |   });
+      50 |
+      51 |   test('should contain a <ul> with 3 <li> elements', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:48:16)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      52 |     const nodeList = document.querySelectorAll('ul > li');
+      53 |     const result = nodeList ? nodeList.length : 0;
+    > 54 |     expect(result).toBe(3);
+         |                    ^
+      55 |   });
+      56 |
+      57 |   test('should contain an <li> with title and author for each book of the `myBooks` array', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:54:20)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: ""
+
+      63 |       : '';
+      64 |     state.titlesAndAuthors.forEach((string) =>
+    > 65 |       expect(result).toEqual(expect.stringContaining(string))
+         |                      ^
+      66 |     );
+      67 |   });
+      68 |
+
+      at toEqual (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:65:22)
+          at Array.forEach (<anonymous>)
+      at Object.forEach (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:64:28)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 1 passed, 6 total
+Snapshots:   0 total
+Time:        2.816 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-23 01:56:09 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  20:25  error  'books' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-01-23 02:21:33 info: ----------------------------------------
+2023-01-23 02:21:33 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 02:21:33 info: ----------------------------------------
+2023-01-23 02:21:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (298 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    ✕ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: "  "
+
+      63 |       : '';
+      64 |     state.titlesAndAuthors.forEach((string) =>
+    > 65 |       expect(result).toEqual(expect.stringContaining(string))
+         |                      ^
+      66 |     );
+      67 |   });
+      68 |
+
+      at toEqual (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:65:22)
+          at Array.forEach (<anonymous>)
+      at Object.forEach (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:64:28)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        2.176 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-23 02:21:38 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  24:9  warning  'liElement' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-23 02:35:47 info: ----------------------------------------
+2023-01-23 02:35:47 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 02:35:47 info: ----------------------------------------
+2023-01-23 02:35:51 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (295 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    ✕ should contain an <img> element for each book (2 ms)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: "  "
+
+      63 |       : '';
+      64 |     state.titlesAndAuthors.forEach((string) =>
+    > 65 |       expect(result).toEqual(expect.stringContaining(string))
+         |                      ^
+      66 |     );
+      67 |   });
+      68 |
+
+      at toEqual (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:65:22)
+          at Array.forEach (<anonymous>)
+      at Object.forEach (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:64:28)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        2.191 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-23 02:35:52 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  24:9  warning  'liElement' is never reassigned. Use 'const' instead                              no-autofix/prefer-const
+  26:5  warning  The homework tests do not support `innerText`. Please replace with `textContent`  no-restricted-syntax
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-01-23 02:36:30 info: ----------------------------------------
+2023-01-23 02:36:30 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 02:36:30 info: ----------------------------------------
+2023-01-23 02:36:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (314 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✕ should contain an <img> element for each book (2 ms)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        2.194 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-23 04:38:36 info: ----------------------------------------
+2023-01-23 04:38:36 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 04:38:36 info: ----------------------------------------
+2023-01-23 04:38:40 info: All unit tests passed.
+2023-01-23 04:38:42 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  29:7  warning  'img1' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  34:7  warning  'img2' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  39:7  warning  'img3' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2023-01-23 04:38:43 error: *** Spell Checker Report ***
+
+ex1-bookList/index.js:30:18 - Unknown word (assests)
+ex1-bookList/index.js:35:18 - Unknown word (assests)
+ex1-bookList/index.js:40:18 - Unknown word (assests)
+
+2023-01-23 04:39:47 info: ----------------------------------------
+2023-01-23 04:39:47 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 04:39:47 info: ----------------------------------------
+2023-01-23 04:39:50 info: All unit tests passed.
+2023-01-23 04:39:53 info: All steps were completed successfully
+2023-01-23 05:59:55 info: ----------------------------------------
+2023-01-23 05:59:55 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 05:59:55 info: ----------------------------------------
+2023-01-23 05:59:59 info: All unit tests passed.
+2023-01-23 06:00:01 info: All steps were completed successfully

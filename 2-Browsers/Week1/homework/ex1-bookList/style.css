@@ -1,1 +1,24 @@
 /* Write your style here */
+body {
+  background-color: rgb(231, 176, 176);
+}
+h1 {
+  text-align: center;
+  color: rgb(214, 76, 76);
+}
+
+ul {
+  list-style: none;
+  margin-top: 30px;
+}
+li {
+  float: left;
+  margin-top: 50px;
+  margin-left: 5%;
+}
+
+img {
+  width: 100px;
+  height: 150px;
+  margin-left: 40%;
+}
