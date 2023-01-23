@@ -1,0 +1,5 @@
+
+*** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+ex3-hijackLogo.js:19:47 - Unknown word (Xdpd)

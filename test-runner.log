@@ -246,3 +246,142 @@ Tests:       4 failed, 2 passed, 6 total
 Snapshots:   0 total
 Time:        5.318 s
 Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-23 01:59:29 info: ------------------------------------------
+2023-01-23 01:59:29 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 01:59:29 info: ------------------------------------------
+2023-01-23 01:59:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    × should have all TODO comments removed (2 ms)
+    × should set the `src` property (1 ms)
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.62 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 01:59:37 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:12:49 - Unknown word (Xdpd)
+
+2023-01-23 02:00:24 info: ------------------------------------------
+2023-01-23 02:00:24 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 02:00:24 info: ------------------------------------------
+2023-01-23 02:00:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (1 ms)
+    × should set the `src` property (2 ms)
+    × should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.513 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 02:00:31 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-01-23 02:05:30 info: ------------------------------------------
+2023-01-23 02:05:30 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 02:05:30 info: ------------------------------------------
+2023-01-23 02:05:32 info: All unit tests passed.
+2023-01-23 02:05:37 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:19:47 - Unknown word (Xdpd)
+
+2023-01-23 02:10:24 info: ------------------------------------------
+2023-01-23 02:10:24 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 02:10:24 info: ------------------------------------------
+2023-01-23 02:10:26 info: All unit tests passed.
+2023-01-23 02:10:30 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+ex3-hijackLogo.js:19:47 - Unknown word (Xdpd)
+
