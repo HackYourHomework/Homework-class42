@@ -385,3 +385,67 @@ ex3-hijackLogo.js:19:47 - Unknown word (Xdpd)
 ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
 ex3-hijackLogo.js:19:47 - Unknown word (Xdpd)
 
+2023-01-23 02:44:42 info: --------------------------------------------
+2023-01-23 02:44:42 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:44:42 info: --------------------------------------------
+2023-01-23 02:44:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.124 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (96 ms)
+    √ should have all TODO comments removed (1 ms)
+    × should use `setInterval()` (1 ms)
+    √ should not call `setInterval()` more than once (2011 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should use `setInterval()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `setInterval()`', () => {
+    > 52 |     expect(state.setInterval).toBeDefined();
+         |                               ^
+      53 |   });
+      54 |
+      55 |   test('should not call `setInterval()` more than once', async () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:52:31)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.199 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 02:48:20 info: --------------------------------------------
+2023-01-23 02:48:20 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:48:20 info: --------------------------------------------
+2023-01-23 02:48:27 info: All unit tests passed.
+2023-01-23 02:48:31 info: All steps were completed successfully
+2023-01-23 02:53:40 info: ------------------------------------------
+2023-01-23 02:53:40 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 02:53:40 info: ------------------------------------------
+2023-01-23 02:53:42 info: All unit tests passed.
+2023-01-23 02:53:47 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+ex3-hijackLogo.js:20:47 - Unknown word (Xdpd)
+
+2023-01-23 02:54:19 info: --------------------------------------------
+2023-01-23 02:54:19 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:54:19 info: --------------------------------------------
+2023-01-23 02:54:25 info: All unit tests passed.
+2023-01-23 02:54:30 info: All steps were completed successfully
+2023-01-23 02:58:43 info: ------------------------------------------
+2023-01-23 02:58:43 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 02:58:43 info: ------------------------------------------
+2023-01-23 02:58:45 info: All unit tests passed.
+2023-01-23 02:58:50 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:53 - Unknown word (Xdpd)
+ex3-hijackLogo.js:20:47 - Unknown word (Xdpd)
+
