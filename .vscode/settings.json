@@ -6,7 +6,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "off",
   "prettier.trailingComma": "es5",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {

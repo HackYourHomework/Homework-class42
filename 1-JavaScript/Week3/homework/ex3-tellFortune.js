@@ -33,34 +33,43 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function selectRandomly(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
 }
+function tellFortune(arr1, arr2, arr3, arr4) {
+  const randomlySelectedJobTitle = selectRandomly(arr1);
+  const randomlySelectedLocation = selectRandomly(arr2);
+  const randomlySelectedPartnerName = selectRandomly(arr3);
+  const randomlySelectedNumKids = selectRandomly(arr4);
 
-function tellFortune(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+  return `You will be a ${randomlySelectedJobTitle} in ${randomlySelectedLocation} married to ${randomlySelectedPartnerName} with ${randomlySelectedNumKids} kids`;
 }
+// tellFortune( jobTitles, locations, partnerNames, numKids)
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-  ];
+  const numKids = [1, 2, 3, 4, 5];
 
-  const partnerNames = [
-    // TODO add elements here
-  ];
+  const partnerNames = [' Naadiya ', 'Reem', ' Natalia', ' Alisa', ' Fairoz'];
 
   const locations = [
-    // TODO add elements here
+    ' Damascus',
+    'Amsterdam',
+    'Aleppo',
+    ' Roterdam',
+    'Utrecht',
   ];
 
   const jobTitles = [
-    // TODO add elements here
+    ' Lawyer',
+    'Web developer',
+    'Web designer',
+    'accountant',
+    ' Musician',
   ];
 
-  console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
-  console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
-  console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
+  console.log(tellFortune(jobTitles, locations, partnerNames, numKids));
+  console.log(tellFortune(jobTitles, locations, partnerNames, numKids));
+  console.log(tellFortune(jobTitles, locations, partnerNames, numKids));
 }
 
 // ! Do not change or remove the code below
