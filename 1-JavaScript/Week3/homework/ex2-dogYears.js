@@ -18,7 +18,7 @@ calculate it!
 
 function calculateDogAge(manAge) {
   return `Your doggie is ${manAge * 7} years old in dog years!`;
-  // TODO complete this function
+ 
 }
 
 function main() {
@@ -27,11 +27,6 @@ function main() {
   console.log(calculateDogAge(3));
 }
 
-/*function main() {
-  console.log(calculateDogAge(1)); // -> "Your doggie is 7 years old in dog years!"
-  console.log(calculateDogAge(2)); // -> "Your doggie is 14 years old in dog years!"
-  console.log(calculateDogAge(3)); // -> "Your doggie is 21 years old in dog years!"
-}*/
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
