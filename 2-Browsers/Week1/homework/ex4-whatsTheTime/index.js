@@ -1,4 +1,3 @@
-'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-4-whats-the-time
 
@@ -8,7 +7,21 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  // TODO complete this function
+  const time = new Date()
+  const myTimer = `${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
+  console.log(myTimer)
+  const timer = document.createElement('div')
+  timer.textContent = myTimer
+  document.body.appendChild(timer)
 }
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+
+
+
+
+
+
+window.onload = function () {
+  setInterval(addCurrentTime, 1000)
+
+}
