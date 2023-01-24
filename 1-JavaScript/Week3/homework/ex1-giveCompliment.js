@@ -32,31 +32,23 @@ function giveCompliment(name) {
     'amazing',
   ];
 
-  return `You are ${compliments[Math.floor(Math.random() * 10)]}, ${name}!`;
-
-  }
+  return `You are ${
+    compliments[Math.floor(Math.random() * compliments.length)]
+  }, ${name}!`;
+}
 
 function main() {
-
-
   const myName = 'Yuliia';
 
   console.log(giveCompliment(myName));
   console.log(giveCompliment(myName));
   console.log(giveCompliment(myName));
-  /*console.log(giveCompliment(myName));
-  console.log(giveCompliment(myName));
-  console.log(giveCompliment(myName));*/
 
   const yourName = 'Amsterdam';
 
   console.log(giveCompliment(yourName));
   console.log(giveCompliment(yourName));
   console.log(giveCompliment(yourName));
-
-  /*console.log(giveCompliment(yourName));
-  console.log(giveCompliment(yourName));
-  console.log(giveCompliment(yourName));*/
 }
 
 // ! Do not change or remove the code below
