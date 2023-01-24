@@ -35,7 +35,7 @@ body, this code is now written once only in a separated function.
 // a randomly selected element as its return value.
 function selectRandomly(anArray) {
   return anArray[Math.floor(Math.random() * anArray.length)];
-  // TODO complete this function
+ 
 }
 
 function tellFortune(numKids, partnerName, location, jobTitle) {
@@ -44,15 +44,15 @@ function tellFortune(numKids, partnerName, location, jobTitle) {
   )}, married to ${selectRandomly(partnerName)} with ${selectRandomly(
     numKids
   )} kids.`;
-  // TODO complete this function
+  
 }
 
 function main() {
   const numKids = ['0', '1', '2', '3', '4'];
 
-  const partnerNames = ['Janny', 'Jully', 'Juddy', 'Jonny', 'Janine'];
+  const partnerNames = ['Jany', 'Julia', 'Juddy', 'Johny', 'Janine'];
 
-  const locations = ['Kyiv', 'Chernihiv', 'Kharkiv', 'Lviv', 'Lutsk'];
+  const locations = ['Kyiv', 'Chernihiv', 'Kharkiv', 'Lviv', 'Odessa'];
 
   const jobTitles = [
     'fullstack developer',
