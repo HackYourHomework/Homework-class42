@@ -1,0 +1,274 @@
+2023-01-24 05:28:35 info: ----------------------------------------
+2023-01-24 05:28:35 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-24 05:28:35 info: ----------------------------------------
+2023-01-24 05:28:48 info: All unit tests passed.
+2023-01-24 05:28:54 info: All steps were completed successfully
+2023-01-24 05:29:12 info: ---------------------------------------
+2023-01-24 05:29:12 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-24 05:29:12 info: ---------------------------------------
+2023-01-24 05:29:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    √ should be syntactically valid (106 ms)
+    √ should have all TODO comments removed
+    × the body font-family should be `Arial, sans-serif` (3 ms)
+    √ each <li> should have the CSS class `list-item` (1 ms)
+    √ each <li> should rendered red (27 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.904 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-24 05:29:22 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:12:52 - Unknown word (Badar)
+
+2023-01-24 05:31:15 info: ---------------------------------------
+2023-01-24 05:31:15 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-24 05:31:15 info: ---------------------------------------
+2023-01-24 05:31:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    √ should be syntactically valid (120 ms)
+    √ should have all TODO comments removed
+    × the body font-family should be `Arial, sans-serif` (3 ms)
+    √ each <li> should have the CSS class `list-item` (1 ms)
+    √ each <li> should rendered red (27 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.95 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-24 05:31:24 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:12:52 - Unknown word (Badar)
+
+2023-01-24 05:35:31 info: ---------------------------------------
+2023-01-24 05:35:31 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-24 05:35:31 info: ---------------------------------------
+2023-01-24 05:35:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    √ should be syntactically valid (113 ms)
+    √ should have all TODO comments removed (1 ms)
+    × the body font-family should be `Arial, sans-serif` (3 ms)
+    √ each <li> should have the CSS class `list-item` (1 ms)
+    √ each <li> should rendered red (28 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.233 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-24 05:35:41 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:12:52 - Unknown word (Badar)
+
+2023-01-24 05:46:15 info: ---------------------------------------
+2023-01-24 05:46:15 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-24 05:46:15 info: ---------------------------------------
+2023-01-24 05:46:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    √ should be syntactically valid (119 ms)
+    √ should have all TODO comments removed (1 ms)
+    × the body font-family should be `Arial, sans-serif` (4 ms)
+    √ each <li> should have the CSS class `list-item` (1 ms)
+    √ each <li> should rendered red (27 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.044 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-24 05:50:48 info: ---------------------------------------
+2023-01-24 05:50:48 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-24 05:50:48 info: ---------------------------------------
+2023-01-24 05:50:53 info: All unit tests passed.
+2023-01-24 05:50:57 info: All steps were completed successfully
+2023-01-24 05:51:33 info: ------------------------------------------
+2023-01-24 05:51:33 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-24 05:51:33 info: ------------------------------------------
+2023-01-24 05:51:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (2 ms)
+    × should set the `src` property (2 ms)
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.582 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-24 06:07:07 info: ------------------------------------------
+2023-01-24 06:07:07 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-24 06:07:07 info: ------------------------------------------
+2023-01-24 06:07:09 info: All unit tests passed.
+2023-01-24 06:07:14 info: All steps were completed successfully
+2023-01-24 06:07:43 info: --------------------------------------------
+2023-01-24 06:07:43 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-24 06:07:43 info: --------------------------------------------
+2023-01-24 06:07:51 info: All unit tests passed.
+2023-01-24 06:07:55 info: All steps were completed successfully
+2023-01-24 06:08:20 info: ---------------------------------------
+2023-01-24 06:08:20 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 06:08:20 info: ---------------------------------------
+2023-01-24 06:08:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    √ HTML should be syntactically valid (108 ms)
+    √ should have all TODO comments removed
+    √ should use `setInterval()` and/or `setTimeout()` (1 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.847 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-01-24 06:08:27 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  24:5  warning  'cat' is never reassigned. Use 'const' instead         no-autofix/prefer-const
+  29:7  warning  'currentPos' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-01-24 06:19:36 info: ---------------------------------------
+2023-01-24 06:19:36 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 06:19:36 info: ---------------------------------------
+2023-01-24 06:19:41 info: All unit tests passed.
+2023-01-24 06:19:46 info: All steps were completed successfully
