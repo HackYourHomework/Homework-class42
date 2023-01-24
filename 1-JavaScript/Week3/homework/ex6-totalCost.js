@@ -26,23 +26,23 @@ const cartForParty = {
   oranges: 2.59,
   lemons: 0.99,
   pears: 2.99,
-  // TODO complete this object
+  
 };
 
 function calculateTotalPrice(foodForParty) {
   let everything = 0;
-  for (const price of foodForParty) {
+  Object.values(foodForParty).forEach((price) => {
     everything += price;
-  }
+  });
   return `Total: €${everything}`;
-  // TODO replace this comment with your code
+  
 }
 console.log(calculateTotalPrice(cartForParty));
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
   console.assert(calculateTotalPrice.length === 1);
-  // TODO replace this comment with your code
+  
 }
 
 function test2() {
@@ -50,7 +50,7 @@ function test2() {
   const expect = 'Total: € 18.05';
   const actual = calculateTotalPrice(cartForParty);
   console.assert(actual === expect);
-  // TODO replace this comment with your code
+  
 }
 
 function test() {
