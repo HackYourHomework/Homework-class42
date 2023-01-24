@@ -38,8 +38,7 @@ function computeEarnings(tasks, hourlyRate) {
     .toFixed(2);
   return `€${sum}`;
 
-  // TODO complete this function
-}
+  }
 
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
