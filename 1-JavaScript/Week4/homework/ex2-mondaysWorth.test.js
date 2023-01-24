@@ -27,13 +27,23 @@ const mondayTasks = [
     name: 'Talk to different members from the product team',
     duration: 60,
   },
+  ``,
 ];
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(mondayTasks, hourlyRate) {
+  const euroFormat = new Intl.NumberFormat('en-DE', {
+    style: 'currency',
+    currency: 'EUR',
+  });
+  const totalAmount = mondayTasks
+    .map((task) => (task.duration / 60) * hourlyRate, 0)
+    .reduce((acc, taskRate) => acc + taskRate);
+  return euroFormat.format(totalAmount);
 }
+
+// TODO complete this function
 
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {

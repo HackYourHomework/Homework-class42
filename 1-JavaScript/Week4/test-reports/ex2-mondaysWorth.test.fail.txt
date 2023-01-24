@@ -1,0 +1,30 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount (82 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€NaN"
+
+      57 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      58 |     const expected = '€187.50';
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.727 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.

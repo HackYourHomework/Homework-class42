@@ -30,10 +30,10 @@ const cartForParty = {
   // TODO complete this object
 };
 
-function calculateTotalPrice(cartForParty) {
+function calculateTotalPrice(price) {
   let totalCost = 0;
-  for (const price of cartForParty.values(cartForParty)) {
-    totalCost += price;
+  for (let price of cartForParty.values(price)) {
+   price += totalCost;
   }
   return 'Total: €' + totalCost;
   // TODO replace this comment with your code

@@ -1,0 +1,11 @@
+*** Unit Test Error Report ***
+
+jest-haste-map: Haste module naming collision: homework
+  The following files share their name; please adjust your hasteImpl:
+    * <rootDir>/package.json
+    * <rootDir>/1-JavaScript/Week4/homework/package.json
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/apple/Documents/HackYourFuture/Homework-class42/test-runner/CustomReporter.js"
