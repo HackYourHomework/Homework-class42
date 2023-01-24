@@ -1,0 +1,1002 @@
+2023-01-14 04:16:29 info: ------------------------------------------------------
+2023-01-14 04:16:29 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-14 04:16:29 info: ------------------------------------------------------
+2023-01-14 04:16:29 info: Exercise has not yet been modified
+2023-01-14 04:16:30 info: All unit tests passed.
+2023-01-14 04:16:32 info: All steps were completed successfully
+2023-01-14 07:38:51 info: ------------------------------------------------------
+2023-01-14 07:38:51 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-14 07:38:51 info: ------------------------------------------------------
+2023-01-14 07:38:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  ✕ doubleEvenNumbers should take the even numbers and double them (2 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: [4, 8]
+    Received: NaN
+
+      29 |   const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      30 |   const expected = [4, 8];
+    > 31 |   expect(actual).toEqual(expected);
+         |                  ^
+      32 | });
+      33 |
+
+      at Object.toEqual (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:31:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.249 s, estimated 1 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2023-01-14 08:15:58 info: ------------------------------------------------------
+2023-01-14 08:15:58 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-14 08:15:58 info: ------------------------------------------------------
+2023-01-14 08:15:59 info: All unit tests passed.
+2023-01-14 08:16:00 info: All steps were completed successfully
+2023-01-14 08:22:35 info: ------------------------------------------------------
+2023-01-14 08:22:35 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-14 08:22:35 info: ------------------------------------------------------
+2023-01-14 08:22:36 info: All unit tests passed.
+2023-01-14 08:22:38 info: All steps were completed successfully
+2023-01-15 11:11:12 info: -------------------------------------------------
+2023-01-15 11:11:12 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:11:12 info: -------------------------------------------------
+2023-01-15 11:11:13 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount (1 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    TypeError: Cannot read properties of undefined (reading 'forEach')
+
+      33 |
+      34 | function computeEarnings(tasks, rate) {
+    > 35 |   const totalWorkMonday = tasks.duration.forEach((element) => element / 60);
+         |                                          ^
+      36 |   const mondayIncome = totalWorkMonday * rate;
+      37 |   return `€${mondayIncome}`;
+      38 | }
+
+      at forEach (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:35:42)
+      at Object.computeEarnings (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:49:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.273 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:15:59 info: -------------------------------------------------
+2023-01-15 11:15:59 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:15:59 info: -------------------------------------------------
+2023-01-15 11:16:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    TypeError: Cannot read properties of undefined (reading 'map')
+
+      33 |
+      34 | function computeEarnings(tasks, rate) {
+    > 35 |   const totalWorkMonday = tasks.duration.map((minutes) => minutes / 60);
+         |                                          ^
+      36 |   const mondayIncome = totalWorkMonday * rate;
+      37 |   return `€${mondayIncome}`;
+      38 | }
+
+      at map (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:35:42)
+      at Object.computeEarnings (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:49:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.253 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:29:16 info: -------------------------------------------------
+2023-01-15 11:29:16 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:29:16 info: -------------------------------------------------
+2023-01-15 11:29:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount (2 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      54 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      55 |     const expected = '€187.50';
+    > 56 |     expect(result).toBe(expected);
+         |                    ^
+      57 |   });
+      58 | });
+      59 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:56:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.255 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:35:07 info: -------------------------------------------------
+2023-01-15 11:35:07 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:35:07 info: -------------------------------------------------
+2023-01-15 11:35:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount (2 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      52 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      53 |     const expected = '€187.50';
+    > 54 |     expect(result).toBe(expected);
+         |                    ^
+      55 |   });
+      56 | });
+      57 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:54:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.25 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:36:32 info: -------------------------------------------------
+2023-01-15 11:36:32 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:36:32 info: -------------------------------------------------
+2023-01-15 11:36:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (2 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      52 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      53 |     const expected = '€187.50';
+    > 54 |     expect(result).toBe(expected);
+         |                    ^
+      55 |   });
+      56 | });
+      57 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:54:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.252 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-15 11:37:33 info: -------------------------------------------------
+2023-01-15 11:37:33 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:37:33 info: -------------------------------------------------
+2023-01-15 11:37:34 info: All unit tests passed.
+2023-01-15 11:37:36 info: All steps were completed successfully
+2023-01-15 11:39:37 info: -------------------------------------------------
+2023-01-15 11:39:37 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-15 11:39:37 info: -------------------------------------------------
+2023-01-15 11:39:38 info: All unit tests passed.
+2023-01-15 11:39:40 info: All steps were completed successfully
+2023-01-16 02:52:43 info: -------------------------------------------------
+2023-01-16 02:52:43 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-16 02:52:43 info: -------------------------------------------------
+2023-01-16 02:52:44 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (1 ms)
+    ✕ should not modify the original `fruitBasket` array
+    ✕ should return a new array that does not include the unwanted `lemon` (3 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    ReferenceError: Cannot access 'fruitBasket' before initialization
+
+      44 |   test('should not modify the original `fruitBasket` array', () => {
+      45 |     // Save the original contents of the fruit basket
+    > 46 |     const originalFruitBasketContents = [...fruitBasket];
+         |                                         ^
+      47 |     const fruitBasket = [
+      48 |       'apple',
+      49 |       'lemon',
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:46:41)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      60 |     const actual = sanitizeFruitBasket(fruitBasket, 'lemon');
+      61 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 62 |     expect(actual).toBe(expected);
+         |                    ^
+      63 |   });
+      64 | });
+      65 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:62:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.256 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2023-01-16 02:53:51 info: -------------------------------------------------
+2023-01-16 02:53:51 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-16 02:53:51 info: -------------------------------------------------
+2023-01-16 02:53:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✕ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    ReferenceError: Cannot access 'fruitBasket' before initialization
+
+      44 |   test('should not modify the original `fruitBasket` array', () => {
+      45 |     // Save the original contents of the fruit basket
+    > 46 |     const originalFruitBasketContents = [...fruitBasket];
+         |                                         ^
+      47 |     const fruitBasket = [
+      48 |       'apple',
+      49 |       'lemon',
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:46:41)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      60 |     const actual = sanitizeFruitBasket(fruitBasket, 'lemon');
+      61 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 62 |     expect(actual).toBe(expected);
+         |                    ^
+      63 |   });
+      64 | });
+      65 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:62:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.256 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2023-01-16 02:56:59 info: -------------------------------------------------
+2023-01-16 02:56:59 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-16 02:56:59 info: -------------------------------------------------
+2023-01-16 02:57:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (1 ms)
+    ✕ should not modify the original `fruitBasket` array (2 ms)
+    ✕ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      54 |       'lemon',
+      55 |     ];
+    > 56 |     expect(originalFruitBasketContents).toBe(expected);
+         |                                         ^
+      57 |   });
+      58 |
+      59 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:56:41)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      60 |     const actual = sanitizeFruitBasket(fruitBasket, 'lemon');
+      61 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 62 |     expect(actual).toBe(expected);
+         |                    ^
+      63 |   });
+      64 | });
+      65 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:62:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.256 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2023-01-16 02:59:08 info: -------------------------------------------------
+2023-01-16 02:59:08 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-16 02:59:08 info: -------------------------------------------------
+2023-01-16 02:59:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (1 ms)
+    ✕ should not modify the original `fruitBasket` array (3 ms)
+    ✓ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      54 |       'lemon',
+      55 |     ];
+    > 56 |     expect(originalFruitBasketContents).toBe(expected);
+         |                                         ^
+      57 |   });
+      58 |
+      59 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:56:41)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.254 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2023-01-16 02:59:41 info: -------------------------------------------------
+2023-01-16 02:59:41 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-16 02:59:41 info: -------------------------------------------------
+2023-01-16 02:59:42 info: All unit tests passed.
+2023-01-16 02:59:44 info: All steps were completed successfully
+2023-01-16 08:33:10 info: ------------------------------------------
+2023-01-16 08:33:10 info: >>> Running Unit Test `ex4-observable` <<<
+2023-01-16 08:33:10 info: ------------------------------------------
+2023-01-16 08:33:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (1 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (2 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.314 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2023-01-16 08:33:12 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  3:9  error  'forEach' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-01-16 08:49:27 info: ------------------------------------------
+2023-01-16 08:49:27 info: >>> Running Unit Test `ex4-observable` <<<
+2023-01-16 08:49:27 info: ------------------------------------------
+2023-01-16 08:49:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (1 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (1 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: element.push is not a function
+
+      23 |     notify: function (message) {
+      24 |       return subscribers.forEach((element) => {
+    > 25 |         return element.push(message);
+         |                        ^
+      26 |       });
+      27 |     },
+      28 |   };
+
+      at push (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:25:24)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:24:26)
+      at Object.notify (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.249 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2023-01-16 08:54:07 info: ------------------------------------------
+2023-01-16 08:54:07 info: >>> Running Unit Test `ex4-observable` <<<
+2023-01-16 08:54:07 info: ------------------------------------------
+2023-01-16 08:54:08 info: All unit tests passed.
+2023-01-16 08:54:10 info: All steps were completed successfully
+2023-01-16 08:55:48 info: ------------------------------------------
+2023-01-16 08:55:48 info: >>> Running Unit Test `ex4-observable` <<<
+2023-01-16 08:55:48 info: ------------------------------------------
+2023-01-16 08:55:49 info: All unit tests passed.
+2023-01-16 08:55:51 info: All steps were completed successfully
+2023-01-17 12:28:24 info: --------------------------------------
+2023-01-17 12:28:24 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-17 12:28:24 info: --------------------------------------
+2023-01-17 12:28:25 error: *** Unit Test Error Report ***
+
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/home/yunus/Desktop/GitHub-Repositories/Homework-class42/test-runner/CustomReporter.js"
+2023-01-17 05:05:55 info: --------------------------------------
+2023-01-17 05:05:55 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-17 05:05:55 info: --------------------------------------
+2023-01-17 05:05:57 info: All unit tests passed.
+2023-01-17 05:05:59 info: All steps were completed successfully
+2023-01-22 11:05:14 info: ------------------------------------------
+2023-01-22 11:05:14 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:05:14 info: ------------------------------------------
+2023-01-22 11:05:14 info: Exercise has not yet been modified
+2023-01-22 11:05:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (1 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (2 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one (1 ms)
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 5 passed, 11 total
+Snapshots:   0 total
+Time:        0.41 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2023-01-22 11:12:32 info: ------------------------------------------
+2023-01-22 11:12:32 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:12:32 info: ------------------------------------------
+2023-01-22 11:12:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (1 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (3 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 5 passed, 11 total
+Snapshots:   0 total
+Time:        0.329 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2023-01-22 11:16:35 info: ------------------------------------------
+2023-01-22 11:16:35 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:16:35 info: ------------------------------------------
+2023-01-22 11:16:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (3 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✕ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with three living neighbors should survive and have its life time incremented by one
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with two living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      92 |
+      93 |     expect(midCell.alive).toBe(true);
+    > 94 |     expect(midCell.lifeTime).toBe(2);
+         |                              ^
+      95 |   });
+      96 |
+      97 |   test('a living cell with three living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:94:30)
+
+  ● Game Of Life: › a living cell with three living neighbors should survive and have its life time incremented by one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      115 |
+      116 |     expect(midCell.alive).toBe(true);
+    > 117 |     expect(midCell.lifeTime).toBe(2);
+          |                              ^
+      118 |   });
+      119 |
+      120 |   test('a living cell with four living neighbors should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:117:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 1
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       6 failed, 5 passed, 11 total
+Snapshots:   0 total
+Time:        0.331 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2023-01-22 11:24:35 info: ------------------------------------------
+2023-01-22 11:24:35 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:24:35 info: ------------------------------------------
+2023-01-22 11:24:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    ✓ should exist and be executable (1 ms)
+    ✕ a living cell with zero living neighbors should die and have its life time reset to zero (3 ms)
+    ✕ a living cell with one living neighbor should die and have its life time reset to zero
+    ✓ a living cell with two living neighbors should survive and have its life time incremented by one
+    ✓ a living cell with three living neighbors should survive and have its life time incremented by one (1 ms)
+    ✕ a living cell with four living neighbors should die and have its life time reset to zero
+    ✓ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    ✓ a dead cell with one living neighbor should remain dead and have a life time of zero
+    ✓ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    ✕ a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+    ✓ a dead cell with four living neighbors should remain dead and have a life time of zero
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      48 |     game.updateGrid();
+      49 |
+    > 50 |     expect(midCell.alive).toBe(false);
+         |                           ^
+      51 |     expect(midCell.lifeTime).toBe(0);
+      52 |   });
+      53 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:50:27)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      69 |     game.updateGrid();
+      70 |
+    > 71 |     expect(midCell.alive).toBe(false);
+         |                           ^
+      72 |     expect(midCell.lifeTime).toBe(0);
+      73 |   });
+      74 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:71:27)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+      138 |     game.updateGrid();
+      139 |
+    > 140 |     expect(midCell.alive).toBe(false);
+          |                           ^
+      141 |     expect(midCell.lifeTime).toBe(0);
+      142 |   });
+      143 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:140:27)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      224 |     game.updateGrid();
+      225 |
+    > 226 |     expect(midCell.alive).toBe(true);
+          |                           ^
+      227 |     expect(midCell.lifeTime).toBe(1);
+      228 |   });
+      229 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:226:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 7 passed, 11 total
+Snapshots:   0 total
+Time:        0.336 s, estimated 1 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2023-01-22 11:26:10 info: ------------------------------------------
+2023-01-22 11:26:10 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 11:26:10 info: ------------------------------------------
+2023-01-22 11:26:11 info: All unit tests passed.
+2023-01-22 11:26:13 info: All steps were completed successfully
+2023-01-24 10:15:20 info: ------------------------------------------------------
+2023-01-24 10:15:20 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-24 10:15:20 info: ------------------------------------------------------
+2023-01-24 10:15:21 info: All unit tests passed.
+2023-01-24 10:15:23 info: All steps were completed successfully
