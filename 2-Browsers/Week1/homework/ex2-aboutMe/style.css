@@ -1,1 +1,8 @@
 /* 3. Add a css rule for .list-item to make the color red. */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.list-item {
+  color: red;
+}
