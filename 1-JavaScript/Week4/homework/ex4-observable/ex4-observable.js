@@ -18,14 +18,14 @@ function createObservable() {
   return {
     subscribe: function (subscriber) {
       subscribers.push(subscriber);
-      // TODO complete this function
+      
     },
 
     notify: function (message) {
       for (const notification of subscribers) {
         notification(message);
       }
-      // TODO complete this function
+      
     },
   };
 }
