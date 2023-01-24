@@ -21,8 +21,16 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+
 function catWalk() {
-  // TODO complete this function
+  const image = document.querySelector('img');
+  image.style.left = '0px';
+  let currentLeft = parseInt(image.style.left);
+  setInterval(() => {
+    if (currentLeft === image.style.left) {
+      currentLeft = image.style.left + 10 + 'px';
+    }
+  }, 50);
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.addEventListener('load', catWalk);
