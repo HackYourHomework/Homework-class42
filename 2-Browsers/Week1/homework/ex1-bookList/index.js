@@ -16,26 +16,24 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 -----------------------------------------------------------------------------*/
 //cspell: enable
-
-const { doc } = require('prettier');
-
 function createBookList(books) {
-  const title = document.createElement('p');
-  const img = document.createElement('img');
-  const bookList = document.createElement('ul');
+  const bookLi = document.createElement('ul');
   for (const book of books) {
-    const bookElement = document.createElement('li');
-    bookElement.classLi = book.alreadyRead ? 'green' : 'red';
-    title.textContent = `${book.title} - ${book.author};`;
-    img.src = `./asserts/${book.title.split(' ').join('_')}.jpg`;
-    img.alt = book.title;
-    bookElement.appendChild(title);
-    bookElement.appendChild(img);
-    bookList.appendChild(bookElement);
+    const bookItem = document.createElement('li');
+    book.alreadyRead
+      ? bookItem.classList.add('read')
+      : bookItem.classList.add('not-read');
+    const imageForBook = document.createElement('img');
+    const titleForBook = document.createElement('p');
+    titleForBook.textContent = `${book.title} - ${book.author}`;
+    imageForBook.src = `./assets/${book.title.split(' ').join('_')}.jpg`;
+    imageForBook.alt = book.title;
+    bookItem.appendChild(titleForBook);
+    bookItem.appendChild(imageForBook);
+    bookLi.appendChild(bookItem);
   }
-  return bookList;
+  return bookLi;
 }
-
 function main() {
   const myBooks = [
     {
@@ -57,7 +55,6 @@ function main() {
       alreadyRead: true,
     },
   ];
-
   const ulElement = createBookList(myBooks);
   document.querySelector('#bookList').appendChild(ulElement);
 }
