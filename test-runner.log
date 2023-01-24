@@ -476,3 +476,44 @@ ex4-whatsTheTime/index.js
 2023-01-24 10:18:01 info: ------------------------------------------
 2023-01-24 10:18:05 info: All unit tests passed.
 2023-01-24 10:18:12 info: All steps were completed successfully
+2023-01-24 12:03:48 info: ----------------------------------------
+2023-01-24 12:03:48 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-24 12:03:48 info: ----------------------------------------
+2023-01-24 12:03:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    √ HTML should be syntactically valid (190 ms)
+    √ should have all TODO comments removed
+    × should contain a <ul> that is a child of <div id="bookList"> (3 ms)
+    √ should contain a <ul> with 3 <li> elements (3 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    √ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    expect(received).toBeTruthy()
+
+    Received: null
+
+      46 |   test('should contain a <ul> that is a child of <div id="bookList">', () => {
+      47 |     const ul = document.querySelector('div[id=bookList] > ul');
+    > 48 |     expect(ul).toBeTruthy();
+         |                ^
+      49 |   });
+      50 |
+      51 |   test('should contain a <ul> with 3 <li> elements', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:48:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        4.612 s, estimated 6 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-24 12:09:37 info: ----------------------------------------
+2023-01-24 12:09:37 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-24 12:09:37 info: ----------------------------------------
+2023-01-24 12:09:44 info: All unit tests passed.
+2023-01-24 12:09:50 info: All steps were completed successfully

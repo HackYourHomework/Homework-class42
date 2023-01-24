@@ -20,27 +20,27 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 function createBookList(books) {
   const ul = document.createElement('ul');
 
-  const imgArr = [
-    'assets/the_design_of_everyday_things.jpg',
-    'assets/the_most_human_human.jpg',
-    'assets/the_pragmatic_programmer.jpg',
-  ];
-
-  books.forEach(function (book) {
+  for (const book of books) {
     const li = document.createElement('li');
     const p = document.createElement('p');
-    const img = document.createElement('img');
-    p.appendChild(img);
     p.textContent = `${book.title} by ${book.author}`;
     li.appendChild(p);
-    ul.appendChild(li);
-    const imgSrc = document.querySelectorAll('img');
-    imgSrc[0].src = 'assets/the_design_of_everyday_things.jpg';
-    imgSrc[1].src = 'assets/the_most_human_human.jpg';
-    imgSrc[2].src = 'assets/the_pragmatic_programmer.jpg';
+
+    const img = document.createElement('img');
+    img.src = `./assets/${book.title.toLowerCase().replace(/ /g, '_')}.jpg`;
     img.alt = `Cover of ${book.title} by ${book.author}`;
-  });
-  document.body.appendChild(ul);
+    li.appendChild(img);
+
+    if (book.alreadyRead === true) {
+      li.style.color = 'green';
+    } else {
+      li.style.color = 'red';
+    }
+
+    ul.appendChild(li);
+  }
+
+  document.getElementById('bookList').appendChild(ul);
 }
 
 function main() {
