@@ -1,1 +1,34 @@
-/* Write your style here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: bisque;
+}
+h1 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: brown;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+li {
+  margin: 15px;
+  padding: 10px;
+  min-width: 450px;
+}
+img {
+  max-width: 300px;
+}
+.read {
+  color: green;
+}
+.not-read {
+  color: red;
+}

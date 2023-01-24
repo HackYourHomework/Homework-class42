@@ -1,0 +1,11 @@
+{
+  "name": "week1",
+  "version": "1.0.0",
+  "description": "The homework for this week can be found in the `homework` folder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
