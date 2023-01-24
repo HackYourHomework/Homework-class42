@@ -1,0 +1,137 @@
+2023-01-24 10:33:44 info: ----------------------------------------
+2023-01-24 10:33:44 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-24 10:33:44 info: ----------------------------------------
+2023-01-24 10:33:54 info: All unit tests passed.
+2023-01-24 10:33:57 error: *** Spell Checker Report ***
+
+
+2023-01-24 10:34:19 info: Disclaimer turned off
+2023-01-24 10:37:30 info: ---------------------------------------
+2023-01-24 10:37:30 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-24 10:37:30 info: ---------------------------------------
+2023-01-24 10:37:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (197 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (6 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (62 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        4.935 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-24 10:37:40 error: *** Spell Checker Report ***
+
+
+2023-01-24 10:38:26 info: ---------------------------------------
+2023-01-24 10:38:26 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-24 10:38:26 info: ---------------------------------------
+2023-01-24 10:38:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (321 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (7 ms)
+    ✓ each <li> should have the CSS class `list-item` (3 ms)
+    ✓ each <li> should rendered red (72 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.004 s, estimated 5 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-24 10:38:36 error: *** Spell Checker Report ***
+
+
+2023-01-24 10:39:47 info: ---------------------------------------
+2023-01-24 10:39:47 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-24 10:39:47 info: ---------------------------------------
+2023-01-24 10:39:53 info: All unit tests passed.
+2023-01-24 10:39:56 error: *** Spell Checker Report ***
+
+
+2023-01-24 10:42:16 info: ------------------------------------------
+2023-01-24 10:42:16 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-24 10:42:16 info: ------------------------------------------
+2023-01-24 10:42:19 info: All unit tests passed.
+2023-01-24 10:42:22 error: *** Spell Checker Report ***
+
+
+2023-01-24 10:48:59 info: --------------------------------------------
+2023-01-24 10:48:59 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-24 10:48:59 info: --------------------------------------------
+2023-01-24 10:49:07 info: All unit tests passed.
+2023-01-24 10:49:10 error: *** Spell Checker Report ***
+
+
+2023-01-24 10:58:30 info: ---------------------------------------
+2023-01-24 10:58:30 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 10:58:30 info: ---------------------------------------
+2023-01-24 10:58:36 info: All unit tests passed.
+2023-01-24 10:58:39 error: *** Spell Checker Report ***
+
+
+2023-01-24 11:07:00 info: ---------------------------------------
+2023-01-24 11:07:00 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 11:07:00 info: ---------------------------------------
+2023-01-24 11:07:06 info: All unit tests passed.
+2023-01-24 11:07:09 error: *** Spell Checker Report ***
+
+
