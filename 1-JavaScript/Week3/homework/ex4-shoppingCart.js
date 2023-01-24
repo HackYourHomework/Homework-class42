@@ -31,8 +31,6 @@ function addToShoppingCart(groceryItem) {
     shoppingCart.shift();
   }
   return `You bought ${shoppingCart}!`;
-
-  // TODO complete this function
 }
 
 // ! Test functions (plain vanilla JavaScript)

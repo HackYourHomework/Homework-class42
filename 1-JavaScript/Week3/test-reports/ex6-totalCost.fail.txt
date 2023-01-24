@@ -1,0 +1,10 @@
+
+*** ESLint Report ***
+
+ex6-totalCost.js
+  31:10  error    'calculateTotalPrice' is defined but never used       no-unused-vars
+  31:30  error    'price' is defined but never used                     no-unused-vars
+  32:7   warning  'totalCost' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 3 problems (2 errors, 1 warning)
+

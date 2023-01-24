@@ -20,8 +20,6 @@ function addToShoppingCart(shoppingCart, groceryItem) {
   const cartWithAddedItems = [...shoppingCart, groceryItem];
   const newShoppingCart = cartWithAddedItems.slice(-3);
   return newShoppingCart;
-
-  // TODO complete this function
 }
 
 // ! Test functions (plain vanilla JavaScript)

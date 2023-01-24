@@ -30,15 +30,14 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(employeeRecordsPar){
-  const filteredEmployeeData = [];
-  for (let i=0; i<employeeRecordsPar.length;i++){
-    let { gender,salary,...employeeObj}= employeeRecordsPar[i];
-  filteredEmployeeData.push(employeeObj);
-  return filteredEmployeeData;
-  // TODO complete this function
+function filterPrivateData(employeeRecords) {
+  const newEmploeeList = [];
+  for (const employeeRecords{
+    name,occupation,email
+  } of newEmploeeList
+  ){newEmploeeList.push({name,occupation,email})};
+  return newEmploeeList;
 }
-
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {

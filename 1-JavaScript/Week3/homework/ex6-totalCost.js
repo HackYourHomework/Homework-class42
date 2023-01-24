@@ -26,17 +26,14 @@ const cartForParty = {
   chips: 1.0,
   fish: 3.75,
   water: 0.55,
-
-  // TODO complete this object
 };
 
 function calculateTotalPrice(price) {
   let totalCost = 0;
   for (let price of cartForParty.values(price)) {
-   price += totalCost;
+    price += totalCost;
   }
   return 'Total: €' + totalCost;
-  // TODO replace this comment with your code
 }
 
 // ! Test functions (plain vanilla JavaScript)
