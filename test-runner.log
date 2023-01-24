@@ -995,3 +995,8 @@ Ran all test suites matching /ex6-gameOfLife.test.js/i.
 2023-01-22 11:26:10 info: ------------------------------------------
 2023-01-22 11:26:11 info: All unit tests passed.
 2023-01-22 11:26:13 info: All steps were completed successfully
+2023-01-24 10:15:20 info: ------------------------------------------------------
+2023-01-24 10:15:20 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-24 10:15:20 info: ------------------------------------------------------
+2023-01-24 10:15:21 info: All unit tests passed.
+2023-01-24 10:15:23 info: All steps were completed successfully
