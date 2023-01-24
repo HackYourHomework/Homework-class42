@@ -5,9 +5,6 @@ const image = document.querySelector('img');
   let distanceOfCat = 0;
   const maxDistanceOfCat = 1660;
 
-  window.addEventListener('load', catWalk)
-
-
   function changeCatImage(){
    if(image.src === 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif'){
       image.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif'
@@ -26,4 +23,5 @@ function catWalk() {
   }
 }
 
+window.addEventListener('load', catWalk)
 setInterval(catWalk, 50);
