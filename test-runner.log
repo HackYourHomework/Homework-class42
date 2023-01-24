@@ -253,3 +253,13 @@ ex1-bookList/index.js
 2023-01-24 07:28:03 info: ----------------------------------------
 2023-01-24 07:28:18 info: All unit tests passed.
 2023-01-24 07:28:33 info: All steps were completed successfully
+2023-01-24 11:36:39 info: ---------------------------------------
+2023-01-24 11:36:39 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 11:36:39 info: ---------------------------------------
+2023-01-24 11:36:48 info: All unit tests passed.
+2023-01-24 11:36:55 info: All steps were completed successfully
+2023-01-24 11:58:17 info: ---------------------------------------
+2023-01-24 11:58:17 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-24 11:58:17 info: ---------------------------------------
+2023-01-24 11:58:26 info: All unit tests passed.
+2023-01-24 11:58:33 info: All steps were completed successfully
