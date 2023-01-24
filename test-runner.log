@@ -1210,3 +1210,118 @@ Ran all test suites matching /ex4-whatsTheTime.test.js/i.
 2023-01-23 08:52:39 info: --------------------------------------------
 2023-01-23 08:52:44 info: All unit tests passed.
 2023-01-23 08:52:47 info: All steps were completed successfully
+2023-01-23 10:23:27 info: ---------------------------------------
+2023-01-23 10:23:27 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-23 10:23:27 info: ---------------------------------------
+2023-01-23 10:23:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    ✓ HTML should be syntactically valid (289 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✕ should use `setInterval()` and/or `setTimeout()` (1 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should use `setInterval()` and/or `setTimeout()`', () => {
+    > 48 |     expect(state.timer).toBeDefined();
+         |                         ^
+      49 |   });
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:48:25)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        2.236 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-01-23 10:23:32 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  26:19  error  Parsing error: Identifier directly after number
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-01-24 10:03:22 info: ---------------------------------------
+2023-01-24 10:03:22 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 10:03:22 info: ---------------------------------------
+2023-01-24 10:03:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    ✓ HTML should be syntactically valid (282 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ should use `setInterval()` and/or `setTimeout()`
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.21 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-01-24 10:03:44 info: ---------------------------------------
+2023-01-24 10:03:44 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 10:03:44 info: ---------------------------------------
+2023-01-24 10:03:47 info: All unit tests passed.
+2023-01-24 10:03:50 info: All steps were completed successfully
