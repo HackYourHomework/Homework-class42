@@ -449,3 +449,30 @@ ex3-hijackLogo.js:20:47 - Unknown word (Xdpd)
 ex3-hijackLogo.js:11:53 - Unknown word (Xdpd)
 ex3-hijackLogo.js:20:47 - Unknown word (Xdpd)
 
+2023-01-24 08:55:47 info: --------------------------------------------
+2023-01-24 08:55:47 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-24 08:55:47 info: --------------------------------------------
+2023-01-24 08:55:58 info: All unit tests passed.
+2023-01-24 08:56:01 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  11:9  error  'currentTime' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-01-24 08:56:48 info: --------------------------------------------
+2023-01-24 08:56:48 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-24 08:56:48 info: --------------------------------------------
+2023-01-24 08:56:57 info: All unit tests passed.
+2023-01-24 08:57:04 info: All steps were completed successfully
+2023-01-24 10:16:01 info: ---------------------------------------
+2023-01-24 10:16:01 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 10:16:01 info: ---------------------------------------
+2023-01-24 10:16:09 info: All unit tests passed.
+2023-01-24 10:16:16 info: All steps were completed successfully
+2023-01-24 10:18:01 info: ------------------------------------------
+2023-01-24 10:18:01 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-24 10:18:01 info: ------------------------------------------
+2023-01-24 10:18:05 info: All unit tests passed.
+2023-01-24 10:18:12 info: All steps were completed successfully

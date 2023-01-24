@@ -9,7 +9,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
   const currentTime = new Date().toJSON().slice(11, 19);
-  console.log(currentTime);
+  return currentTime;
 }
 setInterval(addCurrentTime, 1000);
 window.addEventListener('load', addCurrentTime);
