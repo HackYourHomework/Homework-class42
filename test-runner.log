@@ -116,3 +116,38 @@ ex2-mondaysWorth.test.js
 
 
 Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"
+2023-01-24 12:56:53 info: -------------------------------------------
+2023-01-24 12:56:53 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-01-24 12:56:53 info: -------------------------------------------
+2023-01-24 12:56:53 warn: A unit test file was not provided.
+2023-01-24 12:57:01 info: All steps were completed successfully
+2023-01-24 12:57:23 info: -----------------------------------------
+2023-01-24 12:57:23 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-01-24 12:57:23 info: -----------------------------------------
+2023-01-24 12:57:23 warn: A unit test file was not provided.
+2023-01-24 12:57:29 info: All steps were completed successfully
+2023-01-24 12:57:43 info: ------------------------------------------------
+2023-01-24 12:57:43 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-01-24 12:57:43 info: ------------------------------------------------
+2023-01-24 12:57:43 warn: A unit test file was not provided.
+2023-01-24 12:57:50 info: All steps were completed successfully
+2023-01-24 12:58:12 info: --------------------------------------------
+2023-01-24 12:58:12 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-24 12:58:12 info: --------------------------------------------
+2023-01-24 12:58:12 warn: A unit test file was not provided.
+2023-01-24 12:58:19 info: All steps were completed successfully
+2023-01-24 12:58:47 info: -------------------------------------------
+2023-01-24 12:58:47 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-24 12:58:47 info: -------------------------------------------
+2023-01-24 12:58:51 info: All unit tests passed.
+2023-01-24 12:58:58 info: All steps were completed successfully
+2023-01-24 12:59:18 info: ----------------------------------------
+2023-01-24 12:59:18 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-24 12:59:18 info: ----------------------------------------
+2023-01-24 12:59:22 info: All unit tests passed.
+2023-01-24 12:59:28 info: All steps were completed successfully
+2023-01-24 12:59:46 info: ----------------------------------------------
+2023-01-24 12:59:46 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-24 12:59:46 info: ----------------------------------------------
+2023-01-24 12:59:50 info: All unit tests passed.
+2023-01-24 12:59:57 info: All steps were completed successfully

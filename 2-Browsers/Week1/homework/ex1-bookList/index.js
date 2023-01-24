@@ -17,8 +17,23 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 -----------------------------------------------------------------------------*/
 //cspell: enable
 
+const { doc } = require('prettier');
+
 function createBookList(books) {
-  
+  const title = document.createElement('p');
+  const img = document.createElement('img');
+  const bookList = document.createElement('ul');
+  for (const book of books) {
+    const bookElement = document.createElement('li');
+    bookElement.classLi = book.alreadyRead ? 'green' : 'red';
+    title.textContent = `${book.title} - ${book.author};`;
+    img.src = `./asserts/${book.title.split(' ').join('_')}.jpg`;
+    img.alt = book.title;
+    bookElement.appendChild(title);
+    bookElement.appendChild(img);
+    bookList.appendChild(bookElement);
+  }
+  return bookList;
 }
 
 function main() {
