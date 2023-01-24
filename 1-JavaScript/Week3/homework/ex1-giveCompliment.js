@@ -32,7 +32,7 @@ function giveCompliment(name) {
     'amazing',
   ];
 
-  return `You are ${compliments[Math.floor(Math.random() * 10)]}, ${name}!`;
+  return `You are ${compliments[Math.floor(Math.random() * compliments.length)]}, ${name}!`;
 
   // TODO complete this function
 }
