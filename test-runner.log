@@ -1325,3 +1325,13 @@ Ran all test suites matching /ex5-catWalk.test.js/i.
 2023-01-24 10:03:44 info: ---------------------------------------
 2023-01-24 10:03:47 info: All unit tests passed.
 2023-01-24 10:03:50 info: All steps were completed successfully
+2023-01-26 12:35:28 info: ------------------------------------------
+2023-01-26 12:35:28 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-26 12:35:28 info: ------------------------------------------
+2023-01-26 12:35:29 info: All unit tests passed.
+2023-01-26 12:35:31 info: All steps were completed successfully
+2023-01-26 12:35:47 info: ------------------------------------------
+2023-01-26 12:35:47 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-26 12:35:47 info: ------------------------------------------
+2023-01-26 12:35:48 info: All unit tests passed.
+2023-01-26 12:35:49 info: All steps were completed successfully

@@ -24,6 +24,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 const img = document.querySelector('img');
 img.style.left = '0px';
 const steps = 10;
+const width = window.screen.width;
 
 function catWalk() {
   let x = img.offsetLeft;
