@@ -1,0 +1,6 @@
+*** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/apple/Documents/HackYourFuture/Homework-class42/test-runner/CustomReporter.js"

@@ -1,0 +1,46 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (4 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   0
+    Received function: [Function sanitizeFruitBasket]
+
+      35 | describe('sanitizeFruitBasket', () => {
+      36 |   test('should take two parameters', () => {
+    > 37 |     expect(sanitizeFruitBasket).toHaveLength(2);
+         |                                 ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:37:33)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: fruitArray.includes is not a function
+
+      46 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      47 |     const fruitArray = sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 48 |     expect(fruitArray.includes('lemon')).toBe(true);
+         |                       ^
+      49 |   });
+      50 | });
+      51 |
+
+      at Object.includes (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:48:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.732 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.

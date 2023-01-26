@@ -4,7 +4,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
 
 Why pay a fortune teller when you can just program your fortune yourself?
 
-1. Create four arrays, `numKids`, `partnerNames`, `locations` and `jobTitles`. 
++1. Create four arrays, `numKids`, `partnerNames`, `locations` and `jobTitles`. 
    Give each array five random values that have to do with the name of 
    the variable.
 
@@ -33,30 +33,28 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+
+function selectRandomly(myArray) {
+  return myArray[Math.floor(Math.random() * myArray.length)];
 }
 
-function tellFortune(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+function tellFortune(numKids, partnerNames, locations, jobTitles) {
+  const randomlySelectedJobTitle = selectRandomly(jobTitles);
+  const randomlySelectedLocations = selectRandomly(locations);
+  const randomlySelectedPartnerNames = selectRandomly(partnerNames);
+  const randomlySelectedNumKids = selectRandomly(numKids);
+
+  return `You will be a ${randomlySelectedJobTitle} in ${randomlySelectedLocations}, married to ${randomlySelectedPartnerNames} with ${randomlySelectedNumKids} kids.`;
 }
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-  ];
+  const numKids = [1, 2, 3, 4, 5];
 
-  const partnerNames = [
-    // TODO add elements here
-  ];
+  const partnerNames = ['Mot', 'Gill', 'Alex', 'Rob', 'Kat'];
 
-  const locations = [
-    // TODO add elements here
-  ];
+  const locations = ['Kyiv', 'Amsterdam', 'Berlin', 'London', 'Hague'];
 
-  const jobTitles = [
-    // TODO add elements here
-  ];
+  const jobTitles = ['barber', 'cooker', 'developer', 'doctor', 'manager'];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
