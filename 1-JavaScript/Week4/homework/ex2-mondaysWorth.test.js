@@ -43,8 +43,6 @@ function computeEarnings(mondayTasks, hourlyRate) {
   return euroFormat.format(totalAmount);
 }
 
-// TODO complete this function
-
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
   test('should take two parameters', () => {

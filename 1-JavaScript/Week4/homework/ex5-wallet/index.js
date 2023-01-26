@@ -64,8 +64,6 @@ walletJane.reportBalance();
 // * End of exercise code
 
 /*******************************************************************************
- * TODO: Multiple choice: provide your answers by replacing `undefined` with the
- * TODO: letter corresponding to your choice, e.g.  answer: 'a'
  ******************************************************************************/
 // prettier-ignore
 // eslint-disable-next-line no-unused-vars

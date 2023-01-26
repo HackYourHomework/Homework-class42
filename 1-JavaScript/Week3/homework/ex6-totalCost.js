@@ -28,23 +28,25 @@ const cartForParty = {
   water: 0.55,
 };
 
-function calculateTotalPrice(price) {
+function calculateTotalPrice(item) {
   let totalCost = 0;
-  for (let price of cartForParty.values(price)) {
-    price += totalCost;
-  }
+  Object.values(item).forEach((price) => (totalCost += price));
   return 'Total: €' + totalCost;
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+  const expected = 1;
+  const actual = calculateTotalPrice.length;
+  console.assert(actual === expected);
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
+  const expected = `Total: € 9.05`;
+  const actual = calculateTotalPrice(cartForParty);
+  console.assert(actual === expected);
 }
 
 function test() {

@@ -30,13 +30,13 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(employeeRecords) {
-  const newEmploeeList = [];
-  for (const employeeRecords{
-    name,occupation,email
-  } of newEmploeeList
-  ){newEmploeeList.push({name,occupation,email})};
-  return newEmploeeList;
+function filterPrivateData(employeeArr) {
+  const newEmployeeList = [];
+  employeeArr.forEach((privateData) => {
+    const { name, occupation, email } = privateData;
+    newEmployeeList.push({ name, occupation, email });
+  });
+  return newEmployeeList;
 }
 
 // ! Test functions (plain vanilla JavaScript)
