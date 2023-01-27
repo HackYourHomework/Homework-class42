@@ -12,7 +12,7 @@ const fruitBasket = [
 
 // ! Function under test
 function sanitizeFruitBasket(initialBasket, dangerousFruit) {
-  const myHarmlessBasket = [...initialBasket].filter(
+  const myHarmlessBasket = initialBasket.filter(
     (fruit) => fruit !== dangerousFruit
   );
   return myHarmlessBasket;
