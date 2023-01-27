@@ -1,14 +1,10 @@
 'use strict';
 // ! Function to be tested
 function doubleEvenNumbers(numbers) {
-  // TODO rewrite the function body using `map` and `filter`.
-  const newNumbers = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      newNumbers.push(numbers[i] * 2);
-    }
-  }
-  return newNumbers;
+  const newNumbers = numbers
+    .filter((num) => num % 2 === 0)
+    .map((num) => num * 2);
+    return newNumbers
 }
 
 // ! Unit test (using Jest)
