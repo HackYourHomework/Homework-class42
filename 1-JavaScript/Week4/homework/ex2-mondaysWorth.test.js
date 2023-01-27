@@ -23,13 +23,13 @@ const hourlyRate = 25;
 
 function computeEarnings(tasks, hourlyRate) {
   let earnings = 0;
-  const listWithDuration = [];
+  const earningListWithDuration = [];
 
   for (const task of tasks) {
     const { duration } = task;
-    listWithDuration.push({ duration });
+    earningListWithDuration.push({ duration });
   }
-  listWithDuration
+  earningListWithDuration
     .map((value) => Object.values(value))
     .forEach((value) => (earnings += (value / 60) * hourlyRate));
   return `€${earnings.toFixed(2)}`;
