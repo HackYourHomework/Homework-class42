@@ -13,10 +13,12 @@ const NUM_ROWS = 40;
 // life or death
 function createCell(x, y) {
   const alive = Math.random() > 0.5;
+
   return {
     x,
     y,
     alive,
+    lifeTime: alive ? 1 : 0,
   };
 }
 
@@ -46,7 +48,27 @@ function createGame(context, numRows, numColumns) {
   // Draw a cell onto the canvas
   function drawCell(cell) {
     // Draw cell background
-    context.fillStyle = '#303030';
+    // if (cell.alive) {
+    //   let opacity;
+    //   switch (cell.lifeTime) {
+    //     case 1:
+    //       opacity = 0.25;
+
+    //       break;
+    //     case 2:
+    //       opacity = 0.5;
+    //       break;
+    //     case 3:
+    //       opacity = 0.75;
+    //       break;
+    //       default;
+    //     case 4:
+    //       opacity = 1;
+    //       break;
+    //   }
+    // }
+
+    context.fillStyle = `rgba(24, 215, 236,${opacity})`; ///`rgba(24, 215, 236,${opacity})`; last channel is alfa for making the color darker or lighter
     context.fillRect(
       cell.x * CELL_SIZE,
       cell.y * CELL_SIZE,
@@ -65,6 +87,7 @@ function createGame(context, numRows, numColumns) {
       );
     }
   }
+  console.log(grid);
 
   // Check the state of the cell at the given coordinates
   function isAlive(x, y) {
@@ -109,12 +132,20 @@ function createGame(context, numRows, numColumns) {
         // Living cell dies, dead cell remains dead
         cell.nextAlive = false;
       }
+
+      if (cell.alive && cell.nextAlive) cell.lifeTime++;
+      else if (cell.alive && !cell.nextAlive) cell.lifeTime == 0;
+      else if (!cell.alive && cell.nextAlive) cell.lifeTime == 1;
     });
 
     // Apply the newly computed state to the cells
     forEachCell((cell) => {
       cell.alive = cell.nextAlive;
     });
+    // forEachCell(cell) => {
+    //   if (cell.alive) cell.liveTime++;
+    //   else cell.lifeTime = 0;
+    // };
   }
 
   // Render a visual representation of the grid

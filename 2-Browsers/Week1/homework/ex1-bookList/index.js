@@ -15,10 +15,29 @@ The end result should look something like this:
 https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 -----------------------------------------------------------------------------*/
-//cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const ul = document.createElement('ul');
+  ul.className = 'ulStyle';
+  books.forEach((book) => {
+    const li = document.createElement('li');
+    const p = document.createElement('p');
+    p.textContent = `${book.title} by ${book.author}`;
+    li.appendChild(p);
+    const cover = document.createElement('div');
+    cover.id = 'cover-' + book.isbn;
+    cover.classList.add('cover');
+    li.appendChild(cover);
+    const image = document.createElement('img');
+    image.src = `./assets/${book.title.toLowerCase().replaceAll(' ', '_')}.jpg`;
+    image.alt = book.title;
+    image.className = 'imgStyle';
+    li.append(image);
+    li.style.backgroundColor = book.alreadyRead ? 'green' : 'red';
+    li.className = 'liStyle';
+    ul.appendChild(li);
+  });
+  return ul;
 }
 
 function main() {
@@ -45,6 +64,7 @@ function main() {
 
   const ulElement = createBookList(myBooks);
   document.querySelector('#bookList').appendChild(ulElement);
+  console.log(myBooks);
 }
 
 window.addEventListener('load', main);
