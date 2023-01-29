@@ -14,7 +14,6 @@ function addCurrentTime() {
   container.style.margin = '0px auto';
   container.style.marginTop = '200px';
   setInterval(() => {
-    console.clear();
     const time = new Date();
     container.textContent = `Local Time is: ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`;
   }, 1000);
