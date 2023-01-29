@@ -18,7 +18,28 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const booksUl = document.createElement('ul');
+  for (const book of books) {
+    const bookTitle = document.createElement('p');
+    const bookImage = document.createElement('img');
+    const bookLi = document.createElement('li');
+
+    bookTitle.textContent = `Books title is ${book.title}, by the author ${book.author}`;
+    book.alreadyRead
+      ? bookLi.classList.add('read')
+      : bookLi.classList.add('not-read');
+    bookLi.appendChild(bookTitle);
+
+    bookImage.src = `./assets/${book.title
+      .toLowerCase()
+      .split(' ')
+      .join('_')}.jpg`;
+    bookImage.alt = book.title;
+    bookLi.appendChild(bookImage);
+
+    booksUl.appendChild(bookLi);
+  }
+  return booksUl;
 }
 
 function main() {
