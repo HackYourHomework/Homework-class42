@@ -1,0 +1,144 @@
+2023-01-04 02:52:02 info: ----------------------------------------------
+2023-01-04 02:52:02 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 02:52:02 info: ----------------------------------------------
+2023-01-04 02:52:07 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 02:52:15 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Jalal)
+
+2023-01-04 02:53:40 info: Disclaimer turned off
+2023-01-04 02:53:55 info: ----------------------------------------------
+2023-01-04 02:53:55 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 02:53:55 info: ----------------------------------------------
+2023-01-04 02:54:00 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 02:54:07 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:39:19 - Unknown word (Jalal)
+
+2023-01-04 02:57:13 info: ----------------------------------------------
+2023-01-04 02:57:13 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 02:57:13 info: ----------------------------------------------
+2023-01-04 02:57:17 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 02:57:24 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Jalal)
+
+2023-01-04 02:59:06 info: ----------------------------------------------
+2023-01-04 02:59:06 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 02:59:06 info: ----------------------------------------------
+2023-01-04 02:59:11 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 02:59:18 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:40:19 - Unknown word (Jalal)
+
+2023-01-04 03:00:07 info: ----------------------------------------------
+2023-01-04 03:00:07 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-04 03:00:07 info: ----------------------------------------------
+2023-01-04 03:00:11 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 03:00:18 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:39:19 - Unknown word (Jalal)
+
+2023-01-04 03:25:30 info: ----------------------------------------
+2023-01-04 03:25:30 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-04 03:25:30 info: ----------------------------------------
+2023-01-04 03:25:35 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: Your doggie is 7 years old in dog years
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: Your doggie is 14 years old in dog years
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: Your doggie is 21 years old in dog years
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 03:27:07 info: ----------------------------------------
+2023-01-04 03:27:07 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-04 03:27:07 info: ----------------------------------------
+2023-01-04 03:27:11 info: All unit tests passed.
+2023-01-04 03:27:18 info: All steps were completed successfully
+2023-01-04 04:02:01 info: -------------------------------------------
+2023-01-04 04:02:01 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-01-04 04:02:01 info: -------------------------------------------
+2023-01-04 04:02:05 error: *** Unit Test Error Report ***
+
+✕ tellFortune `numKids` should be an array initialized with 5 elements
+✕ tellFortune `partnerNames` should be an array initialized with 5 elements
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="E:\HYF\JS\Homework-class42\Homework-class42\test-runner\CustomReporter.js"
+2023-01-04 04:02:12 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:52:36 - Unknown word (Joulia)
+ex3-tellFortune.js:52:46 - Unknown word (Beartice)
+
+2023-01-04 04:30:46 info: --------------------------------------------
+2023-01-04 04:30:46 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 04:30:46 info: --------------------------------------------
+2023-01-04 04:30:46 warn: A unit test file was not provided.
+2023-01-04 04:30:54 info: All steps were completed successfully
+2023-01-04 04:31:18 info: --------------------------------------------
+2023-01-04 04:31:18 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 04:31:18 info: --------------------------------------------
+2023-01-04 04:31:18 warn: A unit test file was not provided.
+2023-01-04 04:31:25 info: All steps were completed successfully
+2023-01-04 04:46:49 info: --------------------------------------------
+2023-01-04 04:46:49 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 04:46:49 info: --------------------------------------------
+2023-01-04 04:46:49 warn: A unit test file was not provided.
+2023-01-04 04:46:56 info: All steps were completed successfully
+2023-01-04 05:00:01 info: --------------------------------------------
+2023-01-04 05:00:01 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 05:00:01 info: --------------------------------------------
+2023-01-04 05:00:01 warn: A unit test file was not provided.
+2023-01-04 05:00:08 info: All steps were completed successfully
+2023-01-04 08:58:59 info: --------------------------------------------
+2023-01-04 08:58:59 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-01-04 08:58:59 info: --------------------------------------------
+2023-01-04 08:58:59 warn: A unit test file was not provided.
+2023-01-04 08:59:07 info: All steps were completed successfully
+2023-01-05 10:28:05 info: ------------------------------------------------
+2023-01-05 10:28:05 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-01-05 10:28:05 info: ------------------------------------------------
+2023-01-05 10:28:05 warn: A unit test file was not provided.
+2023-01-05 10:28:13 info: All steps were completed successfully
