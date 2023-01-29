@@ -30,19 +30,20 @@ const cartForParty = {
 
 function calculateTotalPrice(myObject) {
   const amount = Object.values(myObject).reduce((a, b) => a + b, 0);
-  return console.log(`Total: €${amount}`);
+  return `Total: €${amount}`;
 }
 
 calculateTotalPrice(cartForParty);
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+
+  console.assert(calculateTotalPrice.length === 1);
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
+  console.assert(calculateTotalPrice(cartForParty) === `Total: €10.4`);
 }
 
 function test() {
