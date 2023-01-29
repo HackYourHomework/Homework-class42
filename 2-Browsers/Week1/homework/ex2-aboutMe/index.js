@@ -9,4 +9,14 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
 
-// TODO add your JavaScript code here.
+const spanList = document.querySelectorAll('span');
+[spanList[0].textContent, spanList[1].textContent, spanList[2].textContent] = [
+  'Ozgur',
+  'Fish',
+  'Turkey',
+];
+
+const listItems = document.querySelectorAll('li');
+listItems.forEach((listItem) => (listItem.className = 'list-item'));
+
+document.body.style.fontFamily = 'Arial, sans-serif';

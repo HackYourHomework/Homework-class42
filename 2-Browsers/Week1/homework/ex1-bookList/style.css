@@ -1,1 +1,16 @@
 /* Write your style here */
+* {
+  line-height: 3rem;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+}
+li {
+  text-align: center;
+  list-style: none;
+}
