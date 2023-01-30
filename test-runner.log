@@ -1348,3 +1348,8 @@ Ran all test suites matching /ex5-catWalk.test.js/i.
 
 ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
 
+2023-01-30 01:09:40 info: ---------------------------------------
+2023-01-30 01:09:40 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-30 01:09:40 info: ---------------------------------------
+2023-01-30 01:09:44 info: All unit tests passed.
+2023-01-30 01:09:45 info: All steps were completed successfully
