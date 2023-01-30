@@ -1,0 +1,9 @@
+
+*** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  35:8  warning  Results from `map` are unused. Replace `map` with `forEach`  no-restricted-syntax
+  35:8  error    Results from `map` are unused. Replace `map` with `forEach`  hyf/use-map-result
+
+✖ 2 problems (1 error, 1 warning)
+
