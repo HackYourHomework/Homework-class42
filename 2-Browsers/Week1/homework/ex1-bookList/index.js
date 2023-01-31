@@ -8,8 +8,7 @@ const assets = ['assets/the_design_of_everyday_things.jpg',
 
 
 function createBookList(books) {
-  let assetsIndex = 0;
-  books.forEach(book => {
+  books.forEach((book, index) => {
     const p = document.createElement('p');
     const ul = document.createElement('ul');
     const li = document.createElement('li');
@@ -19,9 +18,9 @@ function createBookList(books) {
     li.appendChild(p);
     p.appendChild(document.createTextNode(book.title + ' by ' + book.author));
     li.appendChild(img);
-    img.setAttribute('src',assets[assetsIndex]);
+    img.setAttribute('src',assets[index]);
     img.setAttribute('alt','a book cover');
-    assetsIndex++;
+    index++;
     if(book.alreadyRead === true){
       p.style.color = "green"
     } else {
