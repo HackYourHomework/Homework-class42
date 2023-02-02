@@ -13,7 +13,7 @@ document.getElementById('nickname').textContent = 'John';
 document.getElementById('fav-food').textContent = 'Pizza';
 document.getElementById('hometown').textContent = 'Netherlands';
 const listItems = document.querySelectorAll('li');
+document.body.style.fontFamily = 'Arial, sans-serif';
 listItems.forEach(function (item) {
   item.classList.add('list-item');
-  document.body.style.fontFamily = 'Arial, sans-serif';
 });
