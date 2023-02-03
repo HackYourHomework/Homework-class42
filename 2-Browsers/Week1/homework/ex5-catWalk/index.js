@@ -21,32 +21,40 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-let cat;
-let dancing = false;
+const catImage = document.querySelector('img');
+catImage.style.left = '0px';
 
-window.onload = function () {
-  cat = document.querySelector('img');
-  cat.style.left = '0px';
-  setInterval(catWalk, 50);
+const cat = {
+  location: 0,
+  speed: 10,
 };
 
 function catWalk() {
-  const currentPos = parseInt(cat.style.left);
-  if (!dancing) {
-    cat.style.left = currentPos + 10 + 'px';
-  }
-  if (currentPos > window.innerWidth / 2 && !dancing) {
-    dancing = true;
-    cat.src =
-      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
-    setTimeout(() => {
-      cat.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
-      cat.style.left = '0px';
-      dancing = false;
-    }, 5000);
+  cat.location += cat.speed;
+  catImage.style.left = `${cat.location}px`;
+
+  if (cat.location + catImage.offsetWidth >= window.innerWidth) {
+    cat.location = -catImage.offsetWidth;
   }
 
-  if (currentPos > window.innerWidth) {
-    cat.style.left = '0px';
+  const catCenterCoordinateX = cat.location + catImage.offsetWidth / 2;
+  const danceAreaStart = window.innerWidth / 2 - cat.speed;
+  const danceAreaEnd = window.innerWidth / 2 + cat.speed;
+
+  if (
+    catCenterCoordinateX >= danceAreaStart &&
+    catCenterCoordinateX <= danceAreaEnd
+  ) {
+    cat.speed = 0;
+    catImage.src =
+      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+    setTimeout(() => {
+      catImage.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+      cat.speed = 10;
+    }, 5000);
   }
 }
+
+window.addEventListener('load', () => {
+  setInterval(catWalk, 50);
+});
