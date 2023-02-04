@@ -1,1 +1,31 @@
 /* Write your style here */
+* {
+  list-style: none;
+}
+
+body {
+  background-color: azure;
+}
+
+img {
+  width: 50px;
+  height: 90px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+div ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+li {
+  color:white;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
