@@ -292,3 +292,8 @@ ex5-catWalk/index.js
 2023-02-03 09:49:23 info: ---------------------------------------
 2023-02-03 09:49:29 info: All unit tests passed.
 2023-02-03 09:49:34 info: All steps were completed successfully
+2023-02-04 04:41:21 info: ---------------------------------------
+2023-02-04 04:41:21 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-02-04 04:41:21 info: ---------------------------------------
+2023-02-04 04:41:26 info: All unit tests passed.
+2023-02-04 04:41:30 info: All steps were completed successfully

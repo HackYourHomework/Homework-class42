@@ -22,10 +22,8 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 const catImage = document.querySelector('img');
-catImage.style.left = '0px';
-
 const cat = {
-  location: 0,
+  location: -catImage.width,
   speed: 10,
 };
 
@@ -33,17 +31,20 @@ function catWalk() {
   cat.location += cat.speed;
   catImage.style.left = `${cat.location}px`;
 
-  if (cat.location + catImage.offsetWidth >= window.innerWidth) {
+  if (
+    cat.location + catImage.offsetWidth >=
+    window.innerWidth + catImage.offsetWidth
+  ) {
     cat.location = -catImage.offsetWidth;
   }
 
   const catCenterCoordinateX = cat.location + catImage.offsetWidth / 2;
   const danceAreaStart = window.innerWidth / 2 - cat.speed;
-  const danceAreaEnd = window.innerWidth / 2 + cat.speed;
+  const danceAreaEnd = window.innerWidth / 2;
 
   if (
     catCenterCoordinateX >= danceAreaStart &&
-    catCenterCoordinateX <= danceAreaEnd
+    catCenterCoordinateX < danceAreaEnd
   ) {
     cat.speed = 0;
     catImage.src =
