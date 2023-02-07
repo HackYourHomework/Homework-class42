@@ -51,4 +51,3 @@ describe('sanitizeFruitBasket', () => {
     expect(result).toStrictEqual(expected);
   });
 });
-Found a mistake in the third test as I didn`t add 'lemon' as a second argument instead I added it in the function, which made my code pass the test but not correctly as the question required, which one of my two solutions are correct as my homework was approved without any note."
