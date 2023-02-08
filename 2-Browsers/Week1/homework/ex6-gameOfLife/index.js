@@ -17,7 +17,7 @@ function createCell(x, y) {
     x,
     y,
     alive,
-    lifeTime: alive > 0.5 ? 1 : 0,
+    lifeTime: alive ? 1 : 0,
   };
 }
 
