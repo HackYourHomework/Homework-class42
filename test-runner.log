@@ -123,3 +123,101 @@ Ran all test suites matching /ex1-johnWho.test.js/i.
 2023-02-09 12:23:13 info: ---------------------------------------
 2023-02-09 12:23:17 info: All unit tests passed.
 2023-02-09 12:23:23 info: All steps were completed successfully
+2023-02-09 12:32:33 info: -------------------------------------------------
+2023-02-09 12:32:33 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-02-09 12:32:33 info: -------------------------------------------------
+2023-02-09 12:32:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (1 ms)
+    √ should call new Promise()
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument
+    √ should be a function that takes a single argument
+    √ (9) should return a rejected promise with an Error object (2 ms)
+    × (10) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    × (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    √ (100) should return a rejected promise with an Error object
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 10]
+
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+    > 75 |     return expect(promise).resolves.toEqual(
+         |            ^
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+      78 |   });
+
+      at expect (node_modules/expect/build/index.js:128:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:75:12)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 71 |     expect.assertions(3);
+         |            ^
+      72 |     expect(exported).toBeDefined();
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:71:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 99]
+
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+    > 84 |     return expect(promise).resolves.toEqual(
+         |            ^
+      85 |       expect.stringContaining('This is a double digit number!')
+      86 |     );
+      87 |   });
+
+      at expect (node_modules/expect/build/index.js:128:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:84:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      79 |
+      80 |   test('(99) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 81 |     expect.assertions(2);
+         |            ^
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+      84 |     return expect(promise).resolves.toEqual(
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:81:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.084 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2023-02-09 12:33:39 info: -------------------------------------------------
+2023-02-09 12:33:39 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-02-09 12:33:39 info: -------------------------------------------------
+2023-02-09 12:33:44 info: All unit tests passed.
+2023-02-09 12:33:50 info: All steps were completed successfully
