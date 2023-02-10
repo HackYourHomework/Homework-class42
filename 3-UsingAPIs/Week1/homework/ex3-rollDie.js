@@ -11,8 +11,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/3-Usin
   explanation? Add your answer as a comment to be bottom of the file.
 ------------------------------------------------------------------------------*/
 
-// TODO Remove callback and return a promise
-function rollDie(callback) {
+const rollDie = new Promise((resolve, reject) => {
   // Compute a random number of rolls (3-10) that the die MUST complete
   const randomRollsToDo = Math.floor(Math.random() * 8) + 3;
   console.log(`Die scheduled for ${randomRollsToDo} rolls...`);
@@ -24,14 +23,12 @@ function rollDie(callback) {
 
     // Use callback to notify that the die rolled off the table after 6 rolls
     if (roll > 6) {
-      // TODO replace "error" callback
-      callback(new Error('Oops... Die rolled off the table.'));
+      reject(new Error('Oops... Die rolled off the table.'));
     }
 
     // Use callback to communicate the final die value once finished rolling
     if (roll === randomRollsToDo) {
-      // TODO replace "success" callback
-      callback(null, value);
+      resolve(value);
     }
 
     // Schedule the next roll todo until no more rolls to do
@@ -39,14 +36,12 @@ function rollDie(callback) {
       setTimeout(() => rollOnce(roll + 1), 500);
     }
   };
-
   // Start the initial roll
   rollOnce(1);
-}
+});
 
 function main() {
-  // TODO Refactor to use promise
-  rollDie((error, value) => {
+  const rollDie = new Promise((resolve, reject) => {
     if (error !== null) {
       console.log(error.message);
     } else {
