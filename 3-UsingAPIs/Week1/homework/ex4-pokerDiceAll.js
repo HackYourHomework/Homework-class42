@@ -29,11 +29,11 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  return dice.map(rollDie);
 }
 
 function main() {
-  rollDice()
+  Promise.all(rollDice())
     .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
 }
@@ -43,3 +43,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// Promise.all returns a single Promise that resolves when all of the promises passed as an iterable.
