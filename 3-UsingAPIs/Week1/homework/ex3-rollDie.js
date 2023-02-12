@@ -58,3 +58,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+// No, the problem described above didn't occur and this is because of promises, it is easier to handle asynchronous code and ensure that the final value or error is properly communicated. The promise can be used with then() and catch() to handle the success and error cases respectively.
