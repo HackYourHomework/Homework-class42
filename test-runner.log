@@ -185,3 +185,8 @@ Ran all test suites matching /ex1-johnWho.test.js/i.
 2023-02-12 10:29:52 info: ---------------------------------------
 2023-02-12 10:29:54 info: All unit tests passed.
 2023-02-12 10:29:59 info: All steps were completed successfully
+2023-02-13 12:16:53 info: --------------------------------------------
+2023-02-13 12:16:53 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-02-13 12:16:53 info: --------------------------------------------
+2023-02-13 12:16:56 info: All unit tests passed.
+2023-02-13 12:17:00 info: All steps were completed successfully
