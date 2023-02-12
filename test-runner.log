@@ -180,3 +180,8 @@ Ran all test suites matching /ex1-johnWho.test.js/i.
 2023-02-12 10:12:31 info: -------------------------------------------------
 2023-02-12 10:12:34 info: All unit tests passed.
 2023-02-12 10:12:38 info: All steps were completed successfully
+2023-02-12 10:29:52 info: ---------------------------------------
+2023-02-12 10:29:52 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-12 10:29:52 info: ---------------------------------------
+2023-02-12 10:29:54 info: All unit tests passed.
+2023-02-12 10:29:59 info: All steps were completed successfully
