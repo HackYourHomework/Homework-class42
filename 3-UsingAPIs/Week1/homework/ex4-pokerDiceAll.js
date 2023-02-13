@@ -27,9 +27,9 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promises = dice.map((die) => rollDie(die));
+  return Promise.all(promises);
 }
 
 function main() {
@@ -43,3 +43,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+//In the case of a rejected promise, dice that have not yet finished their roll continue to do so because the rollDie() function is not cancelled or stopped when a promise is rejected. The rollDie() function continues to run until it completes the rolling of the die, even if the result is not used. This behavior is intentional, as it allows for any necessary cleanup or logging to occur before the promise is rejected.
