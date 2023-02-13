@@ -29,15 +29,15 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return dice.map(rollDie);
-}
-
-function main() {
-  Promise.all(rollDice())
+  return Promise.all(dice.map(rollDie))
     .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
 }
 
+function main() {
+  rollDice()
+}
+  
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
