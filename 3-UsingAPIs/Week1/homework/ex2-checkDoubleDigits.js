@@ -20,8 +20,8 @@ function checkDoubleDigits(number) {
     if(number >= 10 && number <= 99){
       resolve("This is a double digit number!");
     } else {
-      throw new Error(
-        reject(`Expected a double digit number but got ${number}`)); 
+      
+        reject(new Error(`Expected a double digit number but got ${number}`)); 
       
   }
 });
@@ -31,19 +31,19 @@ return promise;
 function main() {
   checkDoubleDigits(9) // should reject
     .then((message) => console.log(message))
-    .catch((error) => console.log(error.message));
+    .catch((error) => console.log(error));
 
   checkDoubleDigits(10) // should resolve
     .then((message) => console.log(message))
-    .catch((error) => console.log(error.message));
+    .catch((error) => console.log(error));
 
   checkDoubleDigits(99) // should resolve
     .then((message) => console.log(message))
-    .catch((error) => console.log(error.message));
+    .catch((error) => console.log(error));
 
   checkDoubleDigits(100) // should reject
     .then((message) => console.log(message))
-    .catch((error) => console.log(error.message));
+    .catch((error) => console.log(error));
 }
 
 // ! Do not change or remove the code below

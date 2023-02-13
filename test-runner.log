@@ -1582,3 +1582,73 @@ Ran all test suites matching /ex1-johnWho.test.js/i.
 2023-02-13 05:23:09 info: ---------------------------------------
 2023-02-13 05:23:10 info: All unit tests passed.
 2023-02-13 05:23:12 info: All steps were completed successfully
+2023-02-13 05:27:00 info: -------------------------------------------------
+2023-02-13 05:27:00 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-02-13 05:27:00 info: -------------------------------------------------
+2023-02-13 05:27:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `checkDoubleDigits` should not contain unneeded console.log calls
+    ✓ should call new Promise()
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument
+    ✓ should be a function that takes a single argument (1 ms)
+    ✕ (9) should return a rejected promise with an Error object (1 ms)
+    ✓ (10) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    ✓ (99) should return a promise that resolves to "This is a double digit number!"
+    ✕ (100) should return a rejected promise with an Error object (1 ms)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf(expected)
+
+    Expected constructor: Error
+
+    Received value has no prototype
+    Received value: "Expected a double digit number but got 9"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |                                    ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at Object.toBeInstanceOf (node_modules/expect/build/index.js:241:22)
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:36)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf(expected)
+
+    Expected constructor: Error
+
+    Received value has no prototype
+    Received value: "Expected a double digit number but got 100"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |                                    ^
+      94 |   });
+      95 | });
+      96 |
+
+      at Object.toBeInstanceOf (node_modules/expect/build/index.js:241:22)
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:36)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        0.29 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2023-02-13 05:28:19 info: -------------------------------------------------
+2023-02-13 05:28:19 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-02-13 05:28:19 info: -------------------------------------------------
+2023-02-13 05:28:20 info: All unit tests passed.
+2023-02-13 05:28:22 info: All steps were completed successfully
