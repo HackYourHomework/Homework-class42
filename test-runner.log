@@ -1,0 +1,1752 @@
+2023-02-09 03:34:27 info: ---------------------------------------
+2023-02-09 03:34:27 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-09 03:34:27 info: ---------------------------------------
+2023-02-09 03:34:34 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\homework\ex1-johnWho.js:17
+        reject(new Error("You didn't pass in a first name!"));
+               ^
+
+Error: You didn't pass in a first name!
+    at C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\homework\ex1-johnWho.js:17:16
+    at new Promise (<anonymous>)
+    at C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\homework\ex1-johnWho.js:15:12
+    at cb (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\unit-tests\ex1-johnWho.test.js:88:35)
+    at C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-mock\build\index.js:154:19)
+    at getAnonName (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\homework\ex1-johnWho.js:14:3)
+    at Object.getAnonName (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\unit-tests\ex1-johnWho.test.js:89:21)
+    at Promise.then.completed (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v19.5.0
+2023-02-09 03:34:40 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  31:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  38:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  40:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  44:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 4 problems (0 errors, 4 warnings)
+
+
+2023-02-09 03:35:28 info: ---------------------------------------
+2023-02-09 03:35:28 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-09 03:35:28 info: ---------------------------------------
+2023-02-09 03:35:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\homework\ex1-johnWho.js:17
+        reject(new Error("You didn't pass in a first name!"));
+               ^
+
+Error: You didn't pass in a first name!
+    at C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\homework\ex1-johnWho.js:17:16
+    at new Promise (<anonymous>)
+    at C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\homework\ex1-johnWho.js:15:12
+    at cb (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\unit-tests\ex1-johnWho.test.js:88:35)
+    at C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-mock\build\index.js:433:39
+    at C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-mock\build\index.js:441:13
+    at mockConstructor (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-mock\build\index.js:154:19)
+    at getAnonName (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\homework\ex1-johnWho.js:14:3)
+    at Object.getAnonName (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\3-UsingAPIs\Week1\unit-tests\ex1-johnWho.test.js:89:21)
+    at Promise.then.completed (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:91:9)
+    at run (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\run.js:31:3)
+    at runAndTransformResultsToJestFormat (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:136:21)
+    at jestAdapter (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:92:19)
+    at runTestInternal (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-runner\build\runTest.js:407:16)
+    at runTest (C:\Users\KZY\OneDrive\Masaüstü\homework-repository\Homework-class42\node_modules\jest-runner\build\runTest.js:491:34)
+
+Node.js v19.5.0
+2023-02-09 03:44:07 info: ---------------------------------------
+2023-02-09 03:44:07 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-09 03:44:07 info: ---------------------------------------
+2023-02-09 03:44:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    × should exist and be executable (4 ms)
+    × should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    × should call `new Promise()` (1 ms)
+    × should take a single argument (3 ms)
+    × `resolve()` should be called with a one argument
+    × `reject()` should be called with a one argument (1 ms)
+    × should resolve when called with a string argument (15 ms)
+    × should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should exist and be executable', () => {
+    > 48 |     expect(exported).toBeDefined();
+         |                      ^
+      49 |   });
+      50 |
+      51 |   testTodosRemoved(() => source);
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:48:22)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      101 | }
+      102 |
+    > 103 | function testTodosRemoved(getSource) {
+          |                                          ^
+      104 |   test('should have all TODO comments removed', () => {
+      105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+      106 |   });
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:103:42)
+
+  ● getAnonName › should call `new Promise()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      54 |
+      55 |   test('should call `new Promise()`', () => {
+    > 56 |     expect(state.newPromise).toBeDefined();
+         |                              ^
+      57 |   });
+      58 |
+      59 |   test('should take a single argument', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:56:30)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+    > 64 |     expect(state.resolve).toBe(1);
+         |                           ^
+      65 |   });
+      66 |
+      67 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:64:27)
+
+  ● getAnonName › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      66 |
+      67 |   test('`reject()` should be called with a one argument', () => {
+    > 68 |     expect(state.reject).toBe(1);
+         |                          ^
+      69 |   });
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:68:26)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      71 |   test('should resolve when called with a string argument', async () => {
+      72 |     expect.assertions(3);
+    > 73 |     expect(exported).toBeDefined();
+         |                      ^
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+      76 |       .mockImplementation((cb) => cb());
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:73:22)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+      84 |     expect.assertions(3);
+    > 85 |     expect(exported).toBeDefined();
+         |                      ^
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+      88 |       .mockImplementation((cb) => cb());
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:85:22)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+    > 84 |     expect.assertions(3);
+         |            ^
+      85 |     expect(exported).toBeDefined();
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:84:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       8 failed, 1 passed, 9 total
+Snapshots:   0 total
+Time:        1.539 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2023-02-09 03:44:16 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  28:5  error  Parsing error: Unexpected token .
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-09 03:48:19 info: ---------------------------------------
+2023-02-09 03:48:19 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-09 03:48:19 info: ---------------------------------------
+2023-02-09 03:48:24 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    × should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    × should call `new Promise()` (1 ms)
+    × should take a single argument (4 ms)
+    × `resolve()` should be called with a one argument (1 ms)
+    × `reject()` should be called with a one argument (1 ms)
+    × should resolve when called with a string argument (1 ms)
+    × should reject with an Error object when called without an argument
+
+  ● getAnonName › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should exist and be executable', () => {
+    > 48 |     expect(exported).toBeDefined();
+         |                      ^
+      49 |   });
+      50 |
+      51 |   testTodosRemoved(() => source);
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:48:22)
+
+  ● getAnonName › should call `new Promise()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      54 |
+      55 |   test('should call `new Promise()`', () => {
+    > 56 |     expect(state.newPromise).toBeDefined();
+         |                              ^
+      57 |   });
+      58 |
+      59 |   test('should take a single argument', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:56:30)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+    > 64 |     expect(state.resolve).toBe(1);
+         |                           ^
+      65 |   });
+      66 |
+      67 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:64:27)
+
+  ● getAnonName › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      66 |
+      67 |   test('`reject()` should be called with a one argument', () => {
+    > 68 |     expect(state.reject).toBe(1);
+         |                          ^
+      69 |   });
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:68:26)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      71 |   test('should resolve when called with a string argument', async () => {
+      72 |     expect.assertions(3);
+    > 73 |     expect(exported).toBeDefined();
+         |                      ^
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+      76 |       .mockImplementation((cb) => cb());
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:73:22)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+      84 |     expect.assertions(3);
+    > 85 |     expect(exported).toBeDefined();
+         |                      ^
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+      88 |       .mockImplementation((cb) => cb());
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:85:22)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+    > 84 |     expect.assertions(3);
+         |            ^
+      85 |     expect(exported).toBeDefined();
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:84:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       7 failed, 2 passed, 9 total
+Snapshots:   0 total
+Time:        1.447 s, estimated 2 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2023-02-09 03:48:27 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  27:5  error  Parsing error: Unexpected token .
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-09 03:50:51 info: ---------------------------------------
+2023-02-09 03:50:51 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-09 03:50:51 info: ---------------------------------------
+2023-02-09 03:50:56 info: All unit tests passed.
+2023-02-09 03:51:04 info: All steps were completed successfully
+2023-02-09 04:01:34 info: -------------------------------------------------
+2023-02-09 04:01:34 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-02-09 04:01:34 info: -------------------------------------------------
+2023-02-09 04:01:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed
+    √ `checkDoubleDigits` should not contain unneeded console.log calls (1 ms)
+    √ should call new Promise() (1 ms)
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    √ should be a function that takes a single argument (1 ms)
+    × (9) should return a rejected promise with an Error object (3 ms)
+    √ (10) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    √ (99) should return a promise that resolves to "This is a double digit number!"
+    × (100) should return a rejected promise with an Error object
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf(expected)
+
+    Expected constructor: Error
+
+    Received value has no prototype
+    Received value: "Expected a double digit number but got 9"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |                                    ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at Object.toBeInstanceOf (node_modules/expect/build/index.js:241:22)
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:36)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf(expected)
+
+    Expected constructor: Error
+
+    Received value has no prototype
+    Received value: "Expected a double digit number but got 100"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |                                    ^
+      94 |   });
+      95 | });
+      96 |
+
+      at Object.toBeInstanceOf (node_modules/expect/build/index.js:241:22)
+      at Object.toBeInstanceOf (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:36)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.231 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2023-02-09 04:03:06 info: -------------------------------------------------
+2023-02-09 04:03:06 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-02-09 04:03:06 info: -------------------------------------------------
+2023-02-09 04:03:11 info: All unit tests passed.
+2023-02-09 04:03:19 info: All steps were completed successfully
+2023-02-09 07:59:36 info: ---------------------------------------
+2023-02-09 07:59:36 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 07:59:36 info: ---------------------------------------
+2023-02-09 07:59:42 info: All unit tests passed.
+2023-02-09 07:59:52 info: All steps were completed successfully
+2023-02-09 08:34:30 info: ---------------------------------------
+2023-02-09 08:34:30 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 08:34:30 info: ---------------------------------------
+2023-02-09 08:34:34 info: All unit tests passed.
+2023-02-09 08:34:42 info: All steps were completed successfully
+2023-02-09 09:23:47 info: ---------------------------------------
+2023-02-09 09:23:47 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 09:23:47 info: ---------------------------------------
+2023-02-09 09:24:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js (9.304 s)
+  rollDie
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed
+    √ should call `new Promise()`
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when the die settles successfully (3016 ms)
+    × should reject with an Error when the die rolls off the table (5002 ms)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      72 |   });
+      73 |
+    > 74 |   test('should reject with an Error when the die rolls off the table', async () => {
+         |   ^
+      75 |     expect.assertions(3);
+      76 |     expect(exported).toBeDefined();
+      77 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:74:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:8:1)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      73 |
+      74 |   test('should reject with an Error when the die rolls off the table', async () => {
+    > 75 |     expect.assertions(3);
+         |            ^
+      76 |     expect(exported).toBeDefined();
+      77 |
+      78 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        9.47 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 1".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           clearInterval(intervalId)
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+Jest did not exit one second after the test run has completed.
+
+This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 1".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           clearInterval(intervalId)
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 5".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           clearInterval(intervalId)
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+2023-02-09 09:24:07 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  48:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  54:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  56:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  59:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  63:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  67:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  72:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 7 problems (0 errors, 7 warnings)
+
+
+2023-02-09 09:25:39 info: ---------------------------------------
+2023-02-09 09:25:39 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 09:25:39 info: ---------------------------------------
+2023-02-09 09:25:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js (9.124 s)
+  rollDie
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should call `new Promise()` (1 ms)
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    √ should resolve when the die settles successfully (3024 ms)
+    × should reject with an Error when the die rolls off the table (5001 ms)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      72 |   });
+      73 |
+    > 74 |   test('should reject with an Error when the die rolls off the table', async () => {
+         |   ^
+      75 |     expect.assertions(3);
+      76 |     expect(exported).toBeDefined();
+      77 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:74:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:8:1)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      73 |
+      74 |   test('should reject with an Error when the die rolls off the table', async () => {
+    > 75 |     expect.assertions(3);
+         |            ^
+      76 |     expect(exported).toBeDefined();
+      77 |
+      78 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        9.246 s, estimated 10 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 2".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject(new Error('Oops... Die rolled off the table.'));
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+Jest did not exit one second after the test run has completed.
+
+This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 3".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject(new Error('Oops... Die rolled off the table.'));
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 6".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject(new Error('Oops... Die rolled off the table.'));
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+2023-02-09 09:25:58 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  48:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  54:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  56:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  59:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  63:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  67:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  72:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 7 problems (0 errors, 7 warnings)
+
+
+2023-02-09 09:33:47 info: ---------------------------------------
+2023-02-09 09:33:47 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 09:33:47 info: ---------------------------------------
+2023-02-09 09:34:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js (9.129 s)
+  rollDie
+    √ should exist and be executable (5 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should call `new Promise()`
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when the die settles successfully (3018 ms)
+    × should reject with an Error when the die rolls off the table (5015 ms)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      72 |   });
+      73 |
+    > 74 |   test('should reject with an Error when the die rolls off the table', async () => {
+         |   ^
+      75 |     expect.assertions(3);
+      76 |     expect(exported).toBeDefined();
+      77 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:74:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:8:1)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      73 |
+      74 |   test('should reject with an Error when the die rolls off the table', async () => {
+    > 75 |     expect.assertions(3);
+         |            ^
+      76 |     expect(exported).toBeDefined();
+      77 |
+      78 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        9.248 s, estimated 10 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 2".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject(new Error('Oops... Die rolled off the table.'));
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+Jest did not exit one second after the test run has completed.
+
+This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 3".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject(new Error('Oops... Die rolled off the table.'));
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 1".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject(new Error('Oops... Die rolled off the table.'));
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 1".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject(new Error('Oops... Die rolled off the table.'));
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 6".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject(new Error('Oops... Die rolled off the table.'));
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 6".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject(new Error('Oops... Die rolled off the table.'));
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+2023-02-09 09:34:09 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  49:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  55:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  57:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  60:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  64:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  68:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  73:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 7 problems (0 errors, 7 warnings)
+
+
+2023-02-09 09:35:07 info: ---------------------------------------
+2023-02-09 09:35:07 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 09:35:07 info: ---------------------------------------
+2023-02-09 09:35:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js (9.18 s)
+  rollDie
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should call `new Promise()` (1 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when the die settles successfully (3012 ms)
+    × should reject with an Error when the die rolls off the table (5015 ms)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      72 |   });
+      73 |
+    > 74 |   test('should reject with an Error when the die rolls off the table', async () => {
+         |   ^
+      75 |     expect.assertions(3);
+      76 |     expect(exported).toBeDefined();
+      77 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:74:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:8:1)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      73 |
+      74 |   test('should reject with an Error when the die rolls off the table', async () => {
+    > 75 |     expect.assertions(3);
+         |            ^
+      76 |     expect(exported).toBeDefined();
+      77 |
+      78 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        9.319 s, estimated 10 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 6".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject('Oops... Die rolled off the table.');
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+Jest did not exit one second after the test run has completed.
+
+This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 2".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject('Oops... Die rolled off the table.');
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 6".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject('Oops... Die rolled off the table.');
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 6".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject('Oops... Die rolled off the table.');
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 3".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject('Oops... Die rolled off the table.');
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "Die value is now: 4".
+
+      20 |       const intervalId = setInterval(()=>{
+      21 |       const value = Math.floor(Math.random() * 6) + 1;
+    > 22 |       console.log(`Die value is now: ${value}`);
+         |                 ^
+      23 |
+      24 |         if (roll > 6) {
+      25 |           reject('Oops... Die rolled off the table.');
+
+      at console.log (node_modules/@jest/console/build/CustomConsole.js:172:10)
+      at Timeout._onTimeout (3-UsingAPIs/Week1/homework/ex3-rollDie.js:22:17)
+2023-02-09 09:35:28 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  49:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  55:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  57:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  60:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  64:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  68:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  73:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 7 problems (0 errors, 7 warnings)
+
+
+2023-02-09 09:38:06 info: ---------------------------------------
+2023-02-09 09:38:06 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 09:38:06 info: ---------------------------------------
+2023-02-09 09:38:11 info: All unit tests passed.
+2023-02-09 09:38:15 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  13:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  19:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  24:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  29:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  31:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  35:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  41:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 7 problems (0 errors, 7 warnings)
+
+
+2023-02-09 10:52:35 info: --------------------------------------------
+2023-02-09 10:52:35 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-02-09 10:52:35 info: --------------------------------------------
+2023-02-09 10:52:40 info: All unit tests passed.
+2023-02-09 10:52:50 info: All steps were completed successfully
+2023-02-09 11:14:30 info: --------------------------------------------
+2023-02-09 11:14:30 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-02-09 11:14:30 info: --------------------------------------------
+2023-02-09 11:14:35 info: All unit tests passed.
+2023-02-10 09:23:29 info: ----------------------------------------------
+2023-02-10 09:23:29 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-10 09:23:29 info: ----------------------------------------------
+2023-02-10 09:23:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (3 ms)
+    × should have all TODO comments removed (3 ms)
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    × should resolve when all dice settle successfully (116 ms)
+    √ should reject with an Error when a die rolls off the table (84 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      101 | }
+      102 |
+    > 103 | function testTodosRemoved(getSource) {
+          |                                          ^
+      104 |   test('should have all TODO comments removed', () => {
+      105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+      106 |   });
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:103:42)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      32 |     expect(promise).toBeInstanceOf(Promise);
+      33 |     const result = await promise;
+    > 34 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      35 |     expect(result).toHaveLength(5);
+      36 |
+      37 |     promise.finally(() => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:34:35)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        1.885 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-10 09:25:57 info: ----------------------------------------------
+2023-02-10 09:25:57 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-10 09:25:57 info: ----------------------------------------------
+2023-02-10 09:26:02 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDice` should not contain unneeded console.log calls (3 ms)
+    × should resolve when all dice settle successfully (125 ms)
+    √ should reject with an Error when a die rolls off the table (81 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      32 |     expect(promise).toBeInstanceOf(Promise);
+      33 |     const result = await promise;
+    > 34 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      35 |     expect(result).toHaveLength(5);
+      36 |
+      37 |     promise.finally(() => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:34:35)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.559 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-10 09:41:03 info: ----------------------------------------------
+2023-02-10 09:41:03 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-10 09:41:03 info: ----------------------------------------------
+2023-02-10 09:41:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (3 ms)
+    √ should have all TODO comments removed (3 ms)
+    √ `rollDice` should not contain unneeded console.log calls (3 ms)
+    × should resolve when all dice settle successfully (134 ms)
+    √ should reject with an Error when a die rolls off the table (87 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 6
+    Received array:  ["NINE", "NINE", [Circular], "NINE", "NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.376 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-10 09:50:46 info: ----------------------------------------------
+2023-02-10 09:50:46 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-10 09:50:46 info: ----------------------------------------------
+2023-02-10 09:50:51 error: *** Unit Test Error Report ***
+
+console.error
+    A die was rolled off the table! The game has stopped.
+
+      44 |     })
+      45 |     .catch((error)=> {
+    > 46 |       console.error("A die was rolled off the table! The game has stopped.");
+         |               ^
+      47 |       console.error(error.message);
+      48 |     })
+      49 | }
+
+      at error (3-UsingAPIs/Week1/homework/ex5-pokerDiceChain.js:46:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:51:7)
+
+  console.error
+    Die 1 rolled off the table.
+    
+
+      45 |     .catch((error)=> {
+      46 |       console.error("A die was rolled off the table! The game has stopped.");
+    > 47 |       console.error(error.message);
+         |               ^
+      48 |     })
+      49 | }
+      50 |
+
+      at error (3-UsingAPIs/Week1/homework/ex5-pokerDiceChain.js:47:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:51:7)
+
+
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (4 ms)
+    × should resolve when all dice settle successfully (146 ms)
+    × should reject with an Error when a die rolls off the table (133 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 6
+    Received array:  ["NINE", "NINE", [Circular], "NINE", "NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        1.562 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-10 09:54:59 info: ----------------------------------------------
+2023-02-10 09:54:59 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-10 09:54:59 info: ----------------------------------------------
+2023-02-10 09:55:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    × should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls
+    × should resolve when all dice settle successfully (1 ms)
+    × should reject with an Error when a die rolls off the table
+
+  ● ex5-pokerDiceChain › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      16 |
+      17 |   test('should exist and be executable', () => {
+    > 18 |     expect(exported).toBeDefined();
+         |                      ^
+      19 |   });
+      20 |
+      21 |   testTodosRemoved(() => source);
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:18:22)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      25 |   test('should resolve when all dice settle successfully', async () => {
+      26 |     expect.assertions(4);
+    > 27 |     expect(exported).toBeDefined();
+         |                      ^
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+      30 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:27:22)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received one assertion call.
+
+      24 |
+      25 |   test('should resolve when all dice settle successfully', async () => {
+    > 26 |     expect.assertions(4);
+         |            ^
+      27 |     expect(exported).toBeDefined();
+      28 |
+      29 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:26:12)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+      43 |     expect.assertions(3);
+    > 44 |     expect(exported).toBeDefined();
+         |                      ^
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+      47 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:44:22)
+
+  ● ex5-pokerDiceChain › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      41 |
+      42 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 43 |     expect.assertions(3);
+         |            ^
+      44 |     expect(exported).toBeDefined();
+      45 |
+      46 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:43:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        1.324 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-10 09:55:07 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  20:30  error  Parsing error: Unexpected token {
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-10 10:07:28 info: ----------------------------------------------
+2023-02-10 10:07:29 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-10 10:07:29 info: ----------------------------------------------
+2023-02-10 10:07:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (2 ms)
+    × should resolve when all dice settle successfully (27 ms)
+    √ should reject with an Error when a die rolls off the table (80 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 6
+    Received array:  ["NINE", "NINE", [Circular], "NINE", "NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.361 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-10 10:07:37 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  15:9  error  'reject' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-13 07:27:11 info: ---------------------------------------
+2023-02-13 07:27:11 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-13 07:27:11 info: ---------------------------------------
+2023-02-13 07:27:18 info: All unit tests passed.
+2023-02-13 07:27:30 info: All steps were completed successfully
+2023-02-13 07:37:11 info: -------------------------------------------------
+2023-02-13 07:37:11 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-02-13 07:37:11 info: -------------------------------------------------
+2023-02-13 07:37:16 info: All unit tests passed.
+2023-02-13 07:37:25 info: All steps were completed successfully
+2023-02-13 07:41:42 info: ---------------------------------------
+2023-02-13 07:41:42 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-13 07:41:42 info: ---------------------------------------
+2023-02-13 07:41:47 info: All unit tests passed.
+2023-02-13 07:41:51 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  13:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  19:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  24:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  29:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  31:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  35:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  41:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 7 problems (0 errors, 7 warnings)
+
+
+2023-02-13 08:52:39 info: ---------------------------------------
+2023-02-13 08:52:39 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-13 08:52:39 info: ---------------------------------------
+2023-02-13 08:52:45 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should call `new Promise()`
+    √ `resolve()` should be called with a one argument (1 ms)
+    × `reject()` should be called with a one argument (4 ms)
+    √ should resolve when the die settles successfully (2 ms)
+    × should reject with an Error when the die rolls off the table (1 ms)
+
+  ● rollDie › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      46 |
+      47 |   test('`reject()` should be called with a one argument', () => {
+    > 48 |     expect(state.reject).toBe(1);
+         |                          ^
+      49 |   });
+      50 |
+      51 |   test('should resolve when the die settles successfully', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:48:26)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      73 |
+      74 |   test('should reject with an Error when the die rolls off the table', async () => {
+    > 75 |     expect.assertions(3);
+         |            ^
+      76 |     expect(exported).toBeDefined();
+      77 |
+      78 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.264 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2023-02-13 08:52:49 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  14:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  20:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  22:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  25:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  30:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  34:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  39:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  46:32  error    'reject' is defined but never used  no-unused-vars
+
+✖ 8 problems (1 error, 7 warnings)
+
+
+2023-02-13 09:23:50 info: ---------------------------------------
+2023-02-13 09:23:50 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-13 09:23:50 info: ---------------------------------------
+2023-02-13 09:23:55 info: All unit tests passed.
+2023-02-13 09:24:03 info: All steps were completed successfully
+2023-02-13 09:24:35 info: --------------------------------------------
+2023-02-13 09:24:35 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-02-13 09:24:35 info: --------------------------------------------
+2023-02-13 09:24:40 info: All unit tests passed.
+2023-02-13 09:24:48 info: All steps were completed successfully
+2023-02-13 09:33:31 info: ----------------------------------------------
+2023-02-13 09:33:31 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-13 09:33:31 info: ----------------------------------------------
+2023-02-13 09:33:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    × should resolve when all dice settle successfully (133 ms)
+    √ should reject with an Error when a die rolls off the table (84 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 6
+    Received array:  ["NINE", "NINE", [Circular], "NINE", "NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.192 s, estimated 2 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-13 09:33:39 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  15:9  error  'reject' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-13 09:35:11 info: ----------------------------------------------
+2023-02-13 09:35:11 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-13 09:35:11 info: ----------------------------------------------
+2023-02-13 09:35:15 info: All unit tests passed.
+2023-02-13 09:35:19 error: *** ESLint Report ***
+
+ex5-pokerDiceChain.js
+  15:9  error  'reject' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-13 09:36:01 info: ----------------------------------------------
+2023-02-13 09:36:01 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-13 09:36:01 info: ----------------------------------------------
+2023-02-13 09:36:06 info: All unit tests passed.
+2023-02-13 09:36:13 info: All steps were completed successfully
+2023-02-13 09:53:28 info: ---------------------------------------
+2023-02-13 09:53:28 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-13 09:53:28 info: ---------------------------------------
+2023-02-13 09:53:34 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should call `new Promise()` (1 ms)
+    √ `resolve()` should be called with a one argument
+    × `reject()` should be called with a one argument (3 ms)
+    √ should resolve when the die settles successfully (2 ms)
+    × should reject with an Error when the die rolls off the table (1 ms)
+
+  ● rollDie › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      46 |
+      47 |   test('`reject()` should be called with a one argument', () => {
+    > 48 |     expect(state.reject).toBe(1);
+         |                          ^
+      49 |   });
+      50 |
+      51 |   test('should resolve when the die settles successfully', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:48:26)
+
+  ● rollDie › should reject with an Error when the die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      73 |
+      74 |   test('should reject with an Error when the die rolls off the table', async () => {
+    > 75 |     expect.assertions(3);
+         |            ^
+      76 |     expect(exported).toBeDefined();
+      77 |
+      78 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.386 s, estimated 2 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2023-02-13 09:53:38 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  14:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  20:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  22:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  25:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  29:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  33:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  38:1   warning  Remove commented-out code           hyf/no-commented-out-code
+  44:32  error    'reject' is defined but never used  no-unused-vars
+
+✖ 8 problems (1 error, 7 warnings)
+
+
+2023-02-13 10:23:59 info: ---------------------------------------
+2023-02-13 10:23:59 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-13 10:23:59 info: ---------------------------------------
+2023-02-13 10:24:04 info: All unit tests passed.
+2023-02-13 10:24:13 info: All steps were completed successfully
+2023-02-13 11:27:21 info: ---------------------------------------
+2023-02-13 11:27:21 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-13 11:27:21 info: ---------------------------------------
+2023-02-13 11:27:27 info: All unit tests passed.
+2023-02-13 11:27:37 info: All steps were completed successfully

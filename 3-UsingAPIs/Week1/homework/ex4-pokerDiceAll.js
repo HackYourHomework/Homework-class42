@@ -27,9 +27,11 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
+
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promises = dice.map(die => rollDie(die));
+
+  return Promise.all(promises);
 }
 
 function main() {
@@ -38,8 +40,13 @@ function main() {
     .catch((error) => console.log('Rejected!', error.message));
 }
 
+/* In this code, Promise.all calls each RollDie() separately. Therefore, when a dice fails,
+it is caught in the catch block. However, this reject state does not affect the other
+ die and the others continue to rotate.*/
+
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
