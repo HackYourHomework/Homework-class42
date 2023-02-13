@@ -37,8 +37,8 @@ function computeEarnings(mondayTasks, hourlyRate) {
     currency: 'EUR',
   });
   const totalAmount = mondayTasks
-    .map((task) => (task.duration / 60) * hourlyRate, 0)
-    .reduce((acc, taskRate) => acc + taskRate);
+    .map((task) => (task.duration / 60) * hourlyRate)
+    .reduce((acc, taskRate) => acc + taskRate, 0);
   return euroFormat.format(totalAmount);
 }
 
