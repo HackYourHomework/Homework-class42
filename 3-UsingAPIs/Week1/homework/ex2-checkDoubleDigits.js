@@ -17,7 +17,7 @@ function checkDoubleDigits(number) {
     if(number>=10 && number<=99){
       resolves("This is a double digit number!")
     }else{
-      rejects(`Expected a double digit number but got ${number}`)
+      rejects(new Error(`Expected a double digit number but got ${number}`))
     }
   })
 }
@@ -29,15 +29,15 @@ function main() {
 
   checkDoubleDigits(10) // should resolve
     .then((message) => console.log(message))
-    .catch((error) => console.log(error));
+    .catch((error) => console.log(error.message));
 
   checkDoubleDigits(99) // should resolve
     .then((message) => console.log(message))
-    .catch((error) => console.log(error));
+    .catch((error) => console.log(error.message));
 
   checkDoubleDigits(100) // should reject
     .then((message) => console.log(message))
-    .catch((error) => console.log(error));
+    .catch((error) => console.log(error.message));
 }
 
 // ! Do not change or remove the code below
