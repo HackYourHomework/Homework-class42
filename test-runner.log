@@ -556,3 +556,8 @@ ex3-rollDie.js
 2023-02-14 08:03:05 info: ----------------------------------------------
 2023-02-14 08:03:12 info: All unit tests passed.
 2023-02-14 08:03:19 info: All steps were completed successfully
+2023-02-14 08:21:53 info: ---------------------------------------
+2023-02-14 08:21:53 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-14 08:21:53 info: ---------------------------------------
+2023-02-14 08:21:58 info: All unit tests passed.
+2023-02-14 08:22:04 info: All steps were completed successfully
