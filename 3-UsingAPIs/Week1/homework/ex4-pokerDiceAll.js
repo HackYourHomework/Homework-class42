@@ -27,9 +27,9 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const arrayForPromise = dice.map((value) => rollDie(value));
+  return Promise.all(arrayForPromise);
 }
 
 function main() {
@@ -43,3 +43,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/*  In the case of a rejected promise, dice that have not yet finished their roll continue to do so because
+there is nothing to prevent the function from doing it. "Reject" prevents only "resolve" and the rest of the function can continue to run.
+ */

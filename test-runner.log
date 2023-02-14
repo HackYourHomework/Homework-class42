@@ -1,0 +1,74 @@
+2023-02-08 02:59:47 info: ---------------------------------------
+2023-02-08 02:59:47 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-08 02:59:47 info: ---------------------------------------
+2023-02-08 02:59:51 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (1 ms)
+    × should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls
+    √ should call `new Promise()` (1 ms)
+    √ should take a single argument
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    √ should resolve when called with a string argument (1 ms)
+    √ should reject with an Error object when called without an argument
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        0.914 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2023-02-08 03:00:26 info: ---------------------------------------
+2023-02-08 03:00:26 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-08 03:00:26 info: ---------------------------------------
+2023-02-08 03:00:29 info: All unit tests passed.
+2023-02-08 03:00:34 info: All steps were completed successfully
+2023-02-08 03:08:38 info: -------------------------------------------------
+2023-02-08 03:08:38 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-02-08 03:08:38 info: -------------------------------------------------
+2023-02-08 03:08:42 info: All unit tests passed.
+2023-02-08 03:08:47 info: All steps were completed successfully
+2023-02-09 07:50:57 info: ---------------------------------------
+2023-02-09 07:50:57 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 07:50:57 info: ---------------------------------------
+2023-02-09 07:51:00 info: All unit tests passed.
+2023-02-09 07:51:04 info: All steps were completed successfully
+2023-02-09 08:48:08 info: ---------------------------------------
+2023-02-09 08:48:08 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 08:48:08 info: ---------------------------------------
+2023-02-09 08:48:10 info: All unit tests passed.
+2023-02-09 08:48:15 info: All steps were completed successfully
+2023-02-09 09:15:31 info: ---------------------------------------
+2023-02-09 09:15:31 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-09 09:15:31 info: ---------------------------------------
+2023-02-09 09:15:34 info: All unit tests passed.
+2023-02-09 09:15:38 info: All steps were completed successfully
+2023-02-09 09:52:50 info: --------------------------------------------
+2023-02-09 09:52:50 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-02-09 09:52:50 info: --------------------------------------------
+2023-02-09 09:52:52 info: All unit tests passed.
+2023-02-09 09:52:57 info: All steps were completed successfully
+2023-02-09 10:23:42 info: ----------------------------------------------
+2023-02-09 10:23:42 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-09 10:23:42 info: ----------------------------------------------
+2023-02-09 10:23:45 info: All unit tests passed.
+2023-02-09 10:23:49 info: All steps were completed successfully
