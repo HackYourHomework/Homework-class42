@@ -7,21 +7,18 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  const time = new Date()
-  const myTimer = `${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
-  console.log(myTimer)
-  const timer = document.createElement('div')
-  timer.textContent = myTimer
-  document.body.appendChild(timer)
+  const time = new Date();
+  const timeContainer = document.createElement('div');
+  const clock = document.createElement('p');
+
+  timeContainer.appendChild(clock);
+  document.body.appendChild(timeContainer);
+  setInterval(() => {
+    clock.textContent = `${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`;
+    console.log(clock.textContent);
+  }, 1000);
 }
-
-
-
-
-
-
 
 window.onload = function () {
-  setInterval(addCurrentTime, 1000)
-
-}
+  addCurrentTime();
+};
