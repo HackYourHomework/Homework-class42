@@ -551,3 +551,8 @@ ex3-rollDie.js
 2023-02-14 07:05:11 info: --------------------------------------------
 2023-02-14 07:05:17 info: All unit tests passed.
 2023-02-14 07:05:27 info: All steps were completed successfully
+2023-02-14 08:03:05 info: ----------------------------------------------
+2023-02-14 08:03:05 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-14 08:03:05 info: ----------------------------------------------
+2023-02-14 08:03:12 info: All unit tests passed.
+2023-02-14 08:03:19 info: All steps were completed successfully
