@@ -1844,3 +1844,124 @@ ex3-rollDie.js
 2023-02-14 12:30:56 info: ---------------------------------------
 2023-02-14 12:30:57 info: All unit tests passed.
 2023-02-14 12:30:58 info: All steps were completed successfully
+2023-02-14 07:00:47 info: ---------------------------------------
+2023-02-14 07:00:47 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-14 07:00:47 info: ---------------------------------------
+2023-02-14 07:00:48 info: All unit tests passed.
+2023-02-14 07:00:50 info: All steps were completed successfully
+2023-02-14 07:13:53 info: --------------------------------------------
+2023-02-14 07:13:53 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-02-14 07:13:53 info: --------------------------------------------
+2023-02-14 07:13:53 info: Exercise has not yet been modified
+2023-02-14 07:13:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (1 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✕ should use `dice.map()`
+    ✕ should use `Promise.all()`
+    ✕ should resolve when all dice settle successfully (7 ms)
+    ✓ should reject with an Error when a die rolls off the table (26 ms)
+
+  ● ex4-pokerDiceAll › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex4-pokerDiceAll › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      38 |
+      39 |   test('should use `dice.map()`', () => {
+    > 40 |     expect(state.diceMap).toBeDefined();
+         |                           ^
+      41 |   });
+      42 |
+      43 |   test('should use `Promise.all()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:40:27)
+
+  ● ex4-pokerDiceAll › should use `Promise.all()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.all()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:44:30)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      54 |     expect(promise).toBeInstanceOf(Promise);
+      55 |     const result = await promise;
+    > 56 |     expect(Array.isArray(result)).toBe(true);
+         |                                   ^
+      57 |     expect(result).toHaveLength(5);
+      58 |
+      59 |     promise.finally(() => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:56:35)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received three assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        0.341 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+2023-02-14 07:13:55 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  31:9  error  'dice' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-14 07:34:36 info: --------------------------------------------
+2023-02-14 07:34:36 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-02-14 07:34:36 info: --------------------------------------------
+2023-02-14 07:34:37 info: All unit tests passed.
+2023-02-14 07:34:38 info: All steps were completed successfully
