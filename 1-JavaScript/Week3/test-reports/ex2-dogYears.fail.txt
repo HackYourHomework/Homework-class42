@@ -1,6 +1,0 @@
-*** Unit Test Error Report ***
-
-✕ calculateDogAge should have all TODO comments removed
-
-
-Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"

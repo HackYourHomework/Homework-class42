@@ -1,6 +1,0 @@
-*** Unit Test Error Report ***
-
-✕ giveCompliment should have all TODO comments removed
-
-
-Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"
