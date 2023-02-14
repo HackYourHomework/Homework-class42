@@ -1965,3 +1965,43 @@ ex4-pokerDiceAll.js
 2023-02-14 07:34:36 info: --------------------------------------------
 2023-02-14 07:34:37 info: All unit tests passed.
 2023-02-14 07:34:38 info: All steps were completed successfully
+2023-02-14 07:47:12 info: ----------------------------------------------
+2023-02-14 07:47:12 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-14 07:47:12 info: ----------------------------------------------
+2023-02-14 07:47:13 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (1 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls
+    ✓ should resolve when all dice settle successfully (19 ms)
+    ✓ should reject with an Error when a die rolls off the table (28 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.328 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-14 07:47:27 info: ----------------------------------------------
+2023-02-14 07:47:27 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-14 07:47:27 info: ----------------------------------------------
+2023-02-14 07:47:28 info: All unit tests passed.
+2023-02-14 07:47:29 info: All steps were completed successfully
