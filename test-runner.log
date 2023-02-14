@@ -1,0 +1,179 @@
+2023-01-17 10:11:50 info: -------------------------------------------------
+2023-01-17 10:11:50 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2023-01-17 10:11:50 info: -------------------------------------------------
+2023-01-17 10:11:55 info: All unit tests passed.
+2023-01-17 10:12:04 info: All steps were completed successfully
+2023-01-17 10:19:14 info: ----------------------------------------------
+2023-01-17 10:19:14 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-17 10:19:14 info: ----------------------------------------------
+2023-01-17 10:19:19 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"
+2023-01-17 10:20:02 info: ----------------------------------------------
+2023-01-17 10:20:02 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-01-17 10:20:02 info: ----------------------------------------------
+2023-01-17 10:20:06 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"
+2023-01-17 10:20:13 info: Disclaimer turned off
+2023-01-17 10:20:30 info: ----------------------------------------
+2023-01-17 10:20:30 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-17 10:20:30 info: ----------------------------------------
+2023-01-17 10:20:34 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should have all TODO comments removed
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"
+2023-01-17 10:39:08 info: ----------------------------------------
+2023-01-17 10:39:08 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-01-17 10:39:08 info: ----------------------------------------
+2023-01-17 10:39:13 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should have all TODO comments removed
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"
+2023-01-17 10:39:32 info: ------------------------------------------------------
+2023-01-17 10:39:32 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-17 10:39:32 info: ------------------------------------------------------
+2023-01-17 10:39:37 info: All unit tests passed.
+2023-01-17 10:39:44 info: All steps were completed successfully
+2023-01-17 11:17:24 info: -------------------------------------------------
+2023-01-17 11:17:24 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-17 11:17:24 info: -------------------------------------------------
+2023-01-17 11:17:29 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    √ should take two parameters (3 ms)
+    × should compute the earnings as a formatted Euro amount (6 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    - Expected  - 1
+    + Received  + 4
+
+    - €187.50
+    + € [object Object],[object Object],[object Object],[object Object]
+    +     .map((thing) => thing.duration * (hourlyRate / 60))
+    +     .reduce((some, duration) => (some += duration), 0)
+    +     .toFixed(2)
+
+      51 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      52 |     const expected = '€187.50';
+    > 53 |     expect(result).toBe(expected);
+         |                    ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:53:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.976 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2023-01-17 11:17:33 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  34:33  error  'hourlyRate' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-01-17 11:29:42 info: -------------------------------------------------
+2023-01-17 11:29:42 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2023-01-17 11:29:42 info: -------------------------------------------------
+2023-01-17 11:29:47 info: All unit tests passed.
+2023-01-17 11:29:55 info: All steps were completed successfully
+2023-01-17 11:33:23 info: ------------------------------------------------------
+2023-01-17 11:33:23 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2023-01-17 11:33:23 info: ------------------------------------------------------
+2023-01-17 11:33:28 info: All unit tests passed.
+2023-01-17 11:33:36 info: All steps were completed successfully
+2023-01-18 12:03:22 info: ------------------------------------------
+2023-01-18 12:03:22 info: >>> Running Unit Test `ex4-observable` <<<
+2023-01-18 12:03:22 info: ------------------------------------------
+2023-01-18 12:03:28 info: All unit tests passed.
+2023-01-18 12:03:36 info: All steps were completed successfully
+2023-01-18 12:21:25 info: --------------------------------------
+2023-01-18 12:21:25 info: >>> Running Unit Test `ex5-wallet` <<<
+2023-01-18 12:21:25 info: --------------------------------------
+2023-01-18 12:21:30 error: *** Unit Test Error Report ***
+
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\julia\Homework-class42\test-runner\CustomReporter.js"
+2023-02-14 09:30:38 info: ----------------------------------------------
+2023-02-14 09:30:38 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2023-02-14 09:30:38 info: ----------------------------------------------
+2023-02-14 09:30:44 info: All unit tests passed.
+2023-02-14 09:30:54 info: All steps were completed successfully
+2023-02-14 09:33:10 info: ----------------------------------------
+2023-02-14 09:33:10 info: >>> Running Unit Test `ex2-dogYears` <<<
+2023-02-14 09:33:10 info: ----------------------------------------
+2023-02-14 09:33:15 info: All unit tests passed.
+2023-02-14 09:33:23 info: All steps were completed successfully
+2023-02-14 09:33:39 info: -------------------------------------------
+2023-02-14 09:33:39 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-02-14 09:33:39 info: -------------------------------------------
+2023-02-14 09:33:44 info: All unit tests passed.
+2023-02-14 09:33:51 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:51:26 - Unknown word (Jany)
+ex3-tellFortune.js:51:43 - Unknown word (Juddy)
+ex3-tellFortune.js:51:52 - Unknown word (Johny)
+ex3-tellFortune.js:53:31 - Unknown word (Chernihiv)
+
+2023-02-14 09:34:50 info: -------------------------------------------
+2023-02-14 09:34:50 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2023-02-14 09:34:50 info: -------------------------------------------
+2023-02-14 09:34:55 info: All unit tests passed.
+2023-02-14 09:35:02 info: All steps were completed successfully
+2023-02-14 09:35:16 info: --------------------------------------------
+2023-02-14 09:35:16 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2023-02-14 09:35:16 info: --------------------------------------------
+2023-02-14 09:35:16 warn: A unit test file was not provided.
+2023-02-14 09:35:20 error: *** ESLint Report ***
+
+ex4-shoppingCart.js
+  31:38  error  'join' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-14 09:38:26 info: ------------------------------------------------
+2023-02-14 09:38:26 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2023-02-14 09:38:26 info: ------------------------------------------------
+2023-02-14 09:38:26 warn: A unit test file was not provided.
+2023-02-14 09:38:34 info: All steps were completed successfully
+2023-02-14 09:38:48 info: -----------------------------------------
+2023-02-14 09:38:48 info: >>> Running Unit Test `ex6-totalCost` <<<
+2023-02-14 09:38:48 info: -----------------------------------------
+2023-02-14 09:38:48 warn: A unit test file was not provided.
+2023-02-14 09:38:55 info: All steps were completed successfully
+2023-02-14 09:39:19 info: -------------------------------------------
+2023-02-14 09:39:19 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2023-02-14 09:39:19 info: -------------------------------------------
+2023-02-14 09:39:19 warn: A unit test file was not provided.
+2023-02-14 09:39:23 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  33:28  error  'employeeRecords' is defined but never used  no-unused-vars
+  34:10  error  'records' is not defined                     no-undef
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
