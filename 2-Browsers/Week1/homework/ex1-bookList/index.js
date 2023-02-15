@@ -18,29 +18,30 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  const ul = document.createElement('ul');
+  const listContainer = document.createElement('ul');
 
   for (const book of books) {
-    const li = document.createElement('li');
-    const p = document.createElement('p');
-    p.textContent = `${book.title} by ${book.author}`;
-    li.appendChild(p);
+    const listItem = document.createElement('li');
+    const bookDescription = document.createElement('p');
+    bookDescription.textContent = `${book.title} by ${book.author}`;
+    listItem.appendChild(bookDescription);
 
     const img = document.createElement('img');
     img.src = `./assets/${book.title.toLowerCase().replace(/ /g, '_')}.jpg`;
     img.alt = `Cover of ${book.title} by ${book.author}`;
-    li.appendChild(img);
+    listItem.appendChild(img);
 
     if (book.alreadyRead === true) {
-      li.style.color = 'green';
+      listItem.style.color = 'green';
     } else {
-      li.style.color = 'red';
+      listItem.style.color = 'red';
     }
 
-    ul.appendChild(li);
+    listContainer.appendChild(listItem);
   }
 
-  document.getElementById('bookList').appendChild(ul);
+  document.getElementById('bookList').appendChild(listContainer);
+  return listContainer;
 }
 
 function main() {
@@ -65,8 +66,8 @@ function main() {
     },
   ];
 
-  const ulElement = createBookList(myBooks);
-  document.querySelector('#bookList').appendChild(ulElement);
+  const listContainerElement = createBookList(myBooks);
+  document.querySelector('#bookList').appendChild(listContainerElement);
 }
 
 window.addEventListener('load', main);
