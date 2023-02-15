@@ -32,7 +32,8 @@ function catWalk() {
   myCat.style.left = `${counter}px`;
   const centerPosition = (window.innerWidth - myCat.width) / 2;
   counter >= window.innerWidth ? (counter = 0) : counter;
-  if (counter === centerPosition + 8) {
+  console.log(centerPosition)
+  if (counter === centerPosition - 2) {
     myCat.src =
       'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
     clearInterval(timer); // use this method to clear the timer.
@@ -41,6 +42,6 @@ function catWalk() {
       // the image gets changed after 5 seconds
       myCat.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
       timer = setInterval(catWalk, 50);
-    }, 1000);
+    }, 5000);
   }
 }
