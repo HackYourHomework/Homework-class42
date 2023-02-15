@@ -1,1 +1,6 @@
-/* add your styling here */
+.grid {
+    display: grid;
+}
+.button {
+    margin-bottom: 20px;
+}
