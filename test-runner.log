@@ -527,3 +527,8 @@ Ran all test suites matching /ex1-bookList.test.js/i.
 2023-02-15 10:24:23 info: ---------------------------------------
 2023-02-15 10:24:31 info: All unit tests passed.
 2023-02-15 10:24:37 info: All steps were completed successfully
+2023-02-15 10:31:30 info: ---------------------------------------
+2023-02-15 10:31:30 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-02-15 10:31:30 info: ---------------------------------------
+2023-02-15 10:31:38 info: All unit tests passed.
+2023-02-15 10:31:43 info: All steps were completed successfully
