@@ -32,7 +32,6 @@ function catWalk() {
   myCat.style.left = `${counter}px`;
   const centerPosition = (window.innerWidth - myCat.width) / 2;
   counter >= window.innerWidth ? (counter = 0) : counter;
-  console.log(centerPosition)
   if (counter === centerPosition - 2) {
     myCat.src =
       'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
