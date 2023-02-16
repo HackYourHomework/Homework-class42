@@ -20,8 +20,6 @@ function rollDice() {
     results.push(value);
     return rollDie(number);
   };
-
-  // TODO: expand the chain to include five dice
   return rollDie(1)
     .then((value) => {
       return pushAndRoll(value, 2);
