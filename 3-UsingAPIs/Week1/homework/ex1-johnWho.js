@@ -21,7 +21,12 @@ const getAnonName = (firstName) => {
 };
 
 function main() {
-  getAnonName('John', console.log);
+  getAnonName()
+    .then((firstName) => {
+      firstName = 'John';
+      console.log(firstName);
+    })
+    .catch((error) => console.log('Rejected!', error.message));
 }
 
 // ! Do not change or remove the code below
