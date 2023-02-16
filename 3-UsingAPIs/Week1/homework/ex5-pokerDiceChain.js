@@ -16,28 +16,17 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const results = [];
+  let promise = Promise.resolve();
 
-  return rollDie(1)
-    .then((value) => {
-      results.push(value);
-      return rollDie(2);
-    })
-    .then((value) => {
-      results.push(value);
-      return rollDie(3);
-    })
-    .then((value) => {
-      results.push(value);
-      return rollDie(4);
-    })
-    .then((value) => {
-      results.push(value);
-      return rollDie(5);
-    })
-    .then((value) => {
-      results.push(value);
-      return results;
+  for (let i = 1; i <= 5; i++) {
+    promise = promise.then(() => {
+      return rollDie(i).then((value) => {
+        results.push(value);
+      });
     });
+  }
+
+  return promise.then(() => results);
 }
 
 function main() {
