@@ -21,8 +21,57 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-function catWalk() {
-  // TODO complete this function
-}
+window.addEventListener('DOMContentLoaded', () => {
+  const cat = document.querySelector('img');
+  cat.style.left = '0px';
+  const screenWidth = window.innerWidth;
 
-// TODO execute `catWalk` when the browser has completed loading the page
+  function catWalk() {
+    const position = parseFloat(cat.style.left);
+
+    if (position > screenWidth - cat.width) {
+      cat.style.left = 0;
+    } else if (
+      position > (screenWidth - cat.width) / 2 &&
+      position < screenWidth / 2
+    ) {
+      window.clearInterval(interval);
+      cat.src =
+        'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+      window.setTimeout(() => {
+        interval = window.setInterval(catWalk, 50);
+        cat.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+        cat.style.left = position + cat.width / 2 + 'px';
+      }, 5000);
+    } else {
+      cat.style.left = position + 10 + 'px';
+    }
+  }
+  let interval = window.setInterval(catWalk, 50);
+});
+
+// const image = document.querySelector('img');
+// image.style.left = '0px';
+// let distanceOfCat = 0;
+// const catSpeed = 10;
+// const maxDistanceOfCat = window.innerWidth;
+// let interval = setInterval(catWalk, 50);
+// window.addEventListener('load', catWalk);
+
+// function catWalk() {
+//   if (image.style.left === `${maxDistanceOfCat} + px`) {
+//     distanceOfCat = 0;
+//   } else if (image.style.left >= `${maxDistanceOfCat / 2} + px`) {
+//     image.style.left = `${maxDistanceOfCat / 2 + 10} `;
+//     clearInterval(interval);
+//     image.src =
+//       'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+//     setTimeout(() => {
+//       image.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+//       interval = setInterval(catWalk, 50);
+//     }, 5000);
+//   } else {
+//     distanceOfCat += catSpeed;
+//     image.style.left = `${distanceOfCat}px`;
+//   }
+// }
