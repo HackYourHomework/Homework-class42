@@ -48,7 +48,10 @@ function fetchAndPopulatePokemons(data) {
 function fetchImage(data, pokemonIndex) {
   const img = document.createElement('img')
   const div = document.getElementById('div-for-image')
-  div.innerHTML = '' // how I can get rid of innerHTML. I want to clear div, because if div is not clear it causes the bug
+  console.log(div.children)
+  for(let i = 0; i<div.children.length; i++){
+    div.removeChild(div.children[i])
+  }
   img.className = 'grid'
   img.src = data.results[pokemonIndex].url
   img.setAttribute('alt',data.results[pokemonIndex].name)
