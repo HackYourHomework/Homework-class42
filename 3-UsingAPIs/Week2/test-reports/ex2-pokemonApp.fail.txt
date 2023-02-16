@@ -1,0 +1,8 @@
+
+*** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  51:3  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
