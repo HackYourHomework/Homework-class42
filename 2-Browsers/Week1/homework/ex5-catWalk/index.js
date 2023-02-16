@@ -22,27 +22,28 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 const img = document.querySelector('img');
-let catPosition = img.style.left;
-const steps = 10;
-const width = window.innerWidth;
+img.style.left ='0px';
 let catInterval = setInterval(catWalk, 50);
 
 function catWalk() {
+  const width = window.innerWidth;
+  let catPosition = img.offsetLeft;
+  const steps = 10;
   catPosition += steps;
-  img.style.left = catPosition + 'px';
+  img.style.left = `${catPosition}px`;
 
-  if (catPosition >= width - 220) {
-    catPosition = 0;
+  if (catPosition >= width) {
+    img.style.left ='0px';
   }
-  if (catPosition === width / 2 - 220) {
+  if (catPosition  === width / 2 - img.width / 2) {
     clearInterval(catInterval);
-    img.src =
-      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+    img.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
     setTimeout(() => {
       img.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
       catInterval = setInterval(catWalk, 50);
     }, 5000);
   }
+
 }
 
 window.addEventListener('load', catWalk);
