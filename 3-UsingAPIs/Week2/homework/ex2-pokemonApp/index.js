@@ -50,20 +50,30 @@ function fetchAndPopulatePokemons(data) {
   body.appendChild(button)
   body.appendChild(select)
 
-  for(const pokemon of data.results){
+  for(let i = 0; i<data.results.length; i++){
     const option = document.createElement('option');
-    option.textContent = pokemon.name
-    option.setAttribute('value',pokemon.name)
+    option.textContent = data.results[i].name
+    option.id = i;
 
   button.addEventListener('click', () => {
-          select.appendChild(option)
-        }
-        )
-      }
+    select.appendChild(option)
+    if(option.selected === true){
+      fetchImage(data, option.id)
+    }
+  }
+  )
+ 
+ 
 }
+      }
 
-function fetchImage(data) {
-  // TODO complete this function
+
+function fetchImage(data, pokemonIndex) {
+  const body = document.querySelector('body')
+  const img = document.createElement('img')
+  img.className = 'grid'
+  img.src = data.results[pokemonIndex].url
+  body.append(img)
 }
 
 async function main() {
@@ -71,7 +81,6 @@ async function main() {
   const url = 'https://pokeapi.co/api/v2/pokemon?limit=151'
   const data = await fetchData(url)
   fetchAndPopulatePokemons(data)
-  fetchImage(data)
 }
 
 window.addEventListener('load', main)
