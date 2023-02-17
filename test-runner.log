@@ -1363,3 +1363,20 @@ ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
 2023-02-16 10:49:58 info: ---------------------------------------
 2023-02-16 10:50:01 info: All unit tests passed.
 2023-02-16 10:50:02 info: All steps were completed successfully
+2023-02-17 11:43:22 info: ---------------------------------------
+2023-02-17 11:43:22 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-02-17 11:43:22 info: ---------------------------------------
+2023-02-17 11:43:25 info: All unit tests passed.
+2023-02-17 11:43:25 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  31:7  warning  'catPosition' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-02-17 11:43:39 info: ---------------------------------------
+2023-02-17 11:43:39 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-02-17 11:43:39 info: ---------------------------------------
+2023-02-17 11:43:41 info: All unit tests passed.
+2023-02-17 11:43:43 info: All steps were completed successfully

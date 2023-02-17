@@ -25,23 +25,25 @@ const img = document.querySelector('img');
 img.style.left ='0px';
 let catInterval = setInterval(catWalk, 50);
 
+
 function catWalk() {
   const width = window.innerWidth;
-  let catPosition = img.offsetLeft;
+  const catPosition = img.offsetLeft;
   const steps = 10;
-  catPosition += steps;
   img.style.left = `${catPosition}px`;
 
-  if (catPosition >= width) {
+  if(catPosition >= width) {
     img.style.left ='0px';
-  }
-  if (catPosition  === width / 2 - img.width / 2) {
-    clearInterval(catInterval);
+  } else if(catPosition  > (width - img.width) / 2 && catPosition < width / 2) {
+    window.clearInterval(catInterval);
     img.src = 'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
-    setTimeout(() => {
-      img.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+    window.setTimeout(() => {
       catInterval = setInterval(catWalk, 50);
+      img.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+      img.style.left = catPosition + img.width / 2 + 'px';
     }, 5000);
+  }  else {
+    img.style.left = catPosition + steps + 'px';
   }
 
 }
