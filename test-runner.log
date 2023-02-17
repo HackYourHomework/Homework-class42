@@ -1,0 +1,1382 @@
+2023-01-23 01:56:02 info: ----------------------------------------
+2023-01-23 01:56:02 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 01:56:02 info: ----------------------------------------
+2023-01-23 01:56:02 info: Exercise has not yet been modified
+2023-01-23 01:56:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (291 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✕ should contain a <ul> that is a child of <div id="bookList"> (1 ms)
+    ✕ should contain a <ul> with 3 <li> elements (2 ms)
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array (1 ms)
+    ✕ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● Generated HTML › should contain a <ul> that is a child of <div id="bookList">
+
+    expect(received).toBeTruthy()
+
+    Received: null
+
+      46 |   test('should contain a <ul> that is a child of <div id="bookList">', () => {
+      47 |     const ul = document.querySelector('div[id=bookList] > ul');
+    > 48 |     expect(ul).toBeTruthy();
+         |                ^
+      49 |   });
+      50 |
+      51 |   test('should contain a <ul> with 3 <li> elements', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:48:16)
+
+  ● Generated HTML › should contain a <ul> with 3 <li> elements
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      52 |     const nodeList = document.querySelectorAll('ul > li');
+      53 |     const result = nodeList ? nodeList.length : 0;
+    > 54 |     expect(result).toBe(3);
+         |                    ^
+      55 |   });
+      56 |
+      57 |   test('should contain an <li> with title and author for each book of the `myBooks` array', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:54:20)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: ""
+
+      63 |       : '';
+      64 |     state.titlesAndAuthors.forEach((string) =>
+    > 65 |       expect(result).toEqual(expect.stringContaining(string))
+         |                      ^
+      66 |     );
+      67 |   });
+      68 |
+
+      at toEqual (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:65:22)
+          at Array.forEach (<anonymous>)
+      at Object.forEach (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:64:28)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 1 passed, 6 total
+Snapshots:   0 total
+Time:        2.816 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-23 01:56:09 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  20:25  error  'books' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-01-23 02:21:33 info: ----------------------------------------
+2023-01-23 02:21:33 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 02:21:33 info: ----------------------------------------
+2023-01-23 02:21:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (298 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    ✕ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: "  "
+
+      63 |       : '';
+      64 |     state.titlesAndAuthors.forEach((string) =>
+    > 65 |       expect(result).toEqual(expect.stringContaining(string))
+         |                      ^
+      66 |     );
+      67 |   });
+      68 |
+
+      at toEqual (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:65:22)
+          at Array.forEach (<anonymous>)
+      at Object.forEach (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:64:28)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        2.176 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-23 02:21:38 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  24:9  warning  'liElement' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-23 02:35:47 info: ----------------------------------------
+2023-01-23 02:35:47 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 02:35:47 info: ----------------------------------------
+2023-01-23 02:35:51 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (295 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✕ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    ✕ should contain an <img> element for each book (2 ms)
+
+  ● Generated HTML › should contain an <li> with title and author for each book of the `myBooks` array
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "The Design of Everyday Things"
+    Received: "  "
+
+      63 |       : '';
+      64 |     state.titlesAndAuthors.forEach((string) =>
+    > 65 |       expect(result).toEqual(expect.stringContaining(string))
+         |                      ^
+      66 |     );
+      67 |   });
+      68 |
+
+      at toEqual (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:65:22)
+          at Array.forEach (<anonymous>)
+      at Object.forEach (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:64:28)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        2.191 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-23 02:35:52 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  24:9  warning  'liElement' is never reassigned. Use 'const' instead                              no-autofix/prefer-const
+  26:5  warning  The homework tests do not support `innerText`. Please replace with `textContent`  no-restricted-syntax
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-01-23 02:36:30 info: ----------------------------------------
+2023-01-23 02:36:30 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 02:36:30 info: ----------------------------------------
+2023-01-23 02:36:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✓ HTML should be syntactically valid (314 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✕ should contain an <img> element for each book (2 ms)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        2.194 s, estimated 3 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-23 04:38:36 info: ----------------------------------------
+2023-01-23 04:38:36 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 04:38:36 info: ----------------------------------------
+2023-01-23 04:38:40 info: All unit tests passed.
+2023-01-23 04:38:42 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  29:7  warning  'img1' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  34:7  warning  'img2' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  39:7  warning  'img3' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+2023-01-23 04:38:43 error: *** Spell Checker Report ***
+
+ex1-bookList/index.js:30:18 - Unknown word (assests)
+ex1-bookList/index.js:35:18 - Unknown word (assests)
+ex1-bookList/index.js:40:18 - Unknown word (assests)
+
+2023-01-23 04:39:47 info: ----------------------------------------
+2023-01-23 04:39:47 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 04:39:47 info: ----------------------------------------
+2023-01-23 04:39:50 info: All unit tests passed.
+2023-01-23 04:39:53 info: All steps were completed successfully
+2023-01-23 05:59:55 info: ----------------------------------------
+2023-01-23 05:59:55 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 05:59:55 info: ----------------------------------------
+2023-01-23 05:59:59 info: All unit tests passed.
+2023-01-23 06:00:01 info: All steps were completed successfully
+2023-01-23 06:58:49 info: ----------------------------------------
+2023-01-23 06:58:49 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-23 06:58:49 info: ----------------------------------------
+2023-01-23 06:58:53 info: All unit tests passed.
+2023-01-23 06:58:55 info: All steps were completed successfully
+2023-01-23 06:59:02 info: ---------------------------------------
+2023-01-23 06:59:02 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 06:59:02 info: ---------------------------------------
+2023-01-23 06:59:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (298 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✕ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (23 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        2.26 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 06:59:09 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:04:54 info: ---------------------------------------
+2023-01-23 07:04:54 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:04:54 info: ---------------------------------------
+2023-01-23 07:04:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (309 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✕ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (25 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        2.23 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:05:01 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:05:28 info: ---------------------------------------
+2023-01-23 07:05:28 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:05:28 info: ---------------------------------------
+2023-01-23 07:05:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (293 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✕ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (26 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      32 |     const nodeList = document.querySelectorAll('li');
+      33 |     const classNames = [...nodeList].map((node) => node.className);
+    > 34 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      35 |   });
+      36 |
+      37 |   test('each <li> should rendered red', () => {
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:34:62)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        2.169 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:05:35 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:11:49 info: ---------------------------------------
+2023-01-23 07:11:49 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:11:49 info: ---------------------------------------
+2023-01-23 07:11:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (296 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (27 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        2.261 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:11:55 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:17:00 info: ---------------------------------------
+2023-01-23 07:17:00 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:17:00 info: ---------------------------------------
+2023-01-23 07:17:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (300 ms)
+    ✓ should have all TODO comments removed
+    ✓ the body font-family should be `Arial, sans-serif` (1 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (28 ms)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.744 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:17:07 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:18:06 info: ---------------------------------------
+2023-01-23 07:18:06 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:18:06 info: ---------------------------------------
+2023-01-23 07:18:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (296 ms)
+    ✓ should have all TODO comments removed
+    ✓ the body font-family should be `Arial, sans-serif` (2 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✕ each <li> should rendered red (29 ms)
+
+  ● Generated HTML › each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      40 |       (node) => window.getComputedStyle(node).color
+      41 |     );
+    > 42 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      43 |   });
+      44 | });
+      45 |
+
+      at Object.toBeTruthy (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:42:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        2.321 s, estimated 3 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-23 07:18:11 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  23:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-23 07:18:13 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:19:11 info: ---------------------------------------
+2023-01-23 07:19:11 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:19:11 info: ---------------------------------------
+2023-01-23 07:19:15 info: All unit tests passed.
+2023-01-23 07:19:17 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  22:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-23 07:19:18 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:19:56 info: ---------------------------------------
+2023-01-23 07:19:56 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:19:56 info: ---------------------------------------
+2023-01-23 07:20:00 info: All unit tests passed.
+2023-01-23 07:20:02 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:29 - Unknown word (Yunus)
+ex2-aboutMe/index.js:18:27 - Unknown word (Turkiye)
+
+2023-01-23 07:21:01 info: ---------------------------------------
+2023-01-23 07:21:01 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-23 07:21:01 info: ---------------------------------------
+2023-01-23 07:21:05 info: All unit tests passed.
+2023-01-23 07:21:08 info: All steps were completed successfully
+2023-01-23 07:24:36 info: ------------------------------------------
+2023-01-23 07:24:36 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:24:36 info: ------------------------------------------
+2023-01-23 07:24:36 info: Exercise has not yet been modified
+2023-01-23 07:24:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✕ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property
+    ✕ should set the `srcset` property (3 ms)
+
+  ● hijackLogo › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.303 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:29:55 info: ------------------------------------------
+2023-01-23 07:29:55 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:29:55 info: ------------------------------------------
+2023-01-23 07:29:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.245 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:30:29 info: ------------------------------------------
+2023-01-23 07:30:29 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:30:29 info: ------------------------------------------
+2023-01-23 07:30:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.229 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:32:39 info: ------------------------------------------
+2023-01-23 07:32:39 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:32:39 info: ------------------------------------------
+2023-01-23 07:32:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.249 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:35:09 info: ------------------------------------------
+2023-01-23 07:35:09 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:35:09 info: ------------------------------------------
+2023-01-23 07:35:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.306 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:36:47 info: ------------------------------------------
+2023-01-23 07:36:47 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:36:47 info: ------------------------------------------
+2023-01-23 07:36:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should set the `src` property (1 ms)
+    ✓ should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.252 s, estimated 1 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-23 07:38:14 info: ------------------------------------------
+2023-01-23 07:38:14 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-23 07:38:14 info: ------------------------------------------
+2023-01-23 07:38:15 info: All unit tests passed.
+2023-01-23 07:38:18 info: All steps were completed successfully
+2023-01-23 07:43:26 info: --------------------------------------------
+2023-01-23 07:43:26 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 07:43:26 info: --------------------------------------------
+2023-01-23 07:43:27 info: Exercise has not yet been modified
+2023-01-23 07:43:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js
+  whatsTheTime
+    ✓ HTML should be syntactically valid (305 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✕ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2003 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● whatsTheTime › should use `setInterval()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `setInterval()`', () => {
+    > 52 |     expect(state.setInterval).toBeDefined();
+         |                               ^
+      53 |   });
+      54 |
+      55 |   test('should not call `setInterval()` more than once', async () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:52:31)
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 passed, 6 total
+Snapshots:   0 total
+Time:        4.349 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 07:43:34 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  10:10  error  'addCurrentTime' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-01-23 08:33:39 info: --------------------------------------------
+2023-01-23 08:33:39 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 08:33:39 info: --------------------------------------------
+2023-01-23 08:33:45 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js
+  whatsTheTime
+    ✓ HTML should be syntactically valid (269 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2004 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        4.247 s, estimated 5 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 08:45:46 info: --------------------------------------------
+2023-01-23 08:45:46 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 08:45:46 info: --------------------------------------------
+2023-01-23 08:45:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js
+  whatsTheTime
+    ✓ HTML should be syntactically valid (274 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2004 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        4.303 s, estimated 5 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 08:45:53 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  20:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-23 08:49:51 info: --------------------------------------------
+2023-01-23 08:49:51 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 08:49:51 info: --------------------------------------------
+2023-01-23 08:49:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js
+  whatsTheTime
+    ✓ HTML should be syntactically valid (287 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2003 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        4.277 s, estimated 5 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 08:52:10 info: --------------------------------------------
+2023-01-23 08:52:10 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 08:52:10 info: --------------------------------------------
+2023-01-23 08:52:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js
+  whatsTheTime
+    ✓ HTML should be syntactically valid (269 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2002 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        4.237 s, estimated 5 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 08:52:39 info: --------------------------------------------
+2023-01-23 08:52:39 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 08:52:39 info: --------------------------------------------
+2023-01-23 08:52:44 info: All unit tests passed.
+2023-01-23 08:52:47 info: All steps were completed successfully
+2023-01-23 10:23:27 info: ---------------------------------------
+2023-01-23 10:23:27 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-23 10:23:27 info: ---------------------------------------
+2023-01-23 10:23:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    ✓ HTML should be syntactically valid (289 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✕ should use `setInterval()` and/or `setTimeout()` (1 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● catWalk › should use `setInterval()` and/or `setTimeout()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |
+      47 |   test('should use `setInterval()` and/or `setTimeout()`', () => {
+    > 48 |     expect(state.timer).toBeDefined();
+         |                         ^
+      49 |   });
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:48:25)
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        2.236 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-01-23 10:23:32 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  26:19  error  Parsing error: Identifier directly after number
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-01-24 10:03:22 info: ---------------------------------------
+2023-01-24 10:03:22 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 10:03:22 info: ---------------------------------------
+2023-01-24 10:03:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    ✓ HTML should be syntactically valid (282 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ should use `setInterval()` and/or `setTimeout()`
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.21 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-01-24 10:03:44 info: ---------------------------------------
+2023-01-24 10:03:44 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-24 10:03:44 info: ---------------------------------------
+2023-01-24 10:03:47 info: All unit tests passed.
+2023-01-24 10:03:50 info: All steps were completed successfully
+2023-01-26 12:35:28 info: ------------------------------------------
+2023-01-26 12:35:28 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-26 12:35:28 info: ------------------------------------------
+2023-01-26 12:35:29 info: All unit tests passed.
+2023-01-26 12:35:31 info: All steps were completed successfully
+2023-01-26 12:35:47 info: ------------------------------------------
+2023-01-26 12:35:47 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-26 12:35:47 info: ------------------------------------------
+2023-01-26 12:35:48 info: All unit tests passed.
+2023-01-26 12:35:49 info: All steps were completed successfully
+2023-01-28 11:38:36 info: ------------------------------------------
+2023-01-28 11:38:36 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-28 11:38:36 info: ------------------------------------------
+2023-01-28 11:38:39 info: All unit tests passed.
+2023-01-28 11:38:43 info: All steps were completed successfully
+2023-01-28 11:41:25 info: ------------------------------------------
+2023-01-28 11:41:25 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-28 11:41:25 info: ------------------------------------------
+2023-01-28 11:41:26 info: All unit tests passed.
+2023-01-28 11:41:28 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:49 - Unknown word (Xdpd)
+
+2023-01-30 01:09:40 info: ---------------------------------------
+2023-01-30 01:09:40 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-30 01:09:40 info: ---------------------------------------
+2023-01-30 01:09:44 info: All unit tests passed.
+2023-01-30 01:09:45 info: All steps were completed successfully
+2023-02-08 11:03:46 info: ---------------------------------------
+2023-02-08 11:03:46 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-02-08 11:03:46 info: ---------------------------------------
+2023-02-08 11:03:50 info: All unit tests passed.
+2023-02-08 11:03:52 info: All steps were completed successfully
+2023-02-16 10:49:58 info: ---------------------------------------
+2023-02-16 10:49:58 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-02-16 10:49:58 info: ---------------------------------------
+2023-02-16 10:50:01 info: All unit tests passed.
+2023-02-16 10:50:02 info: All steps were completed successfully
+2023-02-17 11:43:22 info: ---------------------------------------
+2023-02-17 11:43:22 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-02-17 11:43:22 info: ---------------------------------------
+2023-02-17 11:43:25 info: All unit tests passed.
+2023-02-17 11:43:25 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  31:7  warning  'catPosition' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-02-17 11:43:39 info: ---------------------------------------
+2023-02-17 11:43:39 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-02-17 11:43:39 info: ---------------------------------------
+2023-02-17 11:43:41 info: All unit tests passed.
+2023-02-17 11:43:43 info: All steps were completed successfully

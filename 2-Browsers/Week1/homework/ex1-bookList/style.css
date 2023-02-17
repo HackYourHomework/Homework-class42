@@ -1,1 +1,25 @@
 /* Write your style here */
+body {
+  background-color: rgb(231, 176, 176);
+}
+h1 {
+  text-align: center;
+  color: rgb(214, 76, 76);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-top: 30px;
+}
+li {
+  float: left;
+  margin: auto;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  margin-left: 80px;
+}

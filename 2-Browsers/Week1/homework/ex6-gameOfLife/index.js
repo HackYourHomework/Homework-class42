@@ -17,6 +17,7 @@ function createCell(x, y) {
     x,
     y,
     alive,
+    lifeTime: alive ? 1 : 0,
   };
 }
 
@@ -46,7 +47,7 @@ function createGame(context, numRows, numColumns) {
   // Draw a cell onto the canvas
   function drawCell(cell) {
     // Draw cell background
-    context.fillStyle = '#303030';
+    context.fillStyle = `rgba(24, 215, 236, ${opacity})`;
     context.fillRect(
       cell.x * CELL_SIZE,
       cell.y * CELL_SIZE,
