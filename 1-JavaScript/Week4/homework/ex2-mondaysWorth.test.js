@@ -31,8 +31,15 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(mondayTasks, hourlyRate) {
+  const euroFormat = new Intl.NumberFormat('en-DE', {
+    style: 'currency',
+    currency: 'EUR',
+  });
+  const totalAmount = mondayTasks
+    .map((task) => (task.duration / 60) * hourlyRate)
+    .reduce((acc, taskRate) => acc + taskRate, 0);
+  return euroFormat.format(totalAmount);
 }
 
 // ! Unit tests (using Jest)
