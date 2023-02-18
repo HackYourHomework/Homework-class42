@@ -30,8 +30,8 @@ function rollDie() {
 
 function main() {
 rollDie()
-  .then(value => `Success! Die settled on ${value}.`)
-  .catch(err => err)
+  .then(value => console.log(`Success! Die settled on ${value}.`))
+  .catch(err => console.log(err))
 }
 
 // ! Do not change or remove the code below
