@@ -27,7 +27,7 @@ function rollDice() {
 }
 
 function main() {
-  Promise.all(rollDice())
+  rollDice()
     .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
 }
