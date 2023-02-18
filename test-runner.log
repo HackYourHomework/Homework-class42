@@ -1,0 +1,554 @@
+2023-01-21 08:28:33 info: ----------------------------------------
+2023-01-21 08:28:33 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-21 08:28:33 info: ----------------------------------------
+2023-01-21 08:28:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (6.935 s)
+  Generated HTML
+    × HTML should be syntactically valid (287 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    √ should contain a <ul> with 3 <li> elements (2 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    × should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:113  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:251  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:380  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        7.185 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-21 08:31:07 info: ----------------------------------------
+2023-01-21 08:31:07 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-21 08:31:07 info: ----------------------------------------
+2023-01-21 08:31:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (5.534 s)
+  Generated HTML
+    √ HTML should be syntactically valid (202 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should contain a <ul> that is a child of <div id="bookList"> (3 ms)
+    √ should contain a <ul> with 3 <li> elements (2 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    × should contain an <img> element for each book (4 ms)
+
+  ● Generated HTML › should contain an <img> element for each book
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 3
+    Received: 0
+
+      70 |     const nodeList = document.querySelectorAll('li img');
+      71 |     const result = nodeList ? nodeList.length : 0;
+    > 72 |     expect(result).toBe(3);
+         |                    ^
+      73 |   });
+      74 | });
+      75 |
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:72:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.73 s, estimated 7 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2023-01-21 08:32:15 info: ----------------------------------------
+2023-01-21 08:32:15 info: >>> Running Unit Test `ex1-bookList` <<<
+2023-01-21 08:32:15 info: ----------------------------------------
+2023-01-21 08:32:25 info: All unit tests passed.
+2023-01-21 08:32:35 info: All steps were completed successfully
+2023-01-21 09:26:18 info: ---------------------------------------
+2023-01-21 09:26:18 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-21 09:26:18 info: ---------------------------------------
+2023-01-21 09:26:29 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (5.891 s)
+  Generated HTML
+    √ should be syntactically valid (239 ms)
+    √ should have all TODO comments removed (1 ms)
+    × the body font-family should be `Arial, sans-serif` (5 ms)
+    √ each <li> should have the CSS class `list-item` (2 ms)
+    √ each <li> should rendered red (63 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.125 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2023-01-21 09:26:39 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:25 - Unknown word (Drappi)
+
+2023-01-21 09:29:58 info: ---------------------------------------
+2023-01-21 09:29:58 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-21 09:29:58 info: ---------------------------------------
+2023-01-21 09:30:10 info: All unit tests passed.
+2023-01-21 09:30:20 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:17:25 - Unknown word (drappi)
+
+2023-01-21 09:31:02 info: ---------------------------------------
+2023-01-21 09:31:02 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2023-01-21 09:31:02 info: ---------------------------------------
+2023-01-21 09:31:12 info: All unit tests passed.
+2023-01-21 09:31:21 info: All steps were completed successfully
+2023-01-21 10:07:12 info: ------------------------------------------
+2023-01-21 10:07:12 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-21 10:07:12 info: ------------------------------------------
+2023-01-21 10:07:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (2 ms)
+    × should set the `src` property (2 ms)
+    × should set the `srcset` property (1 ms)
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.281 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-21 10:07:22 error: *** ESLint Report ***
+
+ex3-hijackLogo.js
+  11:7  warning  'logo' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-21 10:07:27 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:41 - Unknown word (Xdpd)
+
+2023-01-21 10:10:03 info: ------------------------------------------
+2023-01-21 10:10:03 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-21 10:10:03 info: ------------------------------------------
+2023-01-21 10:10:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-hijackLogo.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js
+  hijackLogo
+    √ should have all TODO comments removed (2 ms)
+    × should set the `src` property (3 ms)
+    × should set the `srcset` property
+
+  ● hijackLogo › should set the `src` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      29 |
+      30 |   test('should set the `src` property', () => {
+    > 31 |     expect(state.src).toBeDefined();
+         |                       ^
+      32 |   });
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:31:23)
+
+  ● hijackLogo › should set the `srcset` property
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      33 |
+      34 |   test('should set the `srcset` property', () => {
+    > 35 |     expect(state.srcset).toBeDefined();
+         |                          ^
+      36 |   });
+      37 | });
+      38 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex3-hijackLogo.test.js:35:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.227 s, estimated 2 s
+Ran all test suites matching /ex3-hijackLogo.test.js/i.
+2023-01-21 10:10:16 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:43 - Unknown word (Xdpd)
+
+2023-01-21 10:20:40 info: ------------------------------------------
+2023-01-21 10:20:40 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-21 10:20:40 info: ------------------------------------------
+2023-01-21 10:20:45 info: All unit tests passed.
+2023-01-21 10:20:50 error: *** ESLint Report ***
+
+ex3-hijackLogo.js
+  12:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-21 10:20:56 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:43 - Unknown word (Xdpd)
+
+2023-01-21 10:28:05 info: ------------------------------------------
+2023-01-21 10:28:05 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-21 10:28:05 info: ------------------------------------------
+2023-01-21 10:28:10 info: All unit tests passed.
+2023-01-21 10:28:14 error: *** ESLint Report ***
+
+ex3-hijackLogo.js
+  12:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-01-21 10:28:57 info: ------------------------------------------
+2023-01-21 10:28:57 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2023-01-21 10:28:57 info: ------------------------------------------
+2023-01-21 10:29:03 info: All unit tests passed.
+2023-01-21 10:29:12 info: All steps were completed successfully
+2023-01-22 10:30:31 info: ------------------------------------------
+2023-01-22 10:30:31 info: >>> Running Unit Test `ex6-gameOfLife` <<<
+2023-01-22 10:30:31 info: ------------------------------------------
+2023-01-22 10:30:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex6-gameOfLife.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js
+  Game Of Life:
+    √ should exist and be executable (3 ms)
+    × a living cell with zero living neighbors should die and have its life time reset to zero (6 ms)
+    × a living cell with one living neighbor should die and have its life time reset to zero (2 ms)
+    √ a living cell with two living neighbors should survive and have its life time incremented by one (1 ms)
+    √ a living cell with three living neighbors should survive and have its life time incremented by one (1 ms)
+    × a living cell with four living neighbors should die and have its life time reset to zero (1 ms)
+    √ a dead cell with zero living neighbors should remain dead and have a life time of zero (1 ms)
+    √ a dead cell with one living neighbor should remain dead and have a life time of zero
+    √ a dead cell with two living neighbors should remain dead and have a life time of zero (1 ms)
+    × a dead cell with three living neighbors should come alive and have its lifeTime reset to one (2 ms)
+    √ a dead cell with four living neighbors should remain dead and have a life time of zero (1 ms)
+
+  ● Game Of Life: › a living cell with zero living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      49 |
+      50 |     expect(midCell.alive).toBe(false);
+    > 51 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      52 |   });
+      53 |
+      54 |   test('a living cell with one living neighbor should die and have its life time reset to zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:51:30)
+
+  ● Game Of Life: › a living cell with one living neighbor should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      70 |
+      71 |     expect(midCell.alive).toBe(false);
+    > 72 |     expect(midCell.lifeTime).toBe(0);
+         |                              ^
+      73 |   });
+      74 |
+      75 |   test('a living cell with two living neighbors should survive and have its life time incremented by one', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:72:30)
+
+  ● Game Of Life: › a living cell with four living neighbors should die and have its life time reset to zero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: 2
+
+      139 |
+      140 |     expect(midCell.alive).toBe(false);
+    > 141 |     expect(midCell.lifeTime).toBe(0);
+          |                              ^
+      142 |   });
+      143 |
+      144 |   test('a dead cell with zero living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:141:30)
+
+  ● Game Of Life: › a dead cell with three living neighbors should come alive and have its lifeTime reset to one
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      225 |
+      226 |     expect(midCell.alive).toBe(true);
+    > 227 |     expect(midCell.lifeTime).toBe(1);
+          |                              ^
+      228 |   });
+      229 |
+      230 |   test('a dead cell with four living neighbors should remain dead and have a life time of zero', () => {
+
+      at Object.toBe (2-Browsers/Week1/unit-tests/ex6-gameOfLife.test.js:227:30)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 7 passed, 11 total
+Snapshots:   0 total
+Time:        2.105 s
+Ran all test suites matching /ex6-gameOfLife.test.js/i.
+2023-01-22 09:09:21 info: ---------------------------------------
+2023-01-22 09:09:21 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-22 09:09:21 info: ---------------------------------------
+2023-01-22 09:09:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js
+  catWalk
+    √ HTML should be syntactically valid (159 ms)
+    √ should have all TODO comments removed
+    √ should use `setInterval()` and/or `setTimeout()`
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● catWalk › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 52 |     expect(state.onload).toBeDefined();
+         |                          ^
+      53 |   });
+      54 |
+      55 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex5-catWalk.test.js:52:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.147 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+2023-01-22 09:21:11 info: ---------------------------------------
+2023-01-22 09:21:11 info: >>> Running Unit Test `ex5-catWalk` <<<
+2023-01-22 09:21:11 info: ---------------------------------------
+2023-01-22 09:21:20 info: All unit tests passed.
+2023-01-22 09:21:29 info: All steps were completed successfully
+2023-01-23 02:35:08 info: --------------------------------------------
+2023-01-23 02:35:08 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:35:08 info: --------------------------------------------
+2023-01-23 02:35:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (6.867 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (158 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()`
+    √ should not call `setInterval()` more than once (2015 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (5 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        7.035 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 02:37:12 info: --------------------------------------------
+2023-01-23 02:37:12 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:37:12 info: --------------------------------------------
+2023-01-23 02:37:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.85 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (146 ms)
+    √ should have all TODO comments removed
+    √ should use `setInterval()`
+    √ should not call `setInterval()` more than once (2003 ms)
+    × should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (5 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 65 |     expect(state.onload).toBeDefined();
+         |                          ^
+      66 |   });
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:65:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.951 s, estimated 7 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 02:37:49 info: --------------------------------------------
+2023-01-23 02:37:49 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:37:49 info: --------------------------------------------
+2023-01-23 02:37:58 info: All unit tests passed.
+2023-01-23 02:38:05 info: All steps were completed successfully
+2023-01-23 02:42:39 info: --------------------------------------------
+2023-01-23 02:42:39 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 02:42:39 info: --------------------------------------------
+2023-01-23 02:42:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (5.828 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (165 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` (1 ms)
+    √ should not call `setInterval()` more than once (2004 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    × `window.onload` or `window.addEventListener` should not call its event handler function (5 ms)
+
+  ● whatsTheTime › `window.onload` or `window.addEventListener` should not call its event handler function
+
+    expect(received).not.toBeDefined()
+
+    Received: true
+
+      67 |
+      68 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+    > 69 |     expect(state.callError).not.toBeDefined();
+         |                                 ^
+      70 |   });
+      71 | });
+      72 |
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:69:33)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        5.932 s, estimated 6 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2023-01-23 03:14:11 info: --------------------------------------------
+2023-01-23 03:14:11 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2023-01-23 03:14:11 info: --------------------------------------------
+2023-01-23 03:14:20 info: All unit tests passed.
+2023-01-23 03:14:27 info: All steps were completed successfully
