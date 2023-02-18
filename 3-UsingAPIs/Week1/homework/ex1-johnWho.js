@@ -12,9 +12,9 @@ const getAnonName = (firstName) => {
   })
 }
 function main() {
-  getAnonName('John')
+  getAnonName('hyf')
     .then(name => console.log(name))
-    .catch(err => err);
+    .catch(err => console.log(err));
 }
 
 // ! Do not change or remove the code below
