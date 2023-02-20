@@ -22,18 +22,60 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
+async function fetchData(url) {
+  const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+  if(!response.ok)
+  throw new Error(`HTTP Error ${response.status}: ${response.statusText}`);
+  const data = await response.json();
+  console.log(data);
+  return data;
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
 }
+fetchData()
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons(data) {
+  try {
+  //Create button Get Pokemon!
+  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
+  const button = document.createElement('button');
+  button.textContent = 'Get Pokemon!';
+  document.body.append(button);
+  //Create Select
+  const select = document.createElement('select');
+  select.setAttribute('id', 'select-menu');
+  document.body.append(select);
+  const pokemonNames = data.results.map((result) => result.name);
+  button.addEventListener('click', () => {
+    pokemonNames.forEach((pokemon) => {
+      const option = document.createElement('option');
+      select.appendChild(option);
+      option.setAttribute('value', pokemon);
+      option.textContent = pokemon;
+    });
+  });
+} catch (err) {
+  return console.log(err)
 }
+}
+fetchAndPopulatePokemons();
 
+async function fetchImage(data) {
+  try {
+  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
+  const imgData = data.results.map((result) => result.url);
+  const imgUrl = imgData["sprites"]["front_shiny"];
+  const img = document.createElement('img');
+  img.src = imgUrl;
+  document.body.appendChild(img);
+
+
+
+} catch (err) {
+  return console.log(err)
+}
+  
+}
+fetchImage()
 function main() {
   // TODO complete this function
 }
