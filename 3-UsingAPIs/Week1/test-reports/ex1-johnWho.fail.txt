@@ -1,0 +1,169 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (28 ms)
+    × should have all TODO comments removed (4 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (2 ms)
+    × should call `new Promise()` (1 ms)
+    × should take a single argument (7 ms)
+    × `resolve()` should be called with a one argument (2 ms)
+    × `reject()` should be called with a one argument (2 ms)
+    × should resolve when called with a string argument (3 ms)
+    × should reject with an Error object when called without an argument (2 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      101 | }
+      102 |
+    > 103 | function testTodosRemoved(getSource) {
+          |                                          ^
+      104 |   test('should have all TODO comments removed', () => {
+      105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+      106 |   });
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:103:42)
+
+  ● getAnonName › should call `new Promise()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      54 |
+      55 |   test('should call `new Promise()`', () => {
+    > 56 |     expect(state.newPromise).toBeDefined();
+         |                              ^
+      57 |   });
+      58 |
+      59 |   test('should take a single argument', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:56:30)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+    > 64 |     expect(state.resolve).toBe(1);
+         |                           ^
+      65 |   });
+      66 |
+      67 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:64:27)
+
+  ● getAnonName › `reject()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: undefined
+
+      66 |
+      67 |   test('`reject()` should be called with a one argument', () => {
+    > 68 |     expect(state.reject).toBe(1);
+         |                          ^
+      69 |   });
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:68:26)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    TypeError: callback is not a function
+
+      19 |     const fullName = `${firstName} Doe`;
+      20 |
+    > 21 |     callback(fullName);
+         |     ^
+      22 |   }, 1000);
+      23 | };
+      24 |
+
+      at callback (3-UsingAPIs/Week1/homework/ex1-johnWho.js:21:5)
+      at cb (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:35)
+      at setTimeout (3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:3)
+      at Object.getAnonName (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:77:21)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    TypeError: callback is not a function
+
+      13 |   setTimeout(() => {
+      14 |     if (!firstName) {
+    > 15 |       callback(new Error("You didn't pass in a first name!"));
+         |       ^
+      16 |       return;
+      17 |     }
+      18 |
+
+      at callback (3-UsingAPIs/Week1/homework/ex1-johnWho.js:15:7)
+      at cb (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:88:35)
+      at setTimeout (3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:3)
+      at Object.getAnonName (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:89:21)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+    > 84 |     expect.assertions(3);
+         |            ^
+      85 |     expect(exported).toBeDefined();
+      86 |     const timeoutSpy = jest
+      87 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:84:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       7 failed, 2 passed, 9 total
+Snapshots:   0 total
+Time:        2.94 s
+Ran all test suites matching /ex1-johnWho.test.js/i.

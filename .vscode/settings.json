@@ -16,5 +16,6 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.highlightActiveIndentation": true,
-  "editor.guides.bracketPairsHorizontal": "active"
+  "editor.guides.bracketPairsHorizontal": "active",
+  "liveServer.settings.port": 5501
 }

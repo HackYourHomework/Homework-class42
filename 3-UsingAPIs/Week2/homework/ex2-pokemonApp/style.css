@@ -1,1 +1,32 @@
 /* add your styling here */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+}
+
+#get-pokemon{
+  margin: 15px;
+  border:solid 2px black;
+  height: 5vh;
+  width: 20vh;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.select-box{
+font-weight: bold;
+margin:15px;
+width: 20px;
+height: 4vh;
+border-radius: 3px;
+}
+
+.option-box {
+  font-weight: bold;
+  color: white;
+}
