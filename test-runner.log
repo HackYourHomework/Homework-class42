@@ -432,3 +432,104 @@ Ran all test suites matching /ex2-pokemonApp.test.js/i.
 2023-02-20 02:08:19 info: -----------------------------------------
 2023-02-20 02:08:21 info: All unit tests passed.
 2023-02-20 02:08:25 info: All steps were completed successfully
+2023-02-20 02:38:57 info: ----------------------------------------
+2023-02-20 02:38:57 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-20 02:38:57 info: ----------------------------------------
+2023-02-20 02:39:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()` (1 ms)
+    × should use `Promise.race()` (1 ms)
+    × should resolve as soon as a die settles successfully (2 ms)
+    × should reject with an Error as soon as a die rolls off the table (1 ms)
+
+  ● ex4-diceRace › should use `Promise.race()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:44:30)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    ReferenceError: PromiseRejectionEvent is not defined
+
+      17 |   const dice = [1, 2, 3, 4, 5];
+      18 |   const promises = dice.map(() => rollDie());
+    > 19 |   return PromiseRejectionEvent.race(promises);
+         |   ^
+      20 | }
+      21 |
+      22 | async function main() {
+
+      at rollDice (3-UsingAPIs/Week2/homework/ex4-diceRace.js:19:3)
+      at Object.rollDice (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:53:21)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      62 |
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+    > 64 |     expect.assertions(3);
+         |            ^
+      65 |     expect(exported).toBeDefined();
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:64:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 4 passed, 7 total
+Snapshots:   0 total
+Time:        0.877 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+C:\Users\Gebruiker\Desktop\Homework-class42\3-UsingAPIs\helpers\pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (C:\Users\Gebruiker\Desktop\Homework-class42\3-UsingAPIs\helpers\pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (C:\Users\Gebruiker\Desktop\Homework-class42\3-UsingAPIs\helpers\pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v19.3.0
+2023-02-20 02:54:14 info: ----------------------------------------
+2023-02-20 02:54:14 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-20 02:54:14 info: ----------------------------------------
+2023-02-20 02:54:16 info: All unit tests passed.
+2023-02-20 02:54:21 info: All steps were completed successfully

@@ -15,14 +15,17 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDie()
+  const promises = dice.map(() => rollDie());
+  return Promise.race(promises);
 }
 
-// Refactor this function to use async/await and try/catch
-function main() {
-  rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    const result = await rollDice();
+    console.log('resolved!', result);
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
 }
 
 // ! Do not change or remove the code below
@@ -30,3 +33,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// When Promise.race() resolves, it immediately returns the value of the first promise that settles (either resolved or rejected). However, the other promises that are still pending are not canceled and will continue to run until they either resolve or reject. In this case, the rollDie() function generates a random number between 1 and 6 and returns a promise that resolves after a random delay. If the promise doesn't settle before Promise.race() resolves, the function will continue to run until the promise is settled.
