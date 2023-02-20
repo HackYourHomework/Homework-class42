@@ -1,3 +1,99 @@
+*** Unit Test Error Report ***
 
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js (10.918 s)
+  ex4-pokerDiceAll
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✓ should use `dice.map()` (1 ms)
+    ✓ should use `Promise.all()`
+    ✕ should resolve when all dice settle successfully (5006 ms)
+    ✕ should reject with an Error when a die rolls off the table (5005 ms)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      45 |   });
+      46 |
+    > 47 |   test('should resolve when all dice settle successfully', async () => {
+         |   ^
+      48 |     expect.assertions(4);
+      49 |     expect(exported).toBeDefined();
+      50 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:47:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:9:1)
+
+  ● ex4-pokerDiceAll › should resolve when all dice settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve when all dice settle successfully', async () => {
+    > 48 |     expect.assertions(4);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      62 |   });
+      63 |
+    > 64 |   test('should reject with an Error when a die rolls off the table', async () => {
+         |   ^
+      65 |     expect.assertions(3);
+      66 |     expect(exported).toBeDefined();
+      67 |
+
+      at test (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:64:3)
+      at Object.describe (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:9:1)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      63 |
+      64 |   test('should reject with an Error when a die rolls off the table', async () => {
+    > 65 |     expect.assertions(3);
+         |            ^
+      66 |     expect(exported).toBeDefined();
+      67 |
+      68 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:65:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        11.025 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
 *** Spell Checker Report ***
 
