@@ -533,3 +533,8 @@ Node.js v19.3.0
 2023-02-20 02:54:14 info: ----------------------------------------
 2023-02-20 02:54:16 info: All unit tests passed.
 2023-02-20 02:54:21 info: All steps were completed successfully
+2023-02-20 03:24:51 info: ----------------------------------------
+2023-02-20 03:24:51 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-20 03:24:51 info: ----------------------------------------
+2023-02-20 03:24:51 warn: A unit test file was not provided.
+2023-02-20 03:24:55 info: All steps were completed successfully
