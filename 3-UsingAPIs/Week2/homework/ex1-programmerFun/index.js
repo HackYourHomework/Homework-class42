@@ -50,13 +50,6 @@ async function main() {
   } catch (error) {
     renderError(error);
   }
-  /* requestData('https://xkcd.now.sh/?comic=latest')
-    .then((data) => {
-      renderImage(data);
-    })
-    .catch((error) => {
-      renderError(error);
-    }); */
 }
 
 window.addEventListener('load', main);
