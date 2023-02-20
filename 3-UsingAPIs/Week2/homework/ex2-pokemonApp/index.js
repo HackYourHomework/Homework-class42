@@ -10,6 +10,9 @@ async function fetchData(url) {
   try {
     let res = await fetch(url);
     let data = await res.json();
+    if (!res.ok) {
+      throw new Error(res.status, res.statusText);
+    }
     return data;
   } catch (error) {
     console.log(error);

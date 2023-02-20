@@ -5,7 +5,12 @@ const body = document.body;
 
 function requestData(url) {
   return fetch(url)
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response){
+        throw new Error(response.status)
+      }
+      return response.json();
+    })
     .then((data) => data);
 }
 
