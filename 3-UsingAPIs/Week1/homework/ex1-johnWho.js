@@ -22,8 +22,10 @@ const getAnonName = (firstName) => {
 };
 
 function main() {
-  getAnonName('John', console.log);
-  getAnonName('John');
+  getAnonName('John').then(
+    (fullName) => console.log(fullName),
+    (error) => console.log(error.message)
+  );
 }
 
 // ! Do not change or remove the code below
