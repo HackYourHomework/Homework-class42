@@ -1,1 +1,32 @@
-/* add your styling here */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6fe00;
+}
+
+#button {
+  padding: 0.6em 2em;
+  margin: 5rem;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  border-radius: 9999px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+
+}
+
+#select {
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  border: thin solid rgb(0, 55, 255);
+  border-radius: 4px;
+  line-height: 1.5em;
+  padding: 1em;
+  margin: 5rem;
+}
