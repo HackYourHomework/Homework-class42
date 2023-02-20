@@ -1,0 +1,216 @@
+2023-02-16 04:05:06 info: ---------------------------------------
+2023-02-16 04:05:06 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-16 04:05:06 info: ---------------------------------------
+2023-02-16 04:05:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (1 ms)
+    × should have all TODO comments removed (3 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    √ should call `new Promise()`
+    √ should take a single argument
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument
+    √ should resolve when called with a string argument (1 ms)
+    √ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        0.625 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2023-02-20 03:15:46 info: ---------------------------------------
+2023-02-20 03:15:46 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-20 03:15:46 info: ---------------------------------------
+2023-02-20 03:15:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (1 ms)
+    × should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls
+    √ should call `new Promise()`
+    √ should take a single argument
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument
+    √ should resolve when called with a string argument (1 ms)
+    √ should reject with an Error object when called without an argument
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        0.528 s, estimated 1 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2023-02-20 03:16:04 info: -------------------------------------------------
+2023-02-20 03:16:04 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2023-02-20 03:16:04 info: -------------------------------------------------
+2023-02-20 03:16:07 info: All unit tests passed.
+2023-02-20 03:16:11 info: All steps were completed successfully
+2023-02-20 03:16:23 info: ---------------------------------------
+2023-02-20 03:16:23 info: >>> Running Unit Test `ex3-rollDie` <<<
+2023-02-20 03:16:23 info: ---------------------------------------
+2023-02-20 03:16:25 info: All unit tests passed.
+2023-02-20 03:16:29 info: All steps were completed successfully
+2023-02-20 03:16:39 info: --------------------------------------------
+2023-02-20 03:16:39 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2023-02-20 03:16:39 info: --------------------------------------------
+2023-02-20 03:16:42 info: All unit tests passed.
+2023-02-20 03:16:47 info: All steps were completed successfully
+2023-02-20 03:16:56 info: ----------------------------------------------
+2023-02-20 03:16:56 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-20 03:16:56 info: ----------------------------------------------
+2023-02-20 03:16:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    × should resolve when all dice settle successfully (58 ms)
+    √ should reject with an Error when a die rolls off the table (88 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 2
+    Received array:  ["NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.756 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-20 06:05:57 info: ----------------------------------------------
+2023-02-20 06:05:57 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-20 06:05:57 info: ----------------------------------------------
+2023-02-20 06:06:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (1 ms)
+    √ should have all TODO comments removed
+    √ `rollDice` should not contain unneeded console.log calls
+    × should resolve when all dice settle successfully (49 ms)
+    √ should reject with an Error when a die rolls off the table (85 ms)
+
+  ● ex5-pokerDiceChain › should resolve when all dice settle successfully
+
+    expect(received).toHaveLength(expected)
+
+    Expected length: 5
+    Received length: 2
+    Received array:  ["NINE", "NINE"]
+
+      33 |     const result = await promise;
+      34 |     expect(Array.isArray(result)).toBe(true);
+    > 35 |     expect(result).toHaveLength(5);
+         |                    ^
+      36 |
+      37 |     promise.finally(() => {
+      38 |       randomSpy.mockRestore();
+
+      at Object.toHaveLength (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:35:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.627 s, estimated 1 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2023-02-20 06:07:42 info: ----------------------------------------------
+2023-02-20 06:07:42 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2023-02-20 06:07:42 info: ----------------------------------------------
+2023-02-20 06:07:45 info: All unit tests passed.
+2023-02-20 06:07:49 info: All steps were completed successfully
+2023-02-20 06:29:27 info: ---------------------------------------
+2023-02-20 06:29:27 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-20 06:29:27 info: ---------------------------------------
+2023-02-20 06:29:29 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (1 ms)
+    × should have all TODO comments removed (1 ms)
+    √ `getAnonName` should not contain unneeded console.log calls
+    √ should call `new Promise()` (1 ms)
+    √ should take a single argument
+    √ `resolve()` should be called with a one argument
+    √ `reject()` should be called with a one argument (1 ms)
+    √ should resolve when called with a string argument (1 ms)
+    √ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        0.476 s, estimated 1 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2023-02-20 06:42:24 info: ---------------------------------------
+2023-02-20 06:42:24 info: >>> Running Unit Test `ex1-johnWho` <<<
+2023-02-20 06:42:24 info: ---------------------------------------
+2023-02-20 06:42:26 info: All unit tests passed.
+2023-02-20 06:42:31 info: All steps were completed successfully
