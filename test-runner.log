@@ -133,3 +133,13 @@ ex3-rollAnAce.js
 ✖ 1 problem (1 error, 0 warnings)
 
 
+2023-02-20 10:33:26 info: -----------------------------------------
+2023-02-20 10:33:26 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 10:33:26 info: -----------------------------------------
+2023-02-20 10:33:30 info: All unit tests passed.
+2023-02-20 10:33:37 info: All steps were completed successfully
+2023-02-20 10:38:39 info: ----------------------------------------
+2023-02-20 10:38:39 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-20 10:38:39 info: ----------------------------------------
+2023-02-20 10:38:44 info: All unit tests passed.
+2023-02-20 10:38:51 info: All steps were completed successfully
