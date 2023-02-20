@@ -22,63 +22,40 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-async function fetchData(url) {
+async function requestData(url) {
   try {
-    const data = await fetch(url).then((response) => response.json());
-    return data;
-  } catch (error) {
-    console.error(error);
+    const response = await fetch(url);
+    const dataJson = await response.json();
+    return dataJson;
+  } catch (e) {
+    throw new Error(e);
   }
 }
 
-function fetchAndPopulatePokemons(data) {
-  const select = document.querySelector('select');
-  select.innerHTML = '';
-  const pokemons = data.results;
-  pokemons.forEach((pokemon) => {
-    const option = document.createElement('option');
-    option.value = pokemon.url;
-    option.textContent = pokemon.name;
-    select.appendChild(option);
-  });
-  select.addEventListener('change', (event) => {
-    fetchImage(event);
-  });
+function renderImage(data) {
+  const renderImg = document.createElement('img');
+  renderImg.src = data.img;
+  renderImg.alt = 'comic';
+  document.body.appendChild(renderImg);
+
+  console.log(data);
 }
 
-async function fetchImage(event) {
+function renderError(error) {
+  const renderError = document.createElement('h1');
+  renderError.textContent = error;
+  document.body.appendChild(renderError);
+
+  console.log(error);
+}
+
+async function main() {
   try {
-    const selectUrl = event.target.value;
-    const img = document.querySelector('img');
-    const imgData = await fetchData(selectUrl);
-    img.alt = 'Pokemon';
-    img.src =
-      imgData.sprites['versions']['generation-v']['black-white']['animated'][
-        'front_default'
-      ];
-  } catch (error) {
-    console.error(error.message);
+    const loadAPI = await requestData('https://xkcd.now.sh/?comic=latest');
+    await renderImage(loadAPI);
+  } catch (e) {
+    renderError(e);
   }
-}
-
-function main() {
-  document.body.innerHTML = `
-      <h2><b>Pokemons</b></h2>
-      <button id="button">Get Pokemons</button>
-      <select id="select">
-          <option value="" disabled selected>Press [Get Pokemons] first</option>
-      </select>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="Pokemon">
-  `;
-  const button = document.querySelector('button');
-  const select = document.querySelector('select');
-  button.addEventListener('click', async () => {
-    const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
-    fetchAndPopulatePokemons(data);
-  });
-  select.addEventListener('change', (event) => {
-    fetchImage(event.target.value);
-  });
 }
 
 window.addEventListener('load', main);

@@ -53,3 +53,111 @@ ex2-pokemonApp/index.js
 ✖ 2 problems (0 errors, 2 warnings)
 
 
+2023-02-20 08:32:46 info: ------------------------------------------
+2023-02-20 08:32:46 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-20 08:32:46 info: ------------------------------------------
+2023-02-20 08:32:51 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (104 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      10:8  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.03 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-20 08:32:53 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  36:3  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+  65:3  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2023-02-20 08:34:09 info: ------------------------------------------
+2023-02-20 08:34:09 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-20 08:34:09 info: ------------------------------------------
+2023-02-20 08:34:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+
+
+  ● Test suite failed to run
+
+    TypeError: Cannot read properties of null (reading 'addEventListener')
+
+      71 |   const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
+      72 |
+    > 73 |   btn.addEventListener('click', async () => {
+         |       ^
+      74 |     fetchAndPopulatePokemons(data);
+      75 |     selectList.onchange = (e) => {
+      76 |       fetchImage(e.target.value);
+
+      at main (file:/C:/Users/vox/Desktop/Homework-class42/3-UsingAPIs/Week2/homework/ex2-pokemonApp/index.js:73:7)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        2.848 s, estimated 3 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-20 08:37:32 info: ------------------------------------------
+2023-02-20 08:37:32 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-20 08:37:32 info: ------------------------------------------
+2023-02-20 08:37:37 info: All unit tests passed.
+2023-02-20 08:37:41 info: All steps were completed successfully
+2023-02-20 08:38:13 info: ---------------------------------------------
+2023-02-20 08:38:13 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-02-20 08:38:13 info: ---------------------------------------------
+2023-02-20 08:38:18 info: All unit tests passed.
+2023-02-20 08:38:22 info: All steps were completed successfully
+2023-02-20 08:38:38 info: -----------------------------------------
+2023-02-20 08:38:38 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 08:38:38 info: -----------------------------------------
+2023-02-20 08:38:41 info: All unit tests passed.
+2023-02-20 08:38:45 info: All steps were completed successfully
+2023-02-20 08:38:53 info: ----------------------------------------
+2023-02-20 08:38:53 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-20 08:38:53 info: ----------------------------------------
+2023-02-20 08:38:56 info: All unit tests passed.
+2023-02-20 08:39:00 info: All steps were completed successfully
+2023-02-20 08:39:34 info: ----------------------------------------
+2023-02-20 08:39:34 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-20 08:39:34 info: ----------------------------------------
+2023-02-20 08:39:34 warn: A unit test file was not provided.
+2023-02-20 08:39:38 info: All steps were completed successfully
+2023-02-20 08:39:55 info: --------------------------------------------
+2023-02-20 08:39:55 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-02-20 08:39:55 info: --------------------------------------------
+2023-02-20 08:39:55 warn: A unit test file was not provided.
+2023-02-20 08:39:59 info: All steps were completed successfully
