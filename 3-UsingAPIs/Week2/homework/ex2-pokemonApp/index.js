@@ -61,11 +61,16 @@ async function fetchImage(imgElement, url) {
 async function main() {
   const pokemonSelect = document.getElementById('pokemonSelect');
   const pokemonImage = document.getElementById('pokemonImage');
+  const getPokemonButton = document.getElementById('getPokemonButton');
 
-  await fetchAndPopulatePokemons(
-    pokemonSelect,
-    'https://pokeapi.co/api/v2/pokemon?limit=150'
-  );
+  getPokemonButton.addEventListener('click', () => {
+    pokemonSelect.style.display = 'block';
+    pokemonImage.style.display = 'block';
+    fetchAndPopulatePokemons(
+      pokemonSelect,
+      'https://pokeapi.co/api/v2/pokemon?limit=151'
+    );
+  });
 
   pokemonSelect.addEventListener('change', () => {
     fetchImage(pokemonImage, pokemonSelect.value);
