@@ -133,3 +133,552 @@ ex2-pokemonApp/index.js
 ✖ 4 problems (4 errors, 0 warnings)
 
 
+2023-02-20 06:31:26 info: -----------------------------------------
+2023-02-20 06:31:26 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 06:31:26 info: -----------------------------------------
+2023-02-20 06:31:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✕ should not include a recursive call
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (23 ms)
+    ✓ should reject with an Error when a die rolls off the table (10 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.389 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-20 06:31:28 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  17:9  error  Unexpected constant condition  no-constant-condition
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-20 06:32:21 info: -----------------------------------------
+2023-02-20 06:32:21 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 06:32:21 info: -----------------------------------------
+2023-02-20 06:32:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed
+    ✓ `rollDieUntil` should not contain unneeded console.log calls (3 ms)
+    ✕ should not include a recursive call (1 ms)
+    ✓ should use async/wait (1 ms)
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (19 ms)
+    ✓ should reject with an Error when a die rolls off the table (13 ms)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.306 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-20 06:32:22 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  17:9  error  Unexpected constant condition  no-constant-condition
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-20 06:34:28 info: -----------------------------------------
+2023-02-20 06:34:28 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 06:34:28 info: -----------------------------------------
+2023-02-20 06:34:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[6631:0x67f8370]    19286 ms: Scavenge 2028.9 (2070.3) -> 2026.2 (2079.0) MB, 2.9 / 0.0 ms  (average mu = 0.159, current mu = 0.125) allocation failure; 
+[6631:0x67f8370]    19293 ms: Scavenge 2033.4 (2079.0) -> 2027.5 (2079.5) MB, 3.7 / 0.0 ms  (average mu = 0.159, current mu = 0.125) allocation failure; 
+[6631:0x67f8370]    19299 ms: Scavenge 2033.9 (2079.5) -> 2028.6 (2080.8) MB, 4.5 / 0.0 ms  (average mu = 0.159, current mu = 0.125) allocation failure; 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+ 1: 0xb6e500 node::Abort() [node]
+ 2: 0xa7e632  [node]
+ 3: 0xd47f20 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+ 4: 0xd482c7 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]
+ 5: 0xf25685  [node]
+ 6: 0xf26588 v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [node]
+ 7: 0xf36a93  [node]
+ 8: 0xf37908 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
+ 9: 0xf3aad5 v8::internal::Heap::HandleGCRequest() [node]
+10: 0xeb8c2f v8::internal::StackGuard::HandleInterrupts() [node]
+11: 0x12b76c5 v8::internal::Runtime_StackGuard(int, unsigned long*, v8::internal::Isolate*) [node]
+12: 0x16e99f9  [node]
+Aborted (core dumped)
+2023-02-20 06:34:50 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  16:8  warning  'dieValue' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  17:9  error    Unexpected constant condition                        no-constant-condition
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2023-02-20 07:41:47 info: -----------------------------------------
+2023-02-20 07:41:47 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 07:41:47 info: -----------------------------------------
+2023-02-20 07:41:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls (2 ms)
+    ✕ should not include a recursive call (1 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (20 ms)
+    ✓ should reject with an Error when a die rolls off the table (12 ms)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.314 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-20 07:41:49 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  16:7  warning  'dieValue' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  17:9  error    Unexpected constant condition                        no-constant-condition
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2023-02-20 07:44:30 info: -----------------------------------------
+2023-02-20 07:44:30 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 07:44:30 info: -----------------------------------------
+2023-02-20 07:44:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✕ should not include a recursive call (1 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (20 ms)
+    ✓ should reject with an Error when a die rolls off the table (14 ms)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.313 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-20 07:44:31 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  16:7  warning  'dieValue' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-02-20 07:48:46 info: -----------------------------------------
+2023-02-20 07:48:46 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 07:48:46 info: -----------------------------------------
+2023-02-20 07:48:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls (2 ms)
+    ✕ should not include a recursive call (1 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (18 ms)
+    ✓ should reject with an Error when a die rolls off the table (12 ms)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.311 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-20 07:48:48 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  16:7  warning  'dieValue' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-02-20 07:54:08 info: -----------------------------------------
+2023-02-20 07:54:08 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 07:54:08 info: -----------------------------------------
+2023-02-20 07:54:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (3 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✓ should not include a recursive call (1 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✕ should resolve as soon as a die settles on an ACE (43 ms)
+    ✓ should reject with an Error when a die rolls off the table (12 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.348 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-20 07:54:10 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  18:9  warning  'dieValue' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  18:9  error    'dieValue' is assigned a value but never used        no-unused-vars
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2023-02-20 07:55:10 info: -----------------------------------------
+2023-02-20 07:55:10 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 07:55:10 info: -----------------------------------------
+2023-02-20 07:55:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (3 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✓ should not include a recursive call
+    ✓ should use async/wait
+    ✓ should use try/catch (1 ms)
+    ✕ should resolve as soon as a die settles on an ACE (28 ms)
+    ✓ should reject with an Error when a die rolls off the table (12 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.321 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-20 07:55:11 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  18:9  warning  'dieValue' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  18:9  error    'dieValue' is assigned a value but never used        no-unused-vars
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2023-02-20 07:55:49 info: -----------------------------------------
+2023-02-20 07:55:49 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 07:55:49 info: -----------------------------------------
+2023-02-20 07:55:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    ✓ should not include a recursive call
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✕ should resolve as soon as a die settles on an ACE (55 ms)
+    ✓ should reject with an Error when a die rolls off the table (12 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.353 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-20 07:55:51 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  18:9  warning  'dieValue' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  18:9  error    'dieValue' is assigned a value but never used        no-unused-vars
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2023-02-20 07:57:02 info: -----------------------------------------
+2023-02-20 07:57:02 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 07:57:02 info: -----------------------------------------
+2023-02-20 07:57:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls
+    ✓ should not include a recursive call (3 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✕ should resolve as soon as a die settles on an ACE (52 ms)
+    ✓ should reject with an Error when a die rolls off the table (12 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    Die 1 rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.35 s, estimated 1 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-20 07:57:04 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  18:9  warning  'dieValue' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  18:9  error    'dieValue' is assigned a value but never used        no-unused-vars
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2023-02-20 08:00:56 info: -----------------------------------------
+2023-02-20 08:00:56 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 08:00:56 info: -----------------------------------------
+2023-02-20 08:00:57 info: All unit tests passed.
+2023-02-20 08:00:57 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  17:9  error  Unexpected constant condition  no-constant-condition
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-20 08:06:19 info: -----------------------------------------
+2023-02-20 08:06:19 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-20 08:06:19 info: -----------------------------------------
+2023-02-20 08:06:20 info: All unit tests passed.
+2023-02-20 08:06:21 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  17:9  error  Unexpected constant condition  no-constant-condition
+
+✖ 1 problem (1 error, 0 warnings)
+
+
