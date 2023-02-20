@@ -882,3 +882,8 @@ Node.js v18.12.1
 2023-02-20 09:26:15 info: ----------------------------------------
 2023-02-20 09:26:15 warn: A unit test file was not provided.
 2023-02-20 09:26:16 info: All steps were completed successfully
+2023-02-21 12:25:26 info: --------------------------------------------
+2023-02-21 12:25:26 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-02-21 12:25:26 info: --------------------------------------------
+2023-02-21 12:25:26 warn: A unit test file was not provided.
+2023-02-21 12:25:27 info: All steps were completed successfully
