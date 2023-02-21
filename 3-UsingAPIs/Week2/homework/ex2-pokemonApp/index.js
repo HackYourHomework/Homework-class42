@@ -1,4 +1,7 @@
 'use strict';
+
+
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-2-gotta-catch-em-all
 
@@ -23,59 +26,66 @@ Try and avoid using global variables. As much as possible, try and use function
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 async function fetchData(url) {
-  const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
-  if(!response.ok)
-  throw new Error(`HTTP Error ${response.status}: ${response.statusText}`);
-  const data = await response.json();
-  console.log(data);
-  return data;
-
+    const response = await fetch(url);
+    if(!response.ok)
+    throw new Error(`HTTP Error ${response.status}: ${response.statusText}`);
+    const data = await response.json();
+    return data;
 }
-fetchData()
 
 async function fetchAndPopulatePokemons(data) {
-  try {
-  //Create button Get Pokemon!
-  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
-  const button = document.createElement('button');
-  button.textContent = 'Get Pokemon!';
-  document.body.append(button);
-  //Create Select
-  const select = document.createElement('select');
-  select.setAttribute('id', 'select-menu');
-  document.body.append(select);
-  const pokemonNames = data.results.map((result) => result.name);
-  button.addEventListener('click', () => {
-    pokemonNames.forEach((pokemon) => {
-      const option = document.createElement('option');
-      select.appendChild(option);
-      option.setAttribute('value', pokemon);
-      option.textContent = pokemon;
-    });
-  });
-} catch (err) {
-  return console.log(err)
-}
-}
-fetchAndPopulatePokemons();
 
-async function fetchImage(data) {
-  try {
-  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
-  const imgData = data.results.map((result) => result.url);
-  const imgUrl = imgData["sprites"]["front_shiny"];
-  const img = document.createElement('img');
-  img.src = imgUrl;
-  document.body.appendChild(img);
-
-
-
-} catch (err) {
-  return console.log(err)
-}
+    const button = document.createElement('button');
+    button.setAttribute('type', 'submit');
+    button.textContent = 'Get Pokemon!';
+    document.body.appendChild(button);
   
+    const select = document.createElement('select');
+    document.body.appendChild(select);
+    const pokemonNames = data.results.map((result) => result.name);
+    button.addEventListener('click', () => {
+      pokemonNames.forEach((pokemon, index) => {
+        const option = document.createElement('option');
+        select.appendChild(option);
+        option.setAttribute('value', index + 1);
+        option.textContent = pokemon;
+      });
+  
+    });
+    return data;
+
+ 
 }
-fetchImage()
-function main() {
-  // TODO complete this function
+
+function fetchImage(data) {
+
+    const e = document.querySelector('select');
+    const img = document.createElement('img');
+    img.setAttribute('alt', 'pokemonImage');
+    img.setAttribute('src', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png');
+    img.style.visibility = 'hidden';
+
+    document.body.appendChild(img);
+    e.addEventListener('change', () =>{
+      const index = e.value;
+      img.setAttribute('alt', 'pokemonImage');
+      img.setAttribute('src', `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${(index)}.png`);
+      img.style.visibility = 'visible';
+
+    })
+
+    return data;
 }
+
+async function main() {
+  try{
+    await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151')
+    .then((data) => fetchAndPopulatePokemons(data))
+    .then((data) => fetchImage(data));
+  } catch(error){
+    console.log(error.message);
+  }
+
+}
+
+window.addEventListener('load', main);

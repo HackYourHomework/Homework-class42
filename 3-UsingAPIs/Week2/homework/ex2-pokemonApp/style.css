@@ -1,1 +1,33 @@
 /* add your styling here */
+body{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  padding-top: 5%;
+  margin: auto;
+
+}
+
+button {
+  background-color: rgb(240, 235, 230);
+  margin: 10px;
+  width: 25vh;
+  height: 3vh;
+  border-radius: 5px;
+
+}
+
+select {
+  background-color: rgb(213, 245, 187);
+  margin: 10px;
+  width: 25vh;
+  height: 3vh;
+  border-radius: 5px;
+  text-align: center;
+}
+img{
+
+  width: 25vh;
+}
+
+
