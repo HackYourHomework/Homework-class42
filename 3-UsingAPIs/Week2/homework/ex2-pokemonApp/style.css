@@ -1,1 +1,53 @@
-/* add your styling here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  color: #444;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+button {
+  background-color: #5236f4;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+select {
+  font-size: 16px;
+  padding: 8px;
+  margin: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+img {
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
