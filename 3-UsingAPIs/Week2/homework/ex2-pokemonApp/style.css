@@ -1,1 +1,18 @@
-/* add your styling here */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+select {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 200px;
+}
