@@ -143,3 +143,8 @@ ex3-rollAnAce.js
 2023-02-20 10:38:39 info: ----------------------------------------
 2023-02-20 10:38:44 info: All unit tests passed.
 2023-02-20 10:38:51 info: All steps were completed successfully
+2023-02-20 03:28:28 info: ----------------------------------------
+2023-02-20 03:28:28 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-20 03:28:28 info: ----------------------------------------
+2023-02-20 03:28:28 warn: A unit test file was not provided.
+2023-02-20 03:28:35 info: All steps were completed successfully

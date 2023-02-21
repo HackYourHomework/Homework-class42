@@ -22,8 +22,9 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-
-const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+//const proxy = 'https://cors-anywhere.herokuapp.com/';
+const url =
+  ' https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon?limit=151';
 const selectElement = document.createElement('select');
 document.body.appendChild(selectElement);
 
@@ -41,6 +42,23 @@ async function fetchData(url) {
     console.error('Network Error: ', error);
   }
 }
+/* function fetchData(url) {
+  return fetch(url)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('HTTP error');
+      }
+      const jsonData = response.json();
+      return jsonData;
+    })
+    .then((data) => {
+      return data;
+    })
+    .catch((error) => {
+      console.error(`Network error!`);
+      throw error;
+    });
+} */
 
 async function fetchAndPopulatePokemons() {
   try {
@@ -70,7 +88,7 @@ async function main() {
     await fetchAndPopulatePokemons();
     selectElement.addEventListener('change', async () => {
       const pokemon = selectElement.value;
-      const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+      const url = ` https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/${pokemon}`;
       await fetchImage(url);
     });
   } catch (error) {
