@@ -1,1 +1,16 @@
 /* add your styling here */
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+}
+select {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: greenyellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
