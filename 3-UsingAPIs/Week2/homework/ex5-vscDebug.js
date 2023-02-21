@@ -8,7 +8,8 @@ const fetch = require('node-fetch');
 
 async function getData(url) {
   const response = await fetch(url);
-  return response.json();
+  console.log(response.json())
+  return await response.json();
 }
 
 function renderLaureate({ knownName, birth, death }) {
@@ -18,18 +19,18 @@ function renderLaureate({ knownName, birth, death }) {
 }
 
 function renderLaureates(laureates) {
-  laureates.forEach(renderLaureate);
+  laureates.forEach(renderLaureate());
 }
 
 async function fetchAndRender() {
-  try {
+  // try {
     const laureates = getData(
       'http://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
     renderLaureates(laureates);
-  } catch (err) {
-    console.error(`Something went wrong: ${err.message}`);
-  }
+  // } catch (err) {
+  //   console.error(`Something went wrong: ${err.message}`);
+  // }
 }
 
 fetchAndRender();

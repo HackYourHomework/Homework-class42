@@ -6,7 +6,7 @@ Full description at:https://github.com/HackYourFuture/Homework/blob/main/3-Using
 
 async function getData(url) {
   const response = await fetch(url);
-  return response.json();
+  return await response.json();
 }
 
 function createAndAppend(name, parent, options = {}) {
