@@ -1,18 +1,12 @@
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-button {
+.btn,
+.select {
   width: 200px;
   margin-bottom: 30px;
+  display: block;
+  margin: 10px;
+  padding: 10px;
 }
 
-select {
-  width: 200px;
-  margin-bottom: 30px;
-}
-
-img {
+.img-div {
   width: 200px;
 }
