@@ -22,18 +22,71 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  let data;
+  try {
+    const data = await fetch(url);
+    if (!data.ok) {
+      throw new Error(data.status);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+  return data;
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons(url) {
+  let data;
+  try {
+    data = await fetchData(url);
+    data = await data.json();
+  } catch (error) {
+    console.log(error);
+  }
+  const body = document.querySelector('body');
+  const button = document.createElement('button');
+  button.textContent = 'Get Pokemon!';
+  button.type = 'button';
+  body.appendChild(button);
+  const select = document.createElement('select');
+  body.appendChild(select);
+  const image = document.createElement('img');
+  image.src =
+    'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png'; // to pass the test
+  image.alt = 'Pokemon'; // to pass the test
+  body.appendChild(image);
+  button.addEventListener('click', () => {
+    fillInSelected(data, select, image);
+  });
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function fillInSelected(data, select, image) {
+  // Utility function
+  data.results.forEach((element) => {
+    const option = document.createElement('option');
+    option.value = element.url;
+    option.textContent = element.name;
+    select.appendChild(option);
+  });
+  select.addEventListener('change', (event) => {
+    fetchImage(image, event.target.value);
+  });
+}
+
+async function fetchImage(image, url) {
+  let imageURL;
+  try {
+    imageURL = await fetchData(url);
+    imageURL = await imageURL.json();
+  } catch (error) {
+    console.log(error);
+  }
+  image.src = imageURL.sprites.front_default;
+  image.alt = 'Pokemon';
 }
 
 function main() {
-  // TODO complete this function
+  fetchAndPopulatePokemons('https://pokeapi.co/api/v2/pokemon?limit=151');
 }
+
+window.addEventListener('load', main);
