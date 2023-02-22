@@ -40,7 +40,7 @@ function rollDie() {
 function main() {
   rollDie()
     .then((message) => console.log(message))
-    .catch((message) => console.log(message));
+    .catch((error) => console.log(error.message));
 }
 
 // ! Do not change or remove the code below
@@ -49,5 +49,12 @@ if (process.env.NODE_ENV !== 'test') {
 }
 module.exports = rollDie;
 
-// Because any extra die roll more than 6 rolls result in an error. That is why if the die rolls 8 times we get two error messages and 7 we get only one error message. But with promise we get only one error message regardless. Promises solve the problem of returning both error and success messages at the same time.
-// I hope this explanation is sufficient. If not just let me know in the feedback and I will happily redo it
+
+
+
+
+
+// When we refactor the code using Promises, the 'resolve' or 'reject' method is called only once, when the final roll is completed,
+// but in the original code that uses callbacks, the callback is executed for each roll of the die, even after it has already resolved.
+// I think the reason for that is that the callback inside the function 'rollOnce' is being called
+// repeatedly using 'setTimeOut' until all rolls are completed

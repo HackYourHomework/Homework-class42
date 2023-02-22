@@ -21,7 +21,7 @@ const getAnonName = (firstName) => {
 };
 
 function main() {
-  getAnonName().then(message => console.log(message)).catch(message => console.log(message))
+  getAnonName().then(message => console.log(message)).catch(error => console.log(error.message))
 }
 
 // ! Do not change or remove the code below
