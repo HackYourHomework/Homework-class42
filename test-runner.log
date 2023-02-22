@@ -1392,3 +1392,37 @@ ex4-diceRace.js
 2023-02-22 03:30:27 info: ----------------------------------------
 2023-02-22 03:30:32 info: All unit tests passed.
 2023-02-22 03:30:40 info: All steps were completed successfully
+2023-02-22 04:02:07 info: ----------------------------------------
+2023-02-22 04:02:07 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-22 04:02:07 info: ----------------------------------------
+2023-02-22 04:02:07 warn: A unit test file was not provided.
+2023-02-22 04:02:11 error: *** ESLint Report ***
+
+ex5-vscDebug.js
+  1:5  error  Parsing error: Unexpected token it
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 04:03:22 info: ----------------------------------------
+2023-02-22 04:03:22 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-22 04:03:22 info: ----------------------------------------
+2023-02-22 04:03:22 warn: A unit test file was not provided.
+2023-02-22 04:03:26 error: *** ESLint Report ***
+
+ex5-vscDebug.js
+  1:5  error  Parsing error: Unexpected token it
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 04:06:02 info: ----------------------------------------
+2023-02-22 04:06:02 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-22 04:06:02 info: ----------------------------------------
+2023-02-22 04:06:02 warn: A unit test file was not provided.
+2023-02-22 04:06:09 info: All steps were completed successfully
+2023-02-22 04:07:34 info: ----------------------------------------
+2023-02-22 04:07:34 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-22 04:07:34 info: ----------------------------------------
+2023-02-22 04:07:34 warn: A unit test file was not provided.
+2023-02-22 04:07:41 info: All steps were completed successfully
