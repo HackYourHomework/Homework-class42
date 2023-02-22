@@ -14,26 +14,33 @@ to expand the given promise chain to include five dice.
 // Do not change or remove it.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
-function rollDice() {
-  const results = [];
 
-  // TODO: expand the chain to include five dice
-  return rollDie(1)
-    .then((value) => {
-      results.push(value);
-      return rollDie(2);
-    })
-    .then((value) => {
-      results.push(value);
-      return results;
-    });
+function rollASingleDie(result, dieNumber) {
+  return rollDie(dieNumber).then((value) => {
+    result.push(value)
+  })
 }
+
+function rollDice() {
+
+  const results = []
+
+ return rollASingleDie(results, 1)
+ .then(() => rollASingleDie(results, 2))
+ .then(() => rollASingleDie(results, 3))
+ .then(() => rollASingleDie(results, 4))
+ .then(() => rollASingleDie(results, 5))
+ .then(() => results)
+
+}
+
 
 function main() {
   rollDice()
     .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
 }
+
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {

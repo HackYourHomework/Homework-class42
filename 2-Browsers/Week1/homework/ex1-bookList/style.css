@@ -1,1 +1,11 @@
-/* Write your style here */
+ul {
+    display: flex;
+    gap: 1em;
+    text-align: center;
+    list-style-type: none;  
+
+}
+img {
+    width: 80%;
+    
+}
