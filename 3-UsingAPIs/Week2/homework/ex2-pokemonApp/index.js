@@ -23,31 +23,40 @@ Try and avoid using global variables. As much as possible, try and use function
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 async function fetchData(url) {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return await response.json();
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
+  return fetch(url)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Network response was failed');
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      console.error('Error fetching data:', error);
+      throw error;
+    });
 }
 
 async function fetchAndPopulatePokemons(url, selectElement) {
-  const pokemonList = await fetchData(url);
-  pokemonList.results.forEach((pokemon) => {
-    const option = document.createElement('option');
-    option.value = pokemon.url;
-    option.text = pokemon.name;
-    selectElement.add(option);
-  });
+  try {
+    const pokemonList = await fetchData(url);
+    pokemonList.results.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.value = pokemon.url;
+      option.text = pokemon.name;
+      selectElement.add(option);
+    });
+  } catch (error) {
+    console.error('Error fetching Pokemon Data:', error);
+  }
 }
-
 async function fetchImage(url, imageElement) {
-  const imageData = await fetchData(url);
-  imageElement.src = imageData.sprites.front_default;
-  imageElement.alt = `Image of ${imageData.name}`;
+  try {
+    const pokemonData = await fetchData(url);
+    imageElement.alt = 'pokemon-image';
+    imageElement.src = pokemonData.sprites.front_default;
+  } catch (error) {
+    console.error('Error fetching Pokemon image:', error);
+  }
 }
 
 function main() {
@@ -55,14 +64,18 @@ function main() {
   selectPokemon.classList.add('select-pokemon');
   const pokemonImage = document.createElement('img');
   pokemonImage.classList.add('pokemon-image');
+  pokemonImage.alt = 'pokemon-image';
+  pokemonImage.src =
+    'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png';
   document.body.appendChild(selectPokemon);
   document.body.appendChild(pokemonImage);
   fetchAndPopulatePokemons(
     'https://pokeapi.co/api/v2/pokemon?limit=151',
     selectPokemon
   );
-  selectPokemon.addEventListener('change', () => {
-    fetchImage(selectPokemon.value, pokemonImage);
+  selectPokemon.addEventListener('change', async () => {
+    const selectedPokemonUrl = selectPokemon.value;
+    await fetchImage(selectedPokemonUrl, pokemonImage);
   });
 }
 
