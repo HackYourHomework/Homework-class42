@@ -1,0 +1,1433 @@
+2023-02-21 11:30:08 info: ---------------------------------------------
+2023-02-21 11:30:08 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-02-21 11:30:08 info: ---------------------------------------------
+2023-02-21 11:30:24 info: All unit tests passed.
+2023-02-21 11:30:38 info: All steps were completed successfully
+2023-02-22 12:29:20 info: ------------------------------------------
+2023-02-22 12:29:20 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 12:29:20 info: ------------------------------------------
+2023-02-22 12:29:29 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (234 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10701  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10701  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.015 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 12:55:30 info: ------------------------------------------
+2023-02-22 12:55:30 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 12:55:30 info: ------------------------------------------
+2023-02-22 12:55:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (309 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()`
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10701  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10701  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.958 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 12:58:07 info: ------------------------------------------
+2023-02-22 12:58:07 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 12:58:07 info: ------------------------------------------
+2023-02-22 12:58:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (251 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      13:10701  error  <img> is missing required \"src\" attribute  element-required-attributes
+      13:10701  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.553 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 01:02:04 info: ------------------------------------------
+2023-02-22 01:02:04 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 01:02:04 info: ------------------------------------------
+2023-02-22 01:02:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (258 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()`
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10701  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10701  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.575 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 01:18:27 info: ------------------------------------------
+2023-02-22 01:18:27 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 01:18:27 info: ------------------------------------------
+2023-02-22 01:18:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (338 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10701  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10701  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.09 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 01:18:40 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  49:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-02-22 01:29:00 info: ------------------------------------------
+2023-02-22 01:29:00 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 01:29:00 info: ------------------------------------------
+2023-02-22 01:29:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (244 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()`
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10701  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10701  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.074 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 01:37:57 info: ------------------------------------------
+2023-02-22 01:37:57 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 01:37:57 info: ------------------------------------------
+2023-02-22 01:38:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (264 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10701  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10701  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.566 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 01:38:09 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  48:9  error  'pokemonData' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 01:41:40 info: ------------------------------------------
+2023-02-22 01:41:40 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 01:41:40 info: ------------------------------------------
+2023-02-22 01:41:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (272 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10701  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10701  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.585 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 01:51:19 info: ------------------------------------------
+2023-02-22 01:51:19 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 01:51:19 info: ------------------------------------------
+2023-02-22 01:51:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (252 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10701  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10701  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.829 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 02:07:21 info: ------------------------------------------
+2023-02-22 02:07:21 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 02:07:21 info: ------------------------------------------
+2023-02-22 02:07:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    √ HTML should be syntactically valid (183 ms)
+    √ should have all TODO comments removed (1 ms)
+    × should use `fetch()` (2 ms)
+    × should use `await fetch()` (1 ms)
+    × should use try/catch (1 ms)
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        5.029 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 02:07:33 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  64:11  error  Parsing error: Unexpected token fetchAndPopulatePokemons
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 02:12:02 info: ------------------------------------------
+2023-02-22 02:12:02 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 02:12:02 info: ------------------------------------------
+2023-02-22 02:12:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    √ HTML should be syntactically valid (234 ms)
+    √ should have all TODO comments removed (1 ms)
+    × should use `fetch()` (2 ms)
+    × should use `await fetch()` (1 ms)
+    × should use try/catch (1 ms)
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        4.797 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 02:12:14 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  68:11  error  Parsing error: Unexpected token fetchAndPopulatePokemons
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 02:29:33 info: ------------------------------------------
+2023-02-22 02:29:33 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 02:29:33 info: ------------------------------------------
+2023-02-22 02:29:41 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    √ HTML should be syntactically valid (166 ms)
+    √ should have all TODO comments removed (1 ms)
+    × should use `fetch()` (2 ms)
+    × should use `await fetch()` (1 ms)
+    × should use try/catch
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        4.635 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-22 02:29:45 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  72:11  error  Parsing error: Unexpected token fetchAndPopulatePokemons
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 02:37:53 info: ------------------------------------------
+2023-02-22 02:37:53 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-22 02:37:53 info: ------------------------------------------
+2023-02-22 02:38:01 info: All unit tests passed.
+2023-02-22 02:38:09 info: All steps were completed successfully
+2023-02-22 02:49:39 info: -----------------------------------------
+2023-02-22 02:49:39 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-22 02:49:39 info: -----------------------------------------
+2023-02-22 02:49:44 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call
+    × should use async/wait (2 ms)
+    × should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE
+    × should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      68 |     expect.assertions(3);
+      69 |
+    > 70 |     expect(exported).toBeDefined();
+         |                      ^
+      71 |
+      72 |     // This sequence is known to settle on an ACE in three throws.
+      73 |     const randomSpy = jest
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:70:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+       99 |     expect.assertions(3);
+    > 100 |     expect(exported).toBeDefined();
+          |                      ^
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+      103 |     // in two throws.
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:100:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        1.442 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-22 02:49:48 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  19:21  error  Parsing error: Unexpected token rollDie
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 02:53:51 info: -----------------------------------------
+2023-02-22 02:53:51 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-22 02:53:51 info: -----------------------------------------
+2023-02-22 02:53:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    × should use async/wait (1 ms)
+    × should use try/catch
+    × should resolve as soon as a die settles on an ACE (1 ms)
+    × should reject with an Error when a die rolls off the table
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      68 |     expect.assertions(3);
+      69 |
+    > 70 |     expect(exported).toBeDefined();
+         |                      ^
+      71 |
+      72 |     // This sequence is known to settle on an ACE in three throws.
+      73 |     const randomSpy = jest
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:70:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+       99 |     expect.assertions(3);
+    > 100 |     expect(exported).toBeDefined();
+          |                      ^
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+      103 |     // in two throws.
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:100:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        1.231 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-22 02:53:59 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  19:27  error  Parsing error: Unexpected token rollDie
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 02:55:36 info: -----------------------------------------
+2023-02-22 02:55:36 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-22 02:55:36 info: -----------------------------------------
+2023-02-22 02:55:41 info: All unit tests passed.
+2023-02-22 02:55:49 info: All steps were completed successfully
+2023-02-22 03:19:22 info: ----------------------------------------
+2023-02-22 03:19:22 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-22 03:19:22 info: ----------------------------------------
+2023-02-22 03:19:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    × should exist and be executable (3 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls
+    × should use `dice.map()`
+    × should use `Promise.race()` (1 ms)
+    × should resolve as soon as a die settles successfully
+    × should reject with an Error as soon as a die rolls off the table (1 ms)
+
+  ● ex4-diceRace › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      30 |
+      31 |   test('should exist and be executable', () => {
+    > 32 |     expect(exported).toBeDefined();
+         |                      ^
+      33 |   });
+      34 |
+      35 |   testTodosRemoved(() => source);
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:32:22)
+
+  ● ex4-diceRace › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      38 |
+      39 |   test('should use `dice.map()`', () => {
+    > 40 |     expect(state.diceMap).toBeDefined();
+         |                           ^
+      41 |   });
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:40:27)
+
+  ● ex4-diceRace › should use `Promise.race()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:44:30)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+      48 |     expect.assertions(3);
+    > 49 |     expect(exported).toBeDefined();
+         |                      ^
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+      52 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:49:22)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+      64 |     expect.assertions(3);
+    > 65 |     expect(exported).toBeDefined();
+         |                      ^
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+      68 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:65:22)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+    > 64 |     expect.assertions(3);
+         |            ^
+      65 |     expect(exported).toBeDefined();
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:64:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 2 passed, 7 total
+Snapshots:   0 total
+Time:        1.474 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+2023-02-22 03:19:31 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  39:4  error  Parsing error: Unexpected token is
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 03:19:35 error: *** Spell Checker Report ***
+
+ex4-diceRace.js:39:181 - Unknown word (untill)
+
+2023-02-22 03:27:32 info: ----------------------------------------
+2023-02-22 03:27:32 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-22 03:27:32 info: ----------------------------------------
+2023-02-22 03:27:37 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js
+  ex4-diceRace
+    × should exist and be executable (4 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls
+    × should use `dice.map()` (1 ms)
+    × should use `Promise.race()`
+    × should resolve as soon as a die settles successfully
+    × should reject with an Error as soon as a die rolls off the table (1 ms)
+
+  ● ex4-diceRace › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      30 |
+      31 |   test('should exist and be executable', () => {
+    > 32 |     expect(exported).toBeDefined();
+         |                      ^
+      33 |   });
+      34 |
+      35 |   testTodosRemoved(() => source);
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:32:22)
+
+  ● ex4-diceRace › should use `dice.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      38 |
+      39 |   test('should use `dice.map()`', () => {
+    > 40 |     expect(state.diceMap).toBeDefined();
+         |                           ^
+      41 |   });
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:40:27)
+
+  ● ex4-diceRace › should use `Promise.race()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:44:30)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+      48 |     expect.assertions(3);
+    > 49 |     expect(exported).toBeDefined();
+         |                      ^
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+      52 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:49:22)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+      64 |     expect.assertions(3);
+    > 65 |     expect(exported).toBeDefined();
+         |                      ^
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+      68 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:65:22)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+    > 64 |     expect.assertions(3);
+         |            ^
+      65 |     expect(exported).toBeDefined();
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:64:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 2 passed, 7 total
+Snapshots:   0 total
+Time:        1.196 s, estimated 2 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+2023-02-22 03:27:40 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  50:4  error  Parsing error: Unexpected token is
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 03:27:44 error: *** Spell Checker Report ***
+
+ex4-diceRace.js:50:181 - Unknown word (untill)
+
+2023-02-22 03:28:47 info: ----------------------------------------
+2023-02-22 03:28:47 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-22 03:28:47 info: ----------------------------------------
+2023-02-22 03:29:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-diceRace.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js (11.163 s)
+  ex4-diceRace
+    √ should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ `rollDice` should not contain unneeded console.log calls (1 ms)
+    √ should use `dice.map()`
+    × should use `Promise.race()` (2 ms)
+    × should resolve as soon as a die settles successfully (5003 ms)
+    × should reject with an Error as soon as a die rolls off the table (5012 ms)
+
+  ● ex4-diceRace › should use `Promise.race()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      42 |
+      43 |   test('should use `Promise.race()`', () => {
+    > 44 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      45 |   });
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:44:30)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      45 |   });
+      46 |
+    > 47 |   test('should resolve as soon as a die settles successfully', async () => {
+         |   ^
+      48 |     expect.assertions(3);
+      49 |     expect(exported).toBeDefined();
+      50 |
+
+      at test (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:47:3)
+      at Object.describe (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:9:1)
+
+  ● ex4-diceRace › should resolve as soon as a die settles successfully
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      46 |
+      47 |   test('should resolve as soon as a die settles successfully', async () => {
+    > 48 |     expect.assertions(3);
+         |            ^
+      49 |     expect(exported).toBeDefined();
+      50 |
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:48:12)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    Die (err, result) => {
+            if (err) {
+              PromiseRejectionEvent(err);
+            } else {
+              resolve(result);
+            }
+          } rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    Die (err, result) => {
+            if (err) {
+              PromiseRejectionEvent(err);
+            } else {
+              resolve(result);
+            }
+          } rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    Die (err, result) => {
+            if (err) {
+              PromiseRejectionEvent(err);
+            } else {
+              resolve(result);
+            }
+          } rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    Die (err, result) => {
+            if (err) {
+              PromiseRejectionEvent(err);
+            } else {
+              resolve(result);
+            }
+          } rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    Die (err, result) => {
+            if (err) {
+              PromiseRejectionEvent(err);
+            } else {
+              resolve(result);
+            }
+          } rolled off the table.
+
+      81 |           offTable = true;
+      82 |         }
+    > 83 |         reject(new Error(`Die ${die} rolled off the table.\n`));
+         |                ^
+      84 |       }
+      85 |
+      86 |       // If the dice settles (i.e. all mandated rolls are completed) we
+
+      at rollOnce (3-UsingAPIs/helpers/pokerDiceRoller.js:83:16)
+      at Timeout.rollOnce [as _onTimeout] (3-UsingAPIs/helpers/pokerDiceRoller.js:96:26)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      61 |   });
+      62 |
+    > 63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+         |   ^
+      64 |     expect.assertions(3);
+      65 |     expect(exported).toBeDefined();
+      66 |
+
+      at test (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:63:3)
+      at Object.describe (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:9:1)
+
+  ● ex4-diceRace › should reject with an Error as soon as a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      62 |
+      63 |   test('should reject with an Error as soon as a die rolls off the table', async () => {
+    > 64 |     expect.assertions(3);
+         |            ^
+      65 |     expect(exported).toBeDefined();
+      66 |
+      67 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex4-diceRace.test.js:64:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 4 passed, 7 total
+Snapshots:   0 total
+Time:        11.321 s
+Ran all test suites matching /ex4-diceRace.test.js/i.
+2023-02-22 03:29:06 error: *** ESLint Report ***
+
+ex4-diceRace.js
+  19:34  error  'reject' is defined but never used                                                             no-unused-vars
+  22:11  error  A function with a name starting with an uppercase letter should only be used as a constructor  new-cap
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2023-02-22 03:30:27 info: ----------------------------------------
+2023-02-22 03:30:27 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-22 03:30:27 info: ----------------------------------------
+2023-02-22 03:30:32 info: All unit tests passed.
+2023-02-22 03:30:40 info: All steps were completed successfully
+2023-02-22 04:02:07 info: ----------------------------------------
+2023-02-22 04:02:07 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-22 04:02:07 info: ----------------------------------------
+2023-02-22 04:02:07 warn: A unit test file was not provided.
+2023-02-22 04:02:11 error: *** ESLint Report ***
+
+ex5-vscDebug.js
+  1:5  error  Parsing error: Unexpected token it
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 04:03:22 info: ----------------------------------------
+2023-02-22 04:03:22 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-22 04:03:22 info: ----------------------------------------
+2023-02-22 04:03:22 warn: A unit test file was not provided.
+2023-02-22 04:03:26 error: *** ESLint Report ***
+
+ex5-vscDebug.js
+  1:5  error  Parsing error: Unexpected token it
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 04:06:02 info: ----------------------------------------
+2023-02-22 04:06:02 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-22 04:06:02 info: ----------------------------------------
+2023-02-22 04:06:02 warn: A unit test file was not provided.
+2023-02-22 04:06:09 info: All steps were completed successfully
+2023-02-22 04:07:34 info: ----------------------------------------
+2023-02-22 04:07:34 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-22 04:07:34 info: ----------------------------------------
+2023-02-22 04:07:34 warn: A unit test file was not provided.
+2023-02-22 04:07:41 info: All steps were completed successfully
+2023-02-22 04:49:49 info: --------------------------------------------
+2023-02-22 04:49:49 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-02-22 04:49:49 info: --------------------------------------------
+2023-02-22 04:49:49 warn: A unit test file was not provided.
+2023-02-22 04:49:59 info: All steps were completed successfully

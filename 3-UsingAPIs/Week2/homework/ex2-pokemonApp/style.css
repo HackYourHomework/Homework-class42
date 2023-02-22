@@ -1,1 +1,39 @@
-/* add your styling here */
+body {
+  background-color: #c2c2f3;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.select-pokemon {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgba(20, 7, 68, 0.533);
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+.pokemon-image {
+  max-width: 300px;
+  max-height: 300px;
+  margin-right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-image:hover {
+  animation: zoomIn 3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
