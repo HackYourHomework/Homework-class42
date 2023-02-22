@@ -1426,3 +1426,8 @@ ex5-vscDebug.js
 2023-02-22 04:07:34 info: ----------------------------------------
 2023-02-22 04:07:34 warn: A unit test file was not provided.
 2023-02-22 04:07:41 info: All steps were completed successfully
+2023-02-22 04:49:49 info: --------------------------------------------
+2023-02-22 04:49:49 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-02-22 04:49:49 info: --------------------------------------------
+2023-02-22 04:49:49 warn: A unit test file was not provided.
+2023-02-22 04:49:59 info: All steps were completed successfully
