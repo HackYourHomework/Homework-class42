@@ -627,3 +627,258 @@ ex2-pokemonApp/index.js
 2023-02-22 02:37:53 info: ------------------------------------------
 2023-02-22 02:38:01 info: All unit tests passed.
 2023-02-22 02:38:09 info: All steps were completed successfully
+2023-02-22 02:49:39 info: -----------------------------------------
+2023-02-22 02:49:39 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-22 02:49:39 info: -----------------------------------------
+2023-02-22 02:49:44 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls
+    √ should not include a recursive call
+    × should use async/wait (2 ms)
+    × should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE
+    × should reject with an Error when a die rolls off the table (1 ms)
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      68 |     expect.assertions(3);
+      69 |
+    > 70 |     expect(exported).toBeDefined();
+         |                      ^
+      71 |
+      72 |     // This sequence is known to settle on an ACE in three throws.
+      73 |     const randomSpy = jest
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:70:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+       99 |     expect.assertions(3);
+    > 100 |     expect(exported).toBeDefined();
+          |                      ^
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+      103 |     // in two throws.
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:100:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        1.442 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-22 02:49:48 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  19:21  error  Parsing error: Unexpected token rollDie
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 02:53:51 info: -----------------------------------------
+2023-02-22 02:53:51 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-22 02:53:51 info: -----------------------------------------
+2023-02-22 02:53:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    × should use async/wait (1 ms)
+    × should use try/catch
+    × should resolve as soon as a die settles on an ACE (1 ms)
+    × should reject with an Error when a die rolls off the table
+
+  ● ex3-rollAnAce › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use async/wait', () => {
+    > 59 |     expect(state.async).toBeDefined();
+         |                         ^
+      60 |     expect(state.await).toBeDefined();
+      61 |   });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:59:25)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      68 |     expect.assertions(3);
+      69 |
+    > 70 |     expect(exported).toBeDefined();
+         |                      ^
+      71 |
+      72 |     // This sequence is known to settle on an ACE in three throws.
+      73 |     const randomSpy = jest
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:70:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+       99 |     expect.assertions(3);
+    > 100 |     expect(exported).toBeDefined();
+          |                      ^
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+      103 |     // in two throws.
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:100:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:        1.231 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2023-02-22 02:53:59 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  19:27  error  Parsing error: Unexpected token rollDie
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-22 02:55:36 info: -----------------------------------------
+2023-02-22 02:55:36 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-22 02:55:36 info: -----------------------------------------
+2023-02-22 02:55:41 info: All unit tests passed.
+2023-02-22 02:55:49 info: All steps were completed successfully
