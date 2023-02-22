@@ -19,6 +19,7 @@ function renderLaureate({ knownName, birth, death }) {
 
 function renderLaureates(laureates) {
   laureates.forEach(renderLaureate);
+
 }
 
 async function fetchAndRender() {
