@@ -19,15 +19,14 @@ function renderLaureate({ knownName, birth, death }) {
 
 function renderLaureates(laureates) {
   laureates.forEach(renderLaureate);
-
 }
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const laureates = await getData(
       'http://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
-    renderLaureates(laureates);
+    renderLaureates(laureates.data);
   } catch (err) {
     console.error(`Something went wrong: ${err.message}`);
   }
