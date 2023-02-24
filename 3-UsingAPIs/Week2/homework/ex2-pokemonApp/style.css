@@ -1,1 +1,8 @@
 /* add your styling here */
+body {
+  background-color: rgb(107, 153, 116);
+}
+
+#pokemon-list {
+  background-color: rgb(203, 155, 92);
+}

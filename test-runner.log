@@ -1,0 +1,557 @@
+2023-02-22 04:28:31 info: ---------------------------------------------
+2023-02-22 04:28:31 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-02-22 04:28:31 info: ---------------------------------------------
+2023-02-22 04:28:34 info: All unit tests passed.
+2023-02-22 04:28:34 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  20:22  error  'url' is defined but never used          no-unused-vars
+  21:18  error  'requestData' is defined but never used  no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2023-02-23 04:08:28 info: ---------------------------------------------
+2023-02-23 04:08:28 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-02-23 04:08:28 info: ---------------------------------------------
+2023-02-23 04:08:31 info: All unit tests passed.
+2023-02-23 04:08:32 info: All steps were completed successfully
+2023-02-23 05:21:53 info: ------------------------------------------
+2023-02-23 05:21:53 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-23 05:21:53 info: ------------------------------------------
+2023-02-23 05:21:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✓ HTML should be syntactically valid (63 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should use `fetch()`
+    ✕ should use `await fetch()`
+    ✕ should use try/catch (1 ms)
+
+  ● pokemonApp › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      43 |
+      44 |   test('should use `fetch()`', () => {
+    > 45 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      46 |   });
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:45:25)
+
+  ● pokemonApp › should use `await fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      47 |
+      48 |   test('should use `await fetch()`', () => {
+    > 49 |     expect(state.awaitFetch).toBeDefined();
+         |                              ^
+      50 |   });
+      51 |
+      52 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:49:30)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        1.818 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-23 05:21:56 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  34:3  error  Parsing error: Missing catch or finally clause
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-24 01:20:17 info: -----------------------------------------
+2023-02-24 01:20:17 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2023-02-24 01:20:17 info: -----------------------------------------
+2023-02-24 01:20:18 info: All unit tests passed.
+2023-02-24 01:20:20 info: All steps were completed successfully
+2023-02-24 01:22:09 info: ----------------------------------------
+2023-02-24 01:22:09 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-24 01:22:09 info: ----------------------------------------
+2023-02-24 01:22:10 info: All unit tests passed.
+2023-02-24 01:22:12 info: All steps were completed successfully
+2023-02-24 01:24:43 info: ----------------------------------------
+2023-02-24 01:24:43 info: >>> Running Unit Test `ex4-diceRace` <<<
+2023-02-24 01:24:43 info: ----------------------------------------
+2023-02-24 01:24:44 info: All unit tests passed.
+2023-02-24 01:24:45 info: All steps were completed successfully
+2023-02-24 01:26:01 info: ----------------------------------------
+2023-02-24 01:26:01 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-24 01:26:01 info: ----------------------------------------
+2023-02-24 01:26:01 warn: A unit test file was not provided.
+2023-02-24 01:26:02 info: All steps were completed successfully
+2023-02-24 01:56:30 info: ----------------------------------------
+2023-02-24 01:56:30 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-24 01:56:30 info: ----------------------------------------
+2023-02-24 01:56:30 warn: A unit test file was not provided.
+2023-02-24 01:56:31 error: *** ESLint Report ***
+
+ex5-vscDebug.js
+  14:10  error  'renderLaureate' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-24 01:57:36 info: ----------------------------------------
+2023-02-24 01:57:36 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-24 01:57:36 info: ----------------------------------------
+2023-02-24 01:57:36 warn: A unit test file was not provided.
+2023-02-24 01:57:37 error: *** ESLint Report ***
+
+ex5-vscDebug.js
+  14:10  error    'renderLaureate' is defined but never used  no-unused-vars
+  21:3   warning  Remove commented-out code                   hyf/no-commented-out-code
+  30:7   error    'renderLaureates' is not defined            no-undef
+
+✖ 3 problems (2 errors, 1 warning)
+
+
+2023-02-24 02:00:14 info: ----------------------------------------
+2023-02-24 02:00:14 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-24 02:00:14 info: ----------------------------------------
+2023-02-24 02:00:14 warn: A unit test file was not provided.
+2023-02-24 02:00:14 error: *** ESLint Report ***
+
+ex5-vscDebug.js
+  14:10  error  'renderLaureate' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-24 02:02:24 info: ----------------------------------------
+2023-02-24 02:02:24 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-24 02:02:24 info: ----------------------------------------
+2023-02-24 02:02:24 warn: A unit test file was not provided.
+2023-02-24 02:02:25 error: *** ESLint Report ***
+
+ex5-vscDebug.js
+  14:10  error  'renderLaureate' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2023-02-24 02:03:11 info: ----------------------------------------
+2023-02-24 02:03:11 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2023-02-24 02:03:11 info: ----------------------------------------
+2023-02-24 02:03:11 warn: A unit test file was not provided.
+2023-02-24 02:03:13 info: All steps were completed successfully
+2023-02-24 02:04:36 info: --------------------------------------------
+2023-02-24 02:04:36 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-02-24 02:04:36 info: --------------------------------------------
+2023-02-24 02:04:36 warn: A unit test file was not provided.
+2023-02-24 02:04:38 info: All steps were completed successfully
+2023-02-24 02:51:02 info: ------------------------------------------
+2023-02-24 02:51:02 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-24 02:51:02 info: ------------------------------------------
+2023-02-24 02:51:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (130 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()`
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2     error  <img> is missing required \"alt\" attribute  wcag/h37
+      12:2     error  Attribute \"src\" has invalid value \"\"       attribute-allowed-values
+      12:150   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:204   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:259   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:316   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:373   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:429   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:484   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:540   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:596   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:651   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:706   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:764   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:818   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:872   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:928   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:982   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1039  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1094  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1149  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1205  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1260  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1314  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1367  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1420  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1475  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1529  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1586  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1643  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1700  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1756  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1813  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1870  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1926  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1982  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2038  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2094  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2148  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2205  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2263  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2321  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2374  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2428  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2482  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2535  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2592  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2645  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2701  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2756  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2812  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2867  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2922  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2976  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3031  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3086  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3141  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3195  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3251  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3308  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3364  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3419  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3476  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3533  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3585  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3640  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3696  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3750  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3805  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3860  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3918  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3976  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4034  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4091  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4149  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4204  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4260  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4313  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4367  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4423  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4479  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4534  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4591  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4647  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4704  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4757  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4811  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4863  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4918  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4972  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5023  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5079  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5135  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5189  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5244  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5298  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5350  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5405  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5458  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5512  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5567  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5622  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5680  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5738  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5796  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5851  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5907  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5965  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6024  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6082  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6138  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6194  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6250  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6305  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6361  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6417  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6476  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6531  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6586  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6642  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6698  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6753  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6809  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6865  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6921  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6974  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7033  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7088  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7143  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7198  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7255  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7312  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7367  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7421  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7475  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7532  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7588  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7644  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7700  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7756  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7812  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7867  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7924  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7983  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8039  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8096  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8151  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8207  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8263  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8321  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8379  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8434  error  Duplicate ID \"pokemon-option\"              no-dup-id·
+    ✖ 152 problems (152 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.865 s, estimated 2 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-24 02:52:42 info: ------------------------------------------
+2023-02-24 02:52:42 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-24 02:52:42 info: ------------------------------------------
+2023-02-24 02:52:45 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (127 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()`
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2     error  <img> is missing required \"alt\" attribute  wcag/h37
+      12:2     error  Attribute \"src\" has invalid value \"\"       attribute-allowed-values
+      12:150   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:204   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:259   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:316   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:373   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:429   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:484   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:540   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:596   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:651   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:706   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:764   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:818   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:872   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:928   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:982   error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1039  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1094  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1149  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1205  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1260  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1314  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1367  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1420  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1475  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1529  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1586  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1643  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1700  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1756  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1813  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1870  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1926  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:1982  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2038  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2094  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2148  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2205  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2263  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2321  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2374  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2428  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2482  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2535  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2592  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2645  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2701  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2756  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2812  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2867  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2922  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:2976  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3031  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3086  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3141  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3195  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3251  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3308  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3364  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3419  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3476  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3533  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3585  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3640  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3696  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3750  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3805  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3860  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3918  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:3976  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4034  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4091  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4149  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4204  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4260  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4313  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4367  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4423  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4479  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4534  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4591  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4647  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4704  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4757  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4811  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4863  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4918  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:4972  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5023  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5079  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5135  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5189  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5244  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5298  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5350  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5405  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5458  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5512  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5567  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5622  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5680  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5738  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5796  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5851  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5907  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:5965  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6024  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6082  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6138  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6194  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6250  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6305  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6361  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6417  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6476  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6531  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6586  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6642  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6698  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6753  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6809  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6865  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6921  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:6974  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7033  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7088  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7143  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7198  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7255  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7312  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7367  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7421  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7475  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7532  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7588  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7644  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7700  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7756  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7812  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7867  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7924  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:7983  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8039  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8096  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8151  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8207  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8263  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8321  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8379  error  Duplicate ID \"pokemon-option\"              no-dup-id
+      12:8434  error  Duplicate ID \"pokemon-option\"              no-dup-id·
+    ✖ 152 problems (152 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.813 s, estimated 2 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
