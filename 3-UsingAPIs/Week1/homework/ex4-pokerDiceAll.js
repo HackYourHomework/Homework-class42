@@ -27,9 +27,10 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
+
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  return Promise.all(dice.map(rollDie));
+
 }
 
 function main() {
@@ -43,3 +44,9 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+
+// Promise.all is taking all promises and returning a single Promise if they are all resolved it gives us success. If one of them rejected we get an reject message.
+// But it doesn't stop the creating promises until it complete. We created promises and used Promise.all to see at the end of the creating promises and conclusion. 
+// Because of that if die rolls off the table it continues to creating the promises that we pushed into. after all promises created we are getting 1 resolve or 1 reject.
+// If all resolved we get a success message, if one of them rejects we get an error message

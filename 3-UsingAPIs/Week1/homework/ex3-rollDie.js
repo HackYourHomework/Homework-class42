@@ -11,27 +11,30 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/3-Usin
   explanation? Add your answer as a comment to be bottom of the file.
 ------------------------------------------------------------------------------*/
 
-// TODO Remove callback and return a promise
-function rollDie(callback) {
+
+function rollDie() {
+  return new Promise((resolve,reject) => {
   // Compute a random number of rolls (3-10) that the die MUST complete
   const randomRollsToDo = Math.floor(Math.random() * 8) + 3;
   console.log(`Die scheduled for ${randomRollsToDo} rolls...`);
 
   const rollOnce = (roll) => {
+
     // Compute a random die value for the current roll
     const value = Math.floor(Math.random() * 6) + 1;
     console.log(`Die value is now: ${value}`);
 
     // Use callback to notify that the die rolled off the table after 6 rolls
     if (roll > 6) {
-      // TODO replace "error" callback
-      callback(new Error('Oops... Die rolled off the table.'));
+
+      reject(new Error('Oops... Die rolled off the table.'));
+
     }
 
     // Use callback to communicate the final die value once finished rolling
     if (roll === randomRollsToDo) {
-      // TODO replace "success" callback
-      callback(null, value);
+
+      resolve(`Success! Die settled on ${value}.`);
     }
 
     // Schedule the next roll todo until no more rolls to do
@@ -39,20 +42,15 @@ function rollDie(callback) {
       setTimeout(() => rollOnce(roll + 1), 500);
     }
   };
-
-  // Start the initial roll
   rollOnce(1);
+  })
 }
 
 function main() {
-  // TODO Refactor to use promise
-  rollDie((error, value) => {
-    if (error !== null) {
-      console.log(error.message);
-    } else {
-      console.log(`Success! Die settled on ${value}.`);
-    }
-  });
+
+  rollDie()
+      .then((value) => {console.log(value);})
+      .catch((error) => {console.log(error.message);})
 }
 
 // ! Do not change or remove the code below
@@ -60,3 +58,8 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+
+// İn first code callback function was calling regardless the if die rolled from the table or not. When roll equals to randomRollsToDo it was giving the success message to us
+// But in promise method, we are calling resolve if roll equals to randomRollsToDo, and it is rejecting if die rolled of the table.
+// In promises if there is a reject(fail) you can't get the resolve(success) message. We fixed that problem here
