@@ -1,1 +1,18 @@
-/* add your styling here */
+
+
+body{
+    margin: 20px;
+}
+#button{
+    display: block;
+    margin-bottom: 20px;
+    
+}
+
+select{
+
+    min-width: 100px;
+}
+img{
+    width: 15%;
+}
