@@ -58,3 +58,8 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+
+// İn first code callback function was calling regardless the if die rolled from the table or not. When roll equals to randomRollsToDo it was giving the success message to us
+// But in promise method, we are calling resolve if roll equals to randomRollsToDo, and it is rejecting if die rolled of the table.
+// In promises if there is a reject(fail) you can't get the resolve(success) message. We fixed that problem here
