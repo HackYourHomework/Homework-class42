@@ -1,1 +1,21 @@
-/* add your styling here */
+.pokemon-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translate(50%);
+  border: 1px solid rgb(54, 54, 84);
+  background-color: rgba(234, 234, 234, 0.4);
+  box-shadow: 0.5rem 0.5rem 0.5rem yellowgreen,
+    -0.5rem 0.5rem 0.5rem yellowgreen;
+  width: 40%;
+  min-height: 30vh;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.select-element {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  width: 20%;
+}

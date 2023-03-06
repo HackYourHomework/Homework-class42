@@ -22,18 +22,29 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-//const proxy = 'https://cors-anywhere.herokuapp.com/';
-const url =
-  ' https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon?limit=151';
+
+const pokemonDiv = document.createElement('div');
+pokemonDiv.classList.add('pokemon-select');
+document.body.appendChild(pokemonDiv);
+
+const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
 const selectElement = document.createElement('select');
-document.body.appendChild(selectElement);
+selectElement.classList.add('select-element');
+pokemonDiv.appendChild(selectElement);
+
+const imgDiv = document.createElement('div');
+imgDiv.classList.add('img-div');
 
 const imgElement = document.createElement('img');
-document.body.appendChild(imgElement);
+imgElement.src = url;
+imgElement.alt = '';
+imgDiv.appendChild(imgElement);
+pokemonDiv.appendChild(imgDiv);
 
 async function fetchData(url) {
   try {
     const response = await fetch(url);
+
     if (!response.ok) {
       throw new Error(`HTTP error: ${response.status}`);
     }
@@ -42,28 +53,12 @@ async function fetchData(url) {
     console.error('Network Error: ', error);
   }
 }
-/* function fetchData(url) {
-  return fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('HTTP error');
-      }
-      const jsonData = response.json();
-      return jsonData;
-    })
-    .then((data) => {
-      return data;
-    })
-    .catch((error) => {
-      console.error(`Network error!`);
-      throw error;
-    });
-} */
 
 async function fetchAndPopulatePokemons() {
   try {
     const data = await fetchData(url);
-    data.results.forEach((pokemon) => {
+    const results = data['results'];
+    results.forEach((pokemon) => {
       const option = document.createElement('option');
       option.value = pokemon.url;
       option.textContent = pokemon.name;
@@ -75,21 +70,18 @@ async function fetchAndPopulatePokemons() {
 }
 
 async function fetchImage(url) {
-  try {
-    const data = await fetchData(url);
-    imgElement.src = data.url;
-  } catch (error) {
-    console.log('Error:', error);
-  }
+  const pokemonData = await fetchData(url);
+  const imageUrl = pokemonData['sprites']['front_default'];
+  imgElement.src = imageUrl;
+  imgElement.alt = 'pokemon image';
 }
 
 async function main() {
   try {
     await fetchAndPopulatePokemons();
     selectElement.addEventListener('change', async () => {
-      const pokemon = selectElement.value;
-      const url = ` https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/${pokemon}`;
-      await fetchImage(url);
+      const pokemonUrl = selectElement.value;
+      await fetchImage(pokemonUrl);
     });
   } catch (error) {
     console.log('Error: ', error);
