@@ -148,3 +148,13 @@ ex3-rollAnAce.js
 2023-02-20 03:28:28 info: ----------------------------------------
 2023-02-20 03:28:28 warn: A unit test file was not provided.
 2023-02-20 03:28:35 info: All steps were completed successfully
+2023-03-06 09:27:21 info: --------------------------------------------
+2023-03-06 09:27:21 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-03-06 09:27:21 info: --------------------------------------------
+2023-03-06 09:27:21 warn: A unit test file was not provided.
+2023-03-06 09:27:31 info: All steps were completed successfully
+2023-03-06 09:30:41 info: --------------------------------------------
+2023-03-06 09:30:41 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2023-03-06 09:30:41 info: --------------------------------------------
+2023-03-06 09:30:41 warn: A unit test file was not provided.
+2023-03-06 09:30:51 info: All steps were completed successfully
