@@ -40,8 +40,8 @@ function renderImage(data) {
 function renderError(error) {
   const h1 = document.createElement('h1');
   document.body.append(h1);
-  h1.textContent = 'Oops you are in trouble!';  
-  console.log(error);
+  h1.textContent = error;  
+
 }
 
 async function main() {
