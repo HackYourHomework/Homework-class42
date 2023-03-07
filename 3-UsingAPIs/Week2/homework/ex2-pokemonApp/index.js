@@ -4,7 +4,6 @@ async function fetchData(url) {
   const res = await fetch(url)
   const jsonData = await res.json()
   if(res.ok){
-    console.log(jsonData)
     return jsonData
   } else {
     throw new Error('HTTP error')
@@ -48,12 +47,11 @@ function fetchAndPopulatePokemons(data) {
 function fetchImage(data, pokemonIndex) {
   const img = document.createElement('img')
   const div = document.getElementById('div-for-image')
-  console.log(div.children)
   for(let i = 0; i<div.children.length; i++){
     div.removeChild(div.children[i])
   }
   img.className = 'grid'
-  img.src = data.results[pokemonIndex].url
+  img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonIndex}.png`
   img.setAttribute('alt',data.results[pokemonIndex].name)
   div.appendChild(img);
 }
