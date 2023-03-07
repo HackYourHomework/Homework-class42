@@ -34,3 +34,6 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// Promice.race() gives us to first resolved promise to us. That is why we see the result first. 
+//Then the code keeps runnging i think.Promise.race() didn't wait other promises to resolve or reject
