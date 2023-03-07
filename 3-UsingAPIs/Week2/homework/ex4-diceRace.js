@@ -9,7 +9,7 @@ function rollDice() {
 
 async function main() {
   try {
-    const result = rollDice()
+    const result = await rollDice()
     console.log('Resolved!', result)
   } catch (error) {
     console.log('Rejected!', error)
