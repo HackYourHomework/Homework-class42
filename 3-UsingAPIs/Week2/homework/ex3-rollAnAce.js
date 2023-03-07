@@ -13,12 +13,11 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 async function rollDieUntil(wantedValue) {
-  // when I gave the while loop 'true value' it gave me an ESlint error that's why I put true value in a variable
-  const trueVariable = true;
-  while (trueVariable) {
-    const result = await rollDie();
-    if (result === wantedValue || result === undefined) return result;
-  }
+  let result;
+  do {
+    result = await rollDie();
+  } while (result !== wantedValue && result !== undefined);
+  return result;
 }
 
 async function main() {
