@@ -32,15 +32,6 @@ const selectElement = document.createElement('select');
 selectElement.classList.add('select-element');
 pokemonDiv.appendChild(selectElement);
 
-const imgDiv = document.createElement('div');
-imgDiv.classList.add('img-div');
-
-const imgElement = document.createElement('img');
-imgElement.src = url;
-imgElement.alt = '';
-imgDiv.appendChild(imgElement);
-pokemonDiv.appendChild(imgDiv);
-
 async function fetchData(url) {
   try {
     const response = await fetch(url);
@@ -55,37 +46,49 @@ async function fetchData(url) {
 }
 
 async function fetchAndPopulatePokemons() {
-  try {
-    const data = await fetchData(url);
-    const results = data['results'];
-    results.forEach((pokemon) => {
+  const buttonElement = document.createElement('button');
+  buttonElement.setAttribute('id', 'button');
+  buttonElement.setAttribute('type', 'submit');
+  pokemonDiv.appendChild(buttonElement);
+  buttonElement.textContent = 'Get Pokemon';
+
+  const imgElement = document.createElement('img');
+  imgElement.src =
+    'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png';
+  imgElement.alt = '';
+  pokemonDiv.appendChild(imgElement);
+
+  buttonElement.addEventListener('click', async () => {
+    const pokemons = await fetchData(url);
+    const pokemonList = pokemons.results;
+
+    pokemonList.forEach((pokemon) => {
       const option = document.createElement('option');
       option.value = pokemon.url;
       option.textContent = pokemon.name;
       selectElement.appendChild(option);
     });
-  } catch (error) {
-    return console.log('Error: ', error);
-  }
+
+    selectElement.addEventListener('change', async () => {
+      const imageUrl = selectElement.value;
+      await fetchImage(imgElement, imageUrl);
+    });
+  });
 }
 
-async function fetchImage(url) {
-  const pokemonData = await fetchData(url);
-  const imageUrl = pokemonData['sprites']['front_default'];
-  imgElement.src = imageUrl;
-  imgElement.alt = 'pokemon image';
+async function fetchImage(image, url) {
+  try {
+    const pokemonData = await fetchData(url);
+    const imageUrl = pokemonData['sprites']['front_shiny'];
+    image.src = imageUrl;
+    image.alt = 'pokemon image';
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 async function main() {
-  try {
-    await fetchAndPopulatePokemons();
-    selectElement.addEventListener('change', async () => {
-      const pokemonUrl = selectElement.value;
-      await fetchImage(pokemonUrl);
-    });
-  } catch (error) {
-    console.log('Error: ', error);
-  }
+  await fetchAndPopulatePokemons();
 }
 
 window.addEventListener('load', main);
