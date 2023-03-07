@@ -17,13 +17,17 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    url with `.shx`. There is no server at the modified url, therefore this 
    should result in a network (DNS) error.
 ------------------------------------------------------------------------------*/
-function requestData(url) {
-  return fetch(url).then((response) => {
+async function requestData(url) {
+  try {
+    const response = await fetch(url);
     if (!response.ok) {
       throw new Error('HTTP or Network problem!');
     }
-    return response.json();
-  });
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error(error);
+  }
 }
 
 function renderImage(data) {
@@ -42,11 +46,8 @@ function renderError(error) {
 
 async function main() {
   try {
-    return await requestData('https://xkcd.now.sh/?comic=latest').then(
-      (data) => {
-        renderImage(data);
-      }
-    );
+    const data = await requestData('https://xkcd.now.sh/?comic=latest');
+    renderImage(data);
   } catch (error) {
     renderError(error);
   }
