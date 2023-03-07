@@ -1328,3 +1328,8 @@ Ran all test suites matching /ex2-pokemonApp.test.js/i.
 2023-02-21 10:22:46 info: ------------------------------------------
 2023-02-21 10:22:48 info: All unit tests passed.
 2023-02-21 10:22:50 info: All steps were completed successfully
+2023-03-07 08:37:53 info: ---------------------------------------------
+2023-03-07 08:37:53 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-03-07 08:37:53 info: ---------------------------------------------
+2023-03-07 08:37:56 info: All unit tests passed.
+2023-03-07 08:37:57 info: All steps were completed successfully
