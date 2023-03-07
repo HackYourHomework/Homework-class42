@@ -22,18 +22,75 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+
+const pokemonDiv = document.createElement('div');
+pokemonDiv.classList.add('pokemon-select');
+document.body.appendChild(pokemonDiv);
+
+const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+const selectElement = document.createElement('select');
+selectElement.classList.add('select-element');
+pokemonDiv.appendChild(selectElement);
+
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Network Error: ', error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons() {
+  const buttonElement = document.createElement('button');
+  buttonElement.setAttribute('id', 'button');
+  buttonElement.setAttribute('type', 'submit');
+  pokemonDiv.appendChild(buttonElement);
+  buttonElement.textContent = 'Get Pokemon';
+
+  const imgElement = document.createElement('img');
+  imgElement.style.display = 'none';
+  imgElement.src =
+    'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png';
+  imgElement.alt = '';
+  pokemonDiv.appendChild(imgElement);
+
+  buttonElement.addEventListener('click', async () => {
+    const pokemons = await fetchData(url);
+    const pokemonList = pokemons.results;
+
+    pokemonList.forEach((pokemon) => {
+      const option = document.createElement('option');
+      option.value = pokemon.url;
+      option.textContent = pokemon.name;
+      selectElement.appendChild(option);
+    });
+
+    selectElement.addEventListener('change', async () => {
+      imgElement.style.display = 'block';
+      const imageUrl = selectElement.value;
+      await fetchImage(imgElement, imageUrl);
+    });
+  });
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(image, url) {
+  try {
+    const pokemonData = await fetchData(url);
+    const imageUrl = pokemonData['sprites']['front_shiny'];
+    image.src = imageUrl;
+    image.alt = 'pokemon image';
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-function main() {
-  // TODO complete this function
+async function main() {
+  await fetchAndPopulatePokemons();
 }
+
+window.addEventListener('load', main);

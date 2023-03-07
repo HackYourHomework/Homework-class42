@@ -1,1 +1,38 @@
-/* add your styling here */
+.pokemon-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  transform: translate(50%);
+  border: 1px solid rgb(54, 54, 84);
+  background-color: rgba(234, 234, 234, 0.4);
+  box-shadow: 0.5rem 0.5rem 0.5rem yellowgreen,
+    -0.5rem 0.5rem 0.5rem yellowgreen;
+  width: 50%;
+  min-height: 40vh;
+  margin-top: 10%;
+}
+
+.select-element {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  width: 50%;
+}
+
+#button {
+  align-self: calc(50%);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 16px;
+  color: violet;
+  font-weight: bold;
+  border: 1px solid yellowgreen;
+  cursor: pointer;
+}
+
+#button:hover {
+  transform: scale(95%);
+  transition: 0.5s ease;
+}
