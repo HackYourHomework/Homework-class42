@@ -1,0 +1,150 @@
+2023-02-15 10:28:34 info: ---------------------------------------------
+2023-02-15 10:28:34 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-02-15 10:28:34 info: ---------------------------------------------
+2023-02-15 10:28:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    × HTML should be syntactically valid (149 ms)
+    × should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    √ should use try/catch (1 ms)
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        4.485 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2023-02-15 10:28:46 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  53:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-02-15 10:30:29 info: ---------------------------------------------
+2023-02-15 10:30:29 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2023-02-15 10:30:29 info: ---------------------------------------------
+2023-02-15 10:30:35 info: All unit tests passed.
+2023-02-15 10:30:42 info: All steps were completed successfully
+2023-02-16 11:00:39 info: ------------------------------------------
+2023-02-16 11:00:39 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-16 11:00:39 info: ------------------------------------------
+2023-02-16 11:00:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (5.489 s)
+  pokemonApp
+    √ HTML should be syntactically valid (221 ms)
+    × should have all TODO comments removed (3 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()`
+    × should use try/catch
+
+  ● pokemonApp › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        5.678 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2023-02-16 12:20:32 info: ------------------------------------------
+2023-02-16 12:20:32 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-16 12:20:32 info: ------------------------------------------
+2023-02-16 12:20:40 info: All unit tests passed.
+2023-02-16 12:20:49 info: All steps were completed successfully
+2023-02-16 12:25:06 info: ------------------------------------------
+2023-02-16 12:25:06 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-16 12:25:06 info: ------------------------------------------
+2023-02-16 12:25:14 info: All unit tests passed.
+2023-02-16 12:25:18 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  51:3  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2023-02-16 12:37:01 info: ------------------------------------------
+2023-02-16 12:37:01 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2023-02-16 12:37:01 info: ------------------------------------------
+2023-02-16 12:37:10 info: All unit tests passed.
+2023-02-16 12:37:14 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  51:3  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
