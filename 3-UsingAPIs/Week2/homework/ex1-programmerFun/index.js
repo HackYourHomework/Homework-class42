@@ -30,9 +30,9 @@ function renderError(error) {
 async function main() {
   try {
     const data = await requestData('https://xkcd.now.sh/?comic=latest')
-    await renderImage(data)
+    renderImage(data)
   } catch (error) {
-    await renderError(error)
+    renderError(error)
   }
 
 }
