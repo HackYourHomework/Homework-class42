@@ -1,1 +1,24 @@
-/* Write your style here */
+body {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 2vw;
+}
+
+img {
+  margin-left: 6vw;
+  height: 200px;
+  width: auto;
+}
