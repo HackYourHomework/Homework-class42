@@ -2,14 +2,12 @@
 
 async function requestData(url) {
   const response = await fetch(url)
-  const jsonData = await response.json()
-
-  if(response.ok){
-    console.log(jsonData)
-    return jsonData
-  } else {
+  if(!response.ok){
     throw new Error('HTTP error')
   }
+  
+  return await response.json()
+
 
 }
 
