@@ -53,6 +53,7 @@ async function fetchAndPopulatePokemons() {
   buttonElement.textContent = 'Get Pokemon';
 
   const imgElement = document.createElement('img');
+  imgElement.style.display = 'none';
   imgElement.src =
     'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png';
   imgElement.alt = '';
@@ -70,6 +71,7 @@ async function fetchAndPopulatePokemons() {
     });
 
     selectElement.addEventListener('change', async () => {
+      imgElement.style.display = 'block';
       const imageUrl = selectElement.value;
       await fetchImage(imgElement, imageUrl);
     });
