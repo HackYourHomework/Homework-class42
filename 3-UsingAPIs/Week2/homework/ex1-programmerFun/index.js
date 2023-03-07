@@ -35,7 +35,6 @@ function renderImage(data) {
   img.setAttribute('alt', 'data image');
   document.body.append(img);
   img.src = data.img;
-  console.log(data);
 }
 
 function renderError(error) {
