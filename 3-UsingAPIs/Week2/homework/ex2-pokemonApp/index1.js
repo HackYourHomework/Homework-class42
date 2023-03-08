@@ -6,7 +6,7 @@ async function fetchData(url) {
   return data;
 }
 
-function fetchAndPopulatePokemons(data) {
+async function fetchAndPopulatePokemons(data) {
   const select = document.querySelector('select');
   const pokemonNames = data.results.map((result) => result.name);
   
@@ -16,7 +16,7 @@ function fetchAndPopulatePokemons(data) {
       option.setAttribute('value', index + 1);
       option.textContent = pokemon;
     });
-    fetchImage(data);
+
   return data;
 
 
@@ -56,7 +56,7 @@ function fetchImage(data) {
     try{
       await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151')
       .then((data) => fetchAndPopulatePokemons(data))
-     // .then((data) => fetchImage(data));
+      .then((data) => fetchImage(data));
     } catch(error){
       console.log(error.message);
     }
